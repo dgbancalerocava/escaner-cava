@@ -1,0 +1,6 @@
+ticker,name,sector
+^GSPC,S&P 500,Índice
+^NDX,Nasdaq 100,Índice
+^IBEX,IBEX 35,Índice
+^STOXX50E,Euro Stoxx 50,Índice
+^GDAXI,DAX,Índice

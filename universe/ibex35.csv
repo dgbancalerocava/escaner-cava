@@ -1,0 +1,36 @@
+ticker,name,sector
+ACS.MC,ACS,Construcción
+ACX.MC,Acerinox,Materiales
+AENA.MC,Aena,Transporte
+AMS.MC,Amadeus,Tecnología
+ANA.MC,Acciona,Construcción
+ANE.MC,Acciona Energía,Utilities
+BBVA.MC,BBVA,Banca
+BKT.MC,Bankinter,Banca
+CABK.MC,CaixaBank,Banca
+CLNX.MC,Cellnex,Telecom
+COL.MC,Colonial,Inmobiliario
+ELE.MC,Endesa,Utilities
+ENG.MC,Enagás,Utilities
+FDR.MC,Fluidra,Industrial
+FER.MC,Ferrovial,Construcción
+GRF.MC,Grifols,Salud
+IAG.MC,IAG,Transporte
+IBE.MC,Iberdrola,Utilities
+IDR.MC,Indra,Tecnología/Defensa
+ITX.MC,Inditex,Consumo
+LOG.MC,Logista,Distribución
+MAP.MC,Mapfre,Seguros
+MRL.MC,Merlin Properties,Inmobiliario
+MTS.MC,ArcelorMittal,Materiales
+NTGY.MC,Naturgy,Utilities
+PUIG.MC,Puig,Consumo
+RED.MC,Redeia,Utilities
+REP.MC,Repsol,Energía
+ROVI.MC,Rovi,Salud
+SAB.MC,Banco Sabadell,Banca
+SAN.MC,Banco Santander,Banca
+SCYR.MC,Sacyr,Construcción
+SLR.MC,Solaria,Utilities
+TEF.MC,Telefónica,Telecom
+UNI.MC,Unicaja,Banca

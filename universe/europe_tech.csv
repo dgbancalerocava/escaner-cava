@@ -1,0 +1,26 @@
+ticker,name,sector
+ASML.AS,ASML,Semiconductores
+ASM.AS,ASM International,Semiconductores
+BESI.AS,BE Semiconductor,Semiconductores
+IFX.DE,Infineon,Semiconductores
+STMPA.PA,STMicroelectronics,Semiconductores
+AIXA.DE,Aixtron,Semiconductores
+SOI.PA,Soitec,Semiconductores
+NOD.OL,Nordic Semiconductor,Semiconductores
+SAP.DE,SAP,Software
+DSY.PA,Dassault Systèmes,Software
+NEM.DE,Nemetschek,Software
+SGE.L,Sage Group,Software
+TEMN.SW,Temenos,Software
+TMV.DE,TeamViewer,Software
+CAP.PA,Capgemini,Servicios IT
+SOP.PA,Sopra Steria,Servicios IT
+ADYEN.AS,Adyen,Pagos
+NEXI.MI,Nexi,Pagos
+PRX.AS,Prosus,Internet
+NOKIA.HE,Nokia,Telecom equipos
+ERIC-B.ST,Ericsson,Telecom equipos
+HEXA-B.ST,Hexagon,Tecnología industrial
+LOGN.SW,Logitech,Hardware
+SIE.DE,Siemens,Tecnología industrial
+SU.PA,Schneider Electric,Electrificación

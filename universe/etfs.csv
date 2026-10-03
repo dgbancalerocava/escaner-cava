@@ -1,0 +1,29 @@
+ticker,name,sector,ucits
+SPY,S&P 500,Índice EEUU,iShares Core S&P 500 UCITS (CSPX/SXR8)
+QQQ,Nasdaq 100,Índice EEUU,iShares Nasdaq 100 UCITS (CNDX/SXRV)
+IWM,Russell 2000,Pequeñas EEUU,SPDR Russell 2000 US Small Cap UCITS (ZPRR)
+XLK,Tecnología EEUU,Sector,iShares S&P 500 Information Technology Sector UCITS (IUIT/QDVE)
+SMH,Semiconductores,Sector,VanEck Semiconductor UCITS (SMH)
+CIBR,Ciberseguridad,Temático,iShares Digital Security UCITS o L&G Cyber Security UCITS
+XLF,Financiero EEUU,Sector,iShares S&P 500 Financials Sector UCITS (IUFS)
+XLV,Salud EEUU,Sector,iShares S&P 500 Health Care Sector UCITS (IUHC)
+XLE,Energía EEUU,Sector,iShares S&P 500 Energy Sector UCITS (IUES)
+XLI,Industrial EEUU,Sector,iShares S&P 500 Industrials Sector UCITS
+XLU,Utilities EEUU,Sector,iShares S&P 500 Utilities Sector UCITS
+XLB,Materiales básicos,Sector,iShares S&P 500 Materials Sector UCITS
+SLX,Acero,Temático,VanEck Steel (sin UCITS directo: valorar acciones del sector)
+ITA,Defensa y aeroespacial,Temático,VanEck Defense UCITS (DFNS)
+URA,Uranio,Temático,VanEck Uranium and Nuclear Technologies UCITS
+GLD,Oro,Materia prima,Xetra-Gold o Invesco Physical Gold ETC
+SLV,Plata,Materia prima,ETC de plata física (p.ej. WisdomTree Physical Silver)
+GDX,Mineras de oro,Temático,VanEck Gold Miners UCITS (GDX)
+COPX,Mineras de cobre,Temático,Global X Copper Miners UCITS
+TLT,Bonos EEUU 20+ años,Renta fija,iShares $ Treasury Bond 20+yr UCITS
+EEM,Emergentes,Regional,iShares Core MSCI EM IMI UCITS (EIMI)
+INDA,India,Regional,iShares MSCI India UCITS
+EWJ,Japón,Regional,iShares Core MSCI Japan IMI UCITS
+FXI,China,Regional,iShares MSCI China UCITS
+VGK,Europa,Regional,iShares Core MSCI Europe UCITS / Stoxx 600
+EWG,Alemania,Regional,iShares Core DAX UCITS (EXS1)
+EWP,España,Regional,Amundi IBEX 35 UCITS
+EUFN,Bancos europeos,Sector,iShares STOXX Europe 600 Banks (EXV1)

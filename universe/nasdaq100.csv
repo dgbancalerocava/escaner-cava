@@ -1,0 +1,101 @@
+ticker,name,sector
+AAPL,Apple,Technology
+MSFT,Microsoft,Technology
+NVDA,NVIDIA,Technology
+AMZN,Amazon,Consumer
+META,Meta Platforms,Communication
+GOOGL,Alphabet A,Communication
+GOOG,Alphabet C,Communication
+AVGO,Broadcom,Technology
+TSLA,Tesla,Consumer
+COST,Costco,Consumer
+NFLX,Netflix,Communication
+PLTR,Palantir,Technology
+AMD,Advanced Micro Devices,Technology
+ASML,ASML (ADR),Technology
+CSCO,Cisco,Technology
+AZN,AstraZeneca (ADR),Health Care
+TMUS,T-Mobile US,Communication
+LIN,Linde,Materials
+PEP,PepsiCo,Consumer
+SHOP,Shopify,Technology
+INTU,Intuit,Technology
+ISRG,Intuitive Surgical,Health Care
+TXN,Texas Instruments,Technology
+QCOM,Qualcomm,Technology
+AMGN,Amgen,Health Care
+BKNG,Booking,Consumer
+ADBE,Adobe,Technology
+AMAT,Applied Materials,Technology
+PDD,PDD Holdings,Consumer
+GILD,Gilead,Health Care
+MU,Micron,Technology
+LRCX,Lam Research,Technology
+KLAC,KLA,Technology
+HON,Honeywell,Industrials
+ADP,ADP,Industrials
+APP,AppLovin,Technology
+PANW,Palo Alto Networks,Technology
+CMCSA,Comcast,Communication
+ADI,Analog Devices,Technology
+CRWD,CrowdStrike,Technology
+MELI,MercadoLibre,Consumer
+VRTX,Vertex,Health Care
+SBUX,Starbucks,Consumer
+INTC,Intel,Technology
+MSTR,Strategy,Technology
+CEG,Constellation Energy,Utilities
+ARM,Arm Holdings,Technology
+DASH,DoorDash,Consumer
+CDNS,Cadence Design,Technology
+SNPS,Synopsys,Technology
+ORLY,O'Reilly Automotive,Consumer
+FTNT,Fortinet,Technology
+MDLZ,Mondelez,Consumer
+CTAS,Cintas,Industrials
+MAR,Marriott,Consumer
+ABNB,Airbnb,Consumer
+MRVL,Marvell,Technology
+PYPL,PayPal,Technology
+REGN,Regeneron,Health Care
+WDAY,Workday,Technology
+ADSK,Autodesk,Technology
+CSX,CSX,Industrials
+AEP,American Electric Power,Utilities
+NXPI,NXP Semiconductors,Technology
+CHTR,Charter,Communication
+ROP,Roper,Technology
+PCAR,PACCAR,Industrials
+MNST,Monster Beverage,Consumer
+FAST,Fastenal,Industrials
+TTWO,Take-Two,Communication
+AXON,Axon,Industrials
+PAYX,Paychex,Industrials
+ZS,Zscaler,Technology
+DDOG,Datadog,Technology
+KDP,Keurig Dr Pepper,Consumer
+EA,Electronic Arts,Communication
+EXC,Exelon,Utilities
+ROST,Ross Stores,Consumer
+IDXX,IDEXX,Health Care
+XEL,Xcel Energy,Utilities
+BKR,Baker Hughes,Energy
+FANG,Diamondback,Energy
+VRSK,Verisk,Industrials
+CCEP,Coca-Cola Europacific,Consumer
+TTD,The Trade Desk,Technology
+CPRT,Copart,Industrials
+ODFL,Old Dominion,Industrials
+KHC,Kraft Heinz,Consumer
+CTSH,Cognizant,Technology
+GEHC,GE HealthCare,Health Care
+TEAM,Atlassian,Technology
+LULU,Lululemon,Consumer
+CSGP,CoStar,Real Estate
+ON,ON Semiconductor,Technology
+DXCM,Dexcom,Health Care
+BIIB,Biogen,Health Care
+GFS,GlobalFoundries,Technology
+MDB,MongoDB,Technology
+WBD,Warner Bros Discovery,Communication
+TRI,Thomson Reuters,Industrials

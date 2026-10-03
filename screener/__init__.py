@@ -1,0 +1,1 @@
+"""Escáner método Cava."""
