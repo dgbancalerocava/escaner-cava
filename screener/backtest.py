@@ -88,7 +88,8 @@ def backtest_valor(args) -> list[dict]:
                     "mercado_ok": bool(reg.iloc[i]) if reg is not None and not pd.isna(reg.iloc[i]) else None,
                     "vol_trampa": bool(r.volumen_barrida >= cfg["trampa"]["volumen_manos_fuertes"])
                     if not np.isnan(r.volumen_barrida) else False,
-                    "n_confirmaciones": len(r.confirmaciones), "fecha_techo": r.fecha_techo, **sim})
+                    "n_confirmaciones": len(r.confirmaciones), "fecha_techo": r.fecha_techo,
+                    "calidad": r.calidad, **sim})
     return ops
 
 
@@ -156,31 +157,31 @@ def _metricas(ops: pd.DataFrame, gestion: str) -> dict:
             "racha_perdedora": racha, "max_drawdown_R": round(float((curva - curva.cummax()).min()), 1)}
 
 
+def calidad_df(ops: pd.DataFrame, cfg: dict) -> pd.Series:
+    """Recalcula el índice de calidad con los umbrales actuales de config (sirve para CSV antiguos)."""
+    return pd.Series([PT.calidad(r.rr, r.retroceso, r.ratio_tiempo, r.disparo, r.grupo, cfg)[0]
+                      for r in ops.itertuples()], index=ops.index)
+
+
 def variantes(ops: pd.DataFrame, cfg: dict, corte: str = "2024-01-01", max_dia: int = 2, log=print):
-    """Construye las variantes A–E y devuelve (tabla, dict de DataFrames, modelo de puntuación)."""
+    """Construye las variantes y devuelve (tabla, dict de DataFrames, umbrales sugeridos, calidad en validación)."""
     ops = ops.copy()
     ops["fecha_entrada"] = ops["fecha_entrada"].fillna(ops["fecha"])
+    if "tipo" not in ops:
+        ops["tipo"] = ops.disparo.str.replace(" (sin R/R)", "", regex=False)
+    if "region" not in ops:
+        ops["region"] = ops.grupo.map(region)
+    ops["calidad"] = calidad_df(ops, cfg)
     base = ops[ops.pasa_filtro.astype(bool)]
-    ops["n_dia"] = ops.fecha.map(base.groupby("fecha").size()).fillna(0)
-    base = ops[ops.pasa_filtro.astype(bool)]
+    u = _una_por_estructura(base)
+    mok = u.mercado_ok.astype("boolean").fillna(True).astype(bool) if "mercado_ok" in u else True
 
     V = {}
-    V["A"] = ("Método actual", "fija", _sin_solapes(_una_por_estructura(base), "fija_salida"))
-    V["B"] = ("A + stop a la entrada en +1R", "ges", _sin_solapes(_una_por_estructura(base), "ges_salida"))
-    rec = base[base.tipo.str.contains("recuperación")]
-    V["C"] = ("B + solo disparo de recuperación con volumen", "ges",
-              _sin_solapes(_una_por_estructura(rec), "ges_salida"))
-    rec_m = rec[rec.mercado_ok.astype("boolean").fillna(True).astype(bool)]
-    V["D"] = ("C + filtro de tendencia del índice", "ges", _sin_solapes(_una_por_estructura(rec_m), "ges_salida"))
-
-    # E: puntuación aprendida SOLO con el periodo de aprendizaje de D (sin solapes) y máx. N señales/día
-    d_full = _una_por_estructura(rec_m)
-    train = d_full[(d_full.fecha < corte) & (d_full.ges_estado == "cerrada")]
-    modelo = PT.entrenar(train, "ges_R")
-    modelo["corte"] = corte
-    d_full = d_full.assign(punt2=PT.puntuar(d_full, modelo))
-    V["E"] = (f"D + puntuación aprendida, máx. {max_dia} señales/día", "ges",
-              _sin_solapes(_max_por_dia(d_full, max_dia, "punt2"), "ges_salida"))
+    V["A"] = ("Método actual (gestión fija)", "fija", _sin_solapes(u, "fija_salida"))
+    V["B"] = ("A con stop a la entrada en +1R", "ges", _sin_solapes(u, "ges_salida"))
+    V["C"] = ("Calidad ≥ 3", "fija", _sin_solapes(u[u.calidad >= 3], "fija_salida"))
+    V["D"] = ("Calidad ≥ 4 (⭐)", "fija", _sin_solapes(u[u.calidad >= 4], "fija_salida"))
+    V["E"] = ("Calidad ≥ 3 + filtro de mercado", "fija", _sin_solapes(u[(u.calidad >= 3) & mok], "fija_salida"))
 
     filas = []
     for k, (desc, gest, df) in V.items():
@@ -190,10 +191,15 @@ def variantes(ops: pd.DataFrame, cfg: dict, corte: str = "2024-01-01", max_dia: 
         fila["total"] = _metricas(df, gest)
         filas.append(fila)
 
-    # ¿la puntuación aprendida ordena bien en validación?
-    val = d_full[(d_full.fecha >= corte) & (d_full.ges_estado == "cerrada")]
-    monot = {}
-    if not val.empty:
-        for p_, g in val.groupby(np.clip(val.punt2, -2, 3)):
-            monot[str(int(p_))] = {"n": int(len(g)), "R_medio": round(float(g.ges_R.mean()), 2)}
-    return filas, {k: v[2] for k, v in V.items()}, modelo, monot
+    # ¿la calidad sigue ordenando bien? (R medio por nivel de calidad, en cada periodo)
+    cerr = u[u.fija_estado == "cerrada"]
+    orden = {}
+    for etiqueta, sub in (("aprendizaje", cerr[cerr.fecha < corte]), ("validacion", cerr[cerr.fecha >= corte])):
+        orden[etiqueta] = {str(int(k)): {"n": int(len(g)), "R_medio": round(float(g.fija_R.mean()), 2)}
+                           for k, g in sub.groupby(np.clip(sub.calidad, 0, 4))}
+    # umbrales que saldrían hoy de los terciles del periodo de aprendizaje (por si conviene recalibrar)
+    ap = u[u.fecha < corte]
+    sugeridos = {"rr_alto": round(float(np.nanquantile(ap.rr, 2 / 3)), 1),
+                 "retroceso_bajo": round(float(np.nanquantile(ap.retroceso, 1 / 3)), 2),
+                 "ratio_tiempo_alto": round(float(np.nanquantile(ap.ratio_tiempo, 2 / 3)), 2)} if len(ap) else {}
+    return filas, {k: v[2] for k, v in V.items()}, sugeridos, orden

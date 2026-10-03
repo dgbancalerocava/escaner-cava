@@ -72,7 +72,9 @@ class Resultado:
     disparo: str = ""          # recuperación / ruptura / degradada (sin R/R)
     dist_sma200: float = math.nan
     puntuacion2: float = math.nan   # puntuación aprendida del backtest (si existe)
-    seleccionada: bool = False      # entre las N mejores del día
+    seleccionada: bool = False      # ⭐ prioritaria (calidad alta)
+    calidad: int = 0                # índice de calidad -1..5 (ver puntuacion.calidad)
+    motivos_calidad: list = field(default_factory=list)
     avisos: list = field(default_factory=list)
     confirmaciones: list = field(default_factory=list)
     # interno para los gráficos (no se exporta)
@@ -401,6 +403,8 @@ def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", 
                              if degradada else "trampa hecha, falta ruptura de directriz"),
                   "VIGILANCIA": "contexto alcista y corrección madura, sin trampa aún"}[estado]
     res.puntuacion = _puntuar(res, e, adx_max)
+    from .puntuacion import calidad as _calidad
+    res.calidad, res.motivos_calidad = _calidad(res.rr, res.retroceso, res.ratio_tiempo, res.disparo, grupo, cfg)
     return res
 
 

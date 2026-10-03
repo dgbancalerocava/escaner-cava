@@ -18,7 +18,6 @@ from screener import indicators as ind
 from screener.emailer import enviar
 from screener import evaluacion as EV
 from screener import mercado as MK
-from screener import puntuacion as PT
 from screener.engine import evaluar
 from screener.report import ESTADOS, grafico, guardar, html_email
 
@@ -69,28 +68,17 @@ def analizar(precios: dict, universo, cfg: dict):
 
 
 def seleccionar(resultados, cfg: dict, log=print):
-    """Marca con ⭐ las N mejores señales del día según la puntuación aprendida en el backtest."""
-    sel = cfg.get("seleccion") or {}
-    n = int(sel.get("max_senales_dia") or 0)
-    senales = [r for r, _ in resultados if r.estado == "SENAL" and not r.ticker.startswith("^")]
-    modelo = PT.cargar(BASE / "reports" / "backtest" / "puntuacion_aprendida.json") \
-        if sel.get("usar_puntuacion_aprendida") else None
-    if not senales:
-        return
-    if modelo:
-        import pandas as pd
-        filas = pd.DataFrame([{"rr": r.rr, "riesgo_plan": r.riesgo_pct, "retroceso": r.retroceso,
-                               "ratio_tiempo": r.ratio_tiempo, "volumen_barrida": r.volumen_barrida,
-                               "rsi14": r.rsi14, "adx": r.adx, "sto50": r.sto50, "dist_sma200": r.dist_sma200,
-                               "n_dia": sum(1 for x in senales if x.marco == "D"),
-                               "region": EV.region(r.grupo)} for r in senales])
-        for r, p in zip(senales, PT.puntuar(filas, modelo)):
-            r.puntuacion2 = float(p)
-    if n > 0:
-        orden = sorted(senales, key=lambda r: (-(r.puntuacion2 if r.puntuacion2 == r.puntuacion2 else 0), -r.rr))
-        for r in orden[:n]:
-            r.seleccionada = True
-        log(f"Seleccionadas: {[r.ticker for r in orden[:n]]}")
+    """Marca con ⭐ las señales con índice de calidad alto (umbral en config: calidad.minimo_estrella)."""
+    minimo = int((cfg.get("calidad") or {}).get("minimo_estrella", 4))
+    tope = int((cfg.get("seleccion") or {}).get("max_senales_dia") or 0)
+    senales = sorted([r for r, _ in resultados if r.estado == "SENAL" and not r.ticker.startswith("^")],
+                     key=lambda r: (-r.calidad, -r.rr))
+    elegidas = [r for r in senales if r.calidad >= minimo]
+    if tope > 0:
+        elegidas = elegidas[:tope]
+    for r in elegidas:
+        r.seleccionada = True
+    log(f"Prioritarias (calidad >= {minimo}): {[r.ticker for r in elegidas]}")
 
 
 def main():
@@ -119,12 +107,12 @@ def main():
     grupos = {}
     for est in ("SENAL", "TRAMPA", "VIGILANCIA"):
         filas = sorted([r for r, _ in resultados if r.estado == est and not r.ticker.startswith("^")],
-                       key=lambda r: (not r.seleccionada, -(r.puntuacion2 if r.puntuacion2 == r.puntuacion2 else -99),
-                                      -r.puntuacion))
+                       key=lambda r: (not r.seleccionada, -r.calidad, -r.rr))
         tope = cfg["informe"]["max_vigilancia"] if est == "VIGILANCIA" else cfg["informe"].get("max_por_estado", 30)
         filas = filas[:tope]
         grupos[est] = filas
-    stats = {"analizados": analizados, **{k: len(v) for k, v in grupos.items()}}
+    stats = {"analizados": analizados, **{k: len(v) for k, v in grupos.items()},
+             "prioritarias": sum(1 for r in grupos["SENAL"] if r.seleccionada)}
 
     # gráficos para señales y trampas
     carpeta_r = BASE / "reports"
@@ -165,7 +153,8 @@ def main():
     log(f"Descartados: {sum(1 for r in todos if r.estado == 'NADA')}")
 
     if not args.sin_email:
-        asunto = f"Escáner Cava {fecha} · 🟢 {stats['SENAL']} · 🟠 {stats['TRAMPA']} · 🟡 {stats['VIGILANCIA']}"
+        asunto = (f"Escáner Cava {fecha} · ⭐ {stats['prioritarias']} · 🟢 {stats['SENAL']} · "
+                  f"🟠 {stats['TRAMPA']} · 🟡 {stats['VIGILANCIA']}")
         enviar(asunto, html, texto, imagenes, log)
 
 

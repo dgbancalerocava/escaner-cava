@@ -65,17 +65,25 @@ filtro_mercado:
   activo: false
   indice_por_grupo: {sp500: "^GSPC", nasdaq100: "^GSPC", etfs: "^GSPC", ibex35: "^IBEX", europe_tech: "^STOXX50E"}
 
-# --- GESTIÓN DE LA OPERACIÓN (usada en autoevaluación y backtest) ---
+# --- GESTIÓN DE LA OPERACIÓN (solo para comparar; el backtest mostró que la gestión fija es mejor) ---
 gestion:
   breakeven_R: 1.0      # al ganar +1R el stop sube a la entrada
   bloqueo_en_R: 2.0     # al ganar +2R...
   bloqueo_a_R: 1.0      # ...el stop asegura +1R
 
-# --- SELECCIÓN DIARIA (variante E) ----------------------------
+# --- ÍNDICE DE CALIDAD (0–5) ---------------------------------
+# Un punto por cada característica que en el backtest 2019–2026 separó bien las operaciones
+# en los DOS periodos (aprendizaje y validación). ⭐ = calidad >= minimo_estrella.
+calidad:
+  rr_alto: 9.5              # R/R >= 9,5
+  retroceso_bajo: 0.28      # la corrección retrocede <= 28 % del tramo (tendencia fuerte)
+  ratio_tiempo_alto: 0.23   # la corrección dura >= 23 % de lo que duró el tramo
+  minimo_estrella: 4        # (+1 escape falso puro, +1 ETF, -1 tecnológica europea)
+
+# --- SELECCIÓN DIARIA ------------------------------------------
 seleccion:
-  max_senales_dia: 2               # marca con ⭐ las N mejores señales del día (0 = no marcar)
-  usar_puntuacion_aprendida: false # ordenar con la puntuación aprendida en el backtest
-  variante_activa: A               # qué variante del backtest se usa como referencia en el email
+  max_senales_dia: 0        # 0 = todas las de calidad suficiente; N = como mucho N ⭐ al día
+  variante_activa: D        # variante del backtest que se muestra como referencia en el email
 
 # Gestión monetaria opcional: si pones capital > 0 calcula nº de acciones
 capital: 0

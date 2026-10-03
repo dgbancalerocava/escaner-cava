@@ -94,3 +94,32 @@ def guardar(modelo: dict, ruta: Path):
 
 def cargar(ruta: Path) -> dict | None:
     return json.loads(ruta.read_text(encoding="utf-8")) if ruta.exists() else None
+
+
+# =========================================================================== índice de calidad
+# Resultado del backtest de octubre de 2026 (8.600 señales): solo estas características separaron
+# bien las operaciones TANTO en 2019-2023 como en 2024-2026. Cada una suma un punto.
+CALIDAD_DEFECTO = {"rr_alto": 9.5, "retroceso_bajo": 0.28, "ratio_tiempo_alto": 0.23, "minimo_estrella": 4}
+
+
+def calidad(rr, retroceso, ratio_tiempo, disparo: str, grupo: str, cfg: dict | None = None) -> tuple[int, list[str]]:
+    """Devuelve (puntos, motivos). Escala de -1 a 5."""
+    c = {**CALIDAD_DEFECTO, **((cfg or {}).get("calidad") or {})}
+    pts, motivos = 0, []
+    def ok(x):
+        return x is not None and x == x
+    if ok(rr) and rr >= c["rr_alto"]:
+        pts += 1; motivos.append("R/R alto")
+    if ok(retroceso) and retroceso <= c["retroceso_bajo"]:
+        pts += 1; motivos.append("corrección poco profunda")
+    if ok(ratio_tiempo) and ratio_tiempo >= c["ratio_tiempo_alto"]:
+        pts += 1; motivos.append("corrección madura en tiempo")
+    tipo = (disparo or "").replace(" (sin R/R)", "")
+    if tipo == "recuperación del nivel barrido con volumen":
+        pts += 1; motivos.append("escape falso puro")
+    g = str(grupo).split("/")[0]
+    if g == "etfs":
+        pts += 1; motivos.append("ETF")
+    elif g == "europe_tech":
+        pts -= 1; motivos.append("Europa tech (resta)")
+    return pts, motivos

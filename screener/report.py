@@ -29,10 +29,8 @@ def _f(x, d=2):
 
 
 def _punt(r) -> str:
-    """Puntuación aprendida si existe (con signo), si no la puntuación clásica."""
-    if r.puntuacion2 == r.puntuacion2:      # no es NaN
-        return f"{r.puntuacion2:+.0f}"
-    return _f(r.puntuacion, 0)
+    """Índice de calidad (−1 a 5) con estrellas."""
+    return "★" * max(r.calidad, 0) + ("" if r.calidad > 0 else str(r.calidad))
 
 
 # ----------------------------------------------------------------- gráfico
@@ -98,10 +96,10 @@ def grafico(df: pd.DataFrame, r: Resultado, ruta: Path, velas=130):
 def _tabla(filas: list[Resultado], con_ucits: dict, cids: dict) -> str:
     th = ("<tr style='background:#f6f8fa;color:#57606a;font-size:12px;text-align:left'>"
           "<th>Valor</th><th>Cierre</th><th>Entrada</th><th>Stop</th><th>Riesgo</th>"
-          "<th>Obj. 1</th><th>Obj. 2</th><th>R/R</th><th>Punt.</th><th>Notas</th></tr>")
+          "<th>Obj. 1</th><th>Obj. 2</th><th>R/R</th><th>Calidad</th><th>Notas</th></tr>")
     out = []
     for r in filas:
-        notas = "; ".join(r.confirmaciones + [f"⚠ {a}" for a in r.avisos])
+        notas = "; ".join([f"<b>{m}</b>" for m in r.motivos_calidad] + r.confirmaciones + [f"⚠ {a}" for a in r.avisos])
         uc = con_ucits.get(r.ticker)
         extra = f"<br><span style='color:#57606a;font-size:11px'>Comprar vía: {uc}</span>" if uc else ""
         marco = " <span style='font-size:10px;background:#ddf4ff;padding:1px 4px;border-radius:3px'>SEMANAL</span>" if r.marco == "W" else ""
@@ -128,7 +126,10 @@ def html_email(fecha: str, mercado: list[dict], grupos: dict, ucits: dict, cids:
 <div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#1f2328;max-width:860px">
 <h2 style="margin:0 0 4px">Escáner método Cava · {fecha}</h2>
 <p style="color:#57606a;margin:0 0 16px">{stats['analizados']} valores analizados ·
-🟢 {stats['SENAL']} señales · 🟠 {stats['TRAMPA']} trampas · 🟡 {stats['VIGILANCIA']} en vigilancia</p>
+⭐ {stats.get('prioritarias', 0)} prioritarias · 🟢 {stats['SENAL']} señales · 🟠 {stats['TRAMPA']} trampas · 🟡 {stats['VIGILANCIA']} en vigilancia</p>
+<p style="font-size:12px;color:#57606a;margin:-10px 0 16px">⭐ = calidad ≥ 4 de 5. La calidad suma un punto por: R/R alto, corrección poco profunda,
+corrección madura en tiempo, escape falso puro (recuperación con volumen) y ser ETF; resta en tecnológicas europeas.
+En el backtest 2019–2026 las señales ⭐ ganaron de media unas 4–5 veces más por operación que el conjunto.</p>
 <h3 style="margin:16px 0 6px">Semáforo de mercado</h3>
 <table cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%">
 <tr style="background:#f6f8fa;color:#57606a;font-size:12px;text-align:left"><th>Índice</th><th>Cierre</th><th>MACD semanal</th><th>MACD mensual</th><th>Media 200</th><th>Filtro mercado</th><th>Estado</th></tr>
@@ -175,6 +176,6 @@ def guardar(carpeta: Path, fecha: str, mercado: list[dict], resultados: list[Res
         filas = [r for r in resultados if r.estado == est]
         md += ["", f"## {ESTADOS[est][1]} ({len(filas)})", ""]
         if filas:
-            md += ["| Valor | Marco | Cierre | Entrada | Stop | Riesgo % | Obj1 | Obj2 | R/R | Punt. | Notas |", "|---|---|---|---|---|---|---|---|---|---|---|"]
-            md += [f"| {'⭐ ' if r.seleccionada else ''}{r.ticker} ({r.nombre}) | {r.marco} | {_f(r.cierre)} | {_f(r.entrada)} | {_f(r.stop)} | {_f(r.riesgo_pct, 1)} | {_f(r.objetivo1)} | {_f(r.objetivo2)} | {_f(r.rr, 1)} | {_punt(r)} | {'; '.join(r.confirmaciones + r.avisos)} |" for r in filas]
+            md += ["| Valor | Marco | Cierre | Entrada | Stop | Riesgo % | Obj1 | Obj2 | R/R | Calidad | Notas |", "|---|---|---|---|---|---|---|---|---|---|---|"]
+            md += [f"| {'⭐ ' if r.seleccionada else ''}{r.ticker} ({r.nombre}) | {r.marco} | {_f(r.cierre)} | {_f(r.entrada)} | {_f(r.stop)} | {_f(r.riesgo_pct, 1)} | {_f(r.objetivo1)} | {_f(r.objetivo2)} | {_f(r.rr, 1)} | {_punt(r)} | {'; '.join(r.motivos_calidad + r.confirmaciones + r.avisos)} |" for r in filas]
     (carpeta / "latest.md").write_text("\n".join(md), encoding="utf-8")

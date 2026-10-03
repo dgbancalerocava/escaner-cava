@@ -23,7 +23,7 @@ from . import indicators as ind
 
 COLS_SENAL = ["fecha", "ticker", "nombre", "grupo", "marco", "disparo", "pasa_filtro", "entrada_ref",
               "stop", "objetivo1", "objetivo2", "rr", "puntuacion", "vol_trampa", "n_confirmaciones",
-              "fecha_techo", "seleccionada", "puntuacion2"]
+              "fecha_techo", "seleccionada", "puntuacion2", "calidad"]
 
 
 def region(grupo: str) -> str:
@@ -161,11 +161,13 @@ def estadisticas(ops: pd.DataFrame, solo_filtradas=True) -> dict:
                        anio=cerr.fecha.str[:4],
                        vol=np.where(cerr.vol_trampa.astype(bool), "con volumen", "sin volumen"),
                        tipo=cerr.disparo.str.replace(" (sin R/R)", "", regex=False),
+                       cal=pd.to_numeric(cerr.get("calidad", pd.Series(np.nan, index=cerr.index)), errors="coerce")
+                           .map(lambda x: "sin dato" if x != x else ("≥4 ⭐" if x >= 4 else f"{int(x)}")),
                        sel=np.where(cerr.get("seleccionada", pd.Series(False, index=cerr.index)).astype(str)
                                     .str.lower().isin(["true", "1"]), "⭐ seleccionadas", "resto"))
     for col, nombre in [("region", "Mercado"), ("marco", "Marco"), ("tipo", "Disparo"),
                         ("tramo", "Puntuación"), ("vol", "Volumen en la trampa"), ("anio", "Año"),
-                        ("sel", "Selección diaria")]:
+                        ("sel", "Selección diaria"), ("cal", "Calidad")]:
         out["grupos"][nombre] = {str(k): _stats(g.fija_R) | {"R_medio_ges": _stats(g.ges_R).get("R_medio") if "ges_R" in g else None}
                                  for k, g in cerr.groupby(col)}
     # efecto del filtro R/R (señales técnicas que se descartaron por R/R < mínimo)
@@ -229,7 +231,8 @@ def registrar_senales(carpeta: Path, resultados) -> int:
                        "vol_trampa": bool(r.volumen_barrida >= 1.3) if not math.isnan(r.volumen_barrida) else False,
                        "n_confirmaciones": len(r.confirmaciones), "fecha_techo": r.fecha_techo,
                        "seleccionada": bool(r.seleccionada),
-                       "puntuacion2": None if math.isnan(r.puntuacion2) else r.puntuacion2})
+                       "puntuacion2": None if math.isnan(r.puntuacion2) else r.puntuacion2,
+                       "calidad": r.calidad})
     if nuevas:
         pd.concat([previas, pd.DataFrame(nuevas)], ignore_index=True).to_csv(ruta, index=False)
     return len(nuevas)

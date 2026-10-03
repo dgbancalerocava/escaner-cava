@@ -48,28 +48,34 @@ def tabla_md(filas: list[dict], corte: str) -> str:
 
 
 def curvas(V: dict, filas: list[dict], ruta: Path, corte: str):
+    """Barras: R medio por operación de cada variante en aprendizaje y validación.
+    (La curva de R acumulado engaña: la variante con más operaciones siempre "gana", pero nadie
+    puede tomar 900 operaciones al año con un capital limitado.)"""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    fig, ax = plt.subplots(figsize=(9, 4))
-    for f in filas:
-        k = f["variante"]
-        g = "fija" if f["gestion"] == "fija" else "ges"
-        df = V[k]
-        c = df[df[f"{g}_estado"] == "cerrada"].sort_values(f"{g}_salida")
-        if c.empty:
-            continue
-        # R por operación normalizado a "R por año" no tiene sentido visual; se dibuja R acumulado
-        ax.plot(pd.to_datetime(c[f"{g}_salida"]), c[f"{g}_R"].cumsum(), lw=2, color=COLORES.get(k, "#000"),
-                label=f"{k} · {f['descripcion']}")
-    ax.axvline(pd.Timestamp(corte), color="#57606a", ls="--", lw=1)
-    ax.text(pd.Timestamp(corte), ax.get_ylim()[1], "  validación →", va="top", fontsize=8, color="#57606a")
-    ax.set_title("R acumulado por variante", loc="left", fontsize=11, fontweight="bold", color="#1f2328")
-    ax.grid(color="#d8dee4", lw=0.6)
-    for s in ax.spines.values():
-        s.set_visible(False)
-    ax.tick_params(colors="#57606a", labelsize=8)
-    ax.legend(frameon=False, fontsize=8, loc="upper left")
+    import numpy as np
+    import textwrap
+    etiquetas = [f"{f['variante']}\n" + textwrap.fill(f["descripcion"].replace(" (⭐)", ""), 20) for f in filas]
+    ap = [f["aprendizaje"].get("R_medio") or 0 for f in filas]
+    va = [f["validacion"].get("R_medio") or 0 for f in filas]
+    x = np.arange(len(filas))
+    fig, ax = plt.subplots(figsize=(9, 3.8))
+    b1 = ax.bar(x - 0.2, ap, 0.38, color="#0969da", label=f"Aprendizaje (hasta {corte[:4]})")
+    b2 = ax.bar(x + 0.2, va, 0.38, color="#bc4c00", label=f"Validación (desde {corte[:4]})")
+    for barras in (b1, b2):
+        for r in barras:
+            ax.annotate(f"{r.get_height():+.2f}", (r.get_x() + r.get_width() / 2, r.get_height()),
+                        ha="center", va="bottom", fontsize=8, color="#1f2328")
+    ax.axhline(0, color="#57606a", lw=0.8)
+    ax.set_xticks(x, etiquetas, fontsize=8)
+    ax.set_ylabel("R medio por operación", color="#57606a")
+    ax.set_title("¿Cuánto gana cada operación de media? (en R)", loc="left", fontsize=11, fontweight="bold", color="#1f2328")
+    ax.grid(axis="y", color="#d8dee4", lw=0.6)
+    for s_ in ax.spines.values():
+        s_.set_visible(False)
+    ax.tick_params(colors="#57606a")
+    ax.legend(frameon=False, fontsize=9)
     fig.tight_layout()
     fig.savefig(ruta, dpi=100)
     plt.close(fig)
@@ -103,8 +109,7 @@ def main():
             return
         ops.to_csv(carpeta / "operaciones.csv", index=False)
 
-    filas, V, modelo, monot = BT.variantes(ops, cfg, corte=args.corte, max_dia=max_dia, log=log)
-    PT.guardar(modelo, carpeta / "puntuacion_aprendida.json")
+    filas, V, sugeridos, orden = BT.variantes(ops, cfg, corte=args.corte, max_dia=max_dia, log=log)
     desde, hasta = ops.fecha.min(), ops.fecha.max()
 
     # resumen detallado de la variante activa (la que usa el escáner diario)
@@ -116,22 +121,26 @@ def main():
 
     md = [f"# Backtest de variantes ({desde} → {hasta})", "",
           f"Aprendizaje: hasta {args.corte} · Validación: desde {args.corte}. "
-          "Las decisiones se toman con el aprendizaje y se confirman en validación.", "",
+          "Una mejora solo cuenta si se mantiene en validación.", "",
           tabla_md(filas, args.corte), "",
-          "## Puntuación aprendida (variante E)", ""]
-    md += [f"- {l}" for l in PT.describir(modelo)]
-    if monot:
-        md += ["", "¿Ordena bien en validación? (R medio por puntuación; debería crecer hacia la derecha)", "",
-               "| Puntuación | " + " | ".join(monot) + " |", "|---|" + "---|" * len(monot),
-               "| R medio | " + " | ".join(f"{v['R_medio']:+.2f}" for v in monot.values()) + " |",
-               "| Operaciones | " + " | ".join(str(v['n']) for v in monot.values()) + " |"]
+          "## ¿El índice de calidad sigue ordenando bien?", "",
+          "R medio por operación según la calidad (debería crecer hacia la derecha en los dos periodos).", ""]
+    niveles = sorted({k for o in orden.values() for k in o}, key=int)
+    md += ["| Periodo | " + " | ".join(("≥4" if n == "4" else n) for n in niveles) + " |", "|---|" + "---|" * len(niveles)]
+    for et, o in orden.items():
+        md.append(f"| {et} | " + " | ".join(f"{o[n]['R_medio']:+.2f} ({o[n]['n']})" if n in o else "–" for n in niveles) + " |")
+    if sugeridos:
+        actuales = {**PT.CALIDAD_DEFECTO, **(cfg.get("calidad") or {})}
+        md += ["", "Umbrales de calidad en uso: " + ", ".join(f"{k} = {actuales[k]}" for k in sugeridos)
+               + " · Recalculados con el periodo de aprendizaje: " + ", ".join(f"{k} = {v}" for k, v in sugeridos.items())]
     md += ["", f"## Detalle de la variante activa en el escáner ({activa})", "",
            EV.markdown(st, "").replace("# \n", ""),
            "", "> Aviso: sesgo de supervivencia (listas actuales de los índices), solo marco diario, "
            "entrada a la apertura siguiente, sin comisiones. Sirve para comparar variantes, no como promesa de rentabilidad."]
     md = "\n".join(md)
     (carpeta / "resumen.md").write_text(md, encoding="utf-8")
-    (carpeta / "variantes.json").write_text(json.dumps({"filas": filas, "puntuacion_validacion": monot},
+    (carpeta / "variantes.json").write_text(json.dumps({"filas": filas, "calidad_por_periodo": orden,
+                                                        "umbrales_sugeridos": sugeridos},
                                                        ensure_ascii=False, indent=1), encoding="utf-8")
     curvas(V, filas, carpeta / "curva.png", args.corte)
     log(md)
