@@ -17,6 +17,8 @@ from screener import data as D
 from screener import indicators as ind
 from screener.emailer import enviar
 from screener import evaluacion as EV
+from screener import mercado as MK
+from screener import puntuacion as PT
 from screener.engine import evaluar
 from screener.report import ESTADOS, grafico, guardar, html_email
 
@@ -30,6 +32,7 @@ def log(*a):
 def analizar(precios: dict, universo, cfg: dict):
     resultados, mercado, analizados = [], [], 0
     info = universo.set_index("ticker")
+    regs = MK.regimenes(precios, cfg)
     for t, df in precios.items():
         row = info.loc[t]
         nombre, grupo = row["name"], row["grupo"]
@@ -41,10 +44,11 @@ def analizar(precios: dict, universo, cfg: dict):
                 continue
         analizados += 1
         sem, men = ind.resample(df, "W-FRI"), ind.resample(df, "ME")
+        mok = None if es_indice else MK.mercado_ok(regs, grupo, df.index[-1], cfg)
         try:
-            r = evaluar(df, t, cfg, "D", nombre, grupo, df_superior=sem, df_mensual=men)
+            r = evaluar(df, t, cfg, "D", nombre, grupo, df_superior=sem, df_mensual=men, mercado_ok=mok)
             # mismo método sobre gráfico semanal (contexto: MACD mensual)
-            rw = evaluar(sem, t, cfg, "W", nombre, grupo, df_superior=men, df_mensual=men)
+            rw = evaluar(sem, t, cfg, "W", nombre, grupo, df_superior=men, df_mensual=men, mercado_ok=mok)
         except Exception as e:  # noqa: BLE001
             log(f"  {t}: error en el análisis ({e})")
             continue
@@ -55,12 +59,38 @@ def analizar(precios: dict, universo, cfg: dict):
                                 macd_sem=float(ws.macd.iloc[-1]),
                                 macd_men_alc=bool(ms.macd.iloc[-1] > ms.macd_sig.iloc[-1]),
                                 sobre_sma200=bool(dd.Close.iloc[-1] > dd.sma200.iloc[-1]),
+                                favorable=bool(regs[t].iloc[-1]) if t in regs else None,
                                 estado=ESTADOS.get(r.estado, ("", r.motivo))[1] if r.estado != "NADA" else r.motivo))
         resultados.append((r, df))
         rw.fecha = df.index[-1].strftime("%Y-%m-%d")   # la vela semanal en curso lleva fecha del viernes
         if rw.estado in ("SENAL", "TRAMPA"):
             resultados.append((rw, sem))
     return resultados, mercado, analizados
+
+
+def seleccionar(resultados, cfg: dict, log=print):
+    """Marca con ⭐ las N mejores señales del día según la puntuación aprendida en el backtest."""
+    sel = cfg.get("seleccion") or {}
+    n = int(sel.get("max_senales_dia") or 0)
+    senales = [r for r, _ in resultados if r.estado == "SENAL" and not r.ticker.startswith("^")]
+    modelo = PT.cargar(BASE / "reports" / "backtest" / "puntuacion_aprendida.json") \
+        if sel.get("usar_puntuacion_aprendida") else None
+    if not senales:
+        return
+    if modelo:
+        import pandas as pd
+        filas = pd.DataFrame([{"rr": r.rr, "riesgo_plan": r.riesgo_pct, "retroceso": r.retroceso,
+                               "ratio_tiempo": r.ratio_tiempo, "volumen_barrida": r.volumen_barrida,
+                               "rsi14": r.rsi14, "adx": r.adx, "sto50": r.sto50, "dist_sma200": r.dist_sma200,
+                               "n_dia": sum(1 for x in senales if x.marco == "D"),
+                               "region": EV.region(r.grupo)} for r in senales])
+        for r, p in zip(senales, PT.puntuar(filas, modelo)):
+            r.puntuacion2 = float(p)
+    if n > 0:
+        orden = sorted(senales, key=lambda r: (-(r.puntuacion2 if r.puntuacion2 == r.puntuacion2 else 0), -r.rr))
+        for r in orden[:n]:
+            r.seleccionada = True
+        log(f"Seleccionadas: {[r.ticker for r in orden[:n]]}")
 
 
 def main():
@@ -85,10 +115,12 @@ def main():
     resultados, mercado, analizados = analizar(precios, universo, cfg)
     fecha = max(df.index[-1] for df in precios.values()).strftime("%Y-%m-%d")
 
+    seleccionar(resultados, cfg, log)
     grupos = {}
     for est in ("SENAL", "TRAMPA", "VIGILANCIA"):
         filas = sorted([r for r, _ in resultados if r.estado == est and not r.ticker.startswith("^")],
-                       key=lambda r: -r.puntuacion)
+                       key=lambda r: (not r.seleccionada, -(r.puntuacion2 if r.puntuacion2 == r.puntuacion2 else -99),
+                                      -r.puntuacion))
         tope = cfg["informe"]["max_vigilancia"] if est == "VIGILANCIA" else cfg["informe"].get("max_por_estado", 30)
         filas = filas[:tope]
         grupos[est] = filas
@@ -114,7 +146,7 @@ def main():
     # autoevaluación: registra las señales de hoy y recalcula el resultado de todas las anteriores
     carpeta_seg = carpeta_r / "seguimiento"
     nuevas = EV.registrar_senales(carpeta_seg, todos)
-    st_vivo = EV.actualizar_seguimiento(carpeta_seg, precios)
+    st_vivo = EV.actualizar_seguimiento(carpeta_seg, precios, cfg)
     log(f"Seguimiento: {nuevas} señales nuevas registradas")
     ruta_bt = carpeta_r / "backtest" / "resumen.json"
     st_bt = json.loads(ruta_bt.read_text(encoding="utf-8")) if ruta_bt.exists() else None

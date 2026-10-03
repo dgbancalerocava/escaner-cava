@@ -28,6 +28,13 @@ def _f(x, d=2):
     return "–" if x is None or (isinstance(x, float) and math.isnan(x)) else f"{x:,.{d}f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
+def _punt(r) -> str:
+    """Puntuación aprendida si existe (con signo), si no la puntuación clásica."""
+    if r.puntuacion2 == r.puntuacion2:      # no es NaN
+        return f"{r.puntuacion2:+.0f}"
+    return _f(r.puntuacion, 0)
+
+
 # ----------------------------------------------------------------- gráfico
 def grafico(df: pd.DataFrame, r: Resultado, ruta: Path, velas=130):
     d = df.iloc[-velas:]
@@ -100,10 +107,10 @@ def _tabla(filas: list[Resultado], con_ucits: dict, cids: dict) -> str:
         marco = " <span style='font-size:10px;background:#ddf4ff;padding:1px 4px;border-radius:3px'>SEMANAL</span>" if r.marco == "W" else ""
         out.append(
             f"<tr style='border-top:1px solid #d8dee4;font-size:13px;vertical-align:top'>"
-            f"<td><b>{r.ticker}</b>{marco}<br><span style='color:#57606a;font-size:11px'>{r.nombre} · {r.grupo}</span>{extra}</td>"
+            f"<td>{'⭐ ' if r.seleccionada else ''}<b>{r.ticker}</b>{marco}<br><span style='color:#57606a;font-size:11px'>{r.nombre} · {r.grupo}</span>{extra}</td>"
             f"<td>{_f(r.cierre)}</td><td><b>{_f(r.entrada)}</b></td><td style='color:#cf222e'>{_f(r.stop)}</td>"
             f"<td>{_f(r.riesgo_pct, 1)} %</td><td>{_f(r.objetivo1)}</td><td>{_f(r.objetivo2)}</td>"
-            f"<td><b>{_f(r.rr, 1)}</b></td><td>{_f(r.puntuacion, 0)}</td>"
+            f"<td><b>{_f(r.rr, 1)}</b></td><td>{_punt(r)}</td>"
             f"<td style='font-size:11px;color:#57606a'>{notas}</td></tr>")
     return f"<table cellpadding='6' cellspacing='0' style='border-collapse:collapse;width:100%'>{th}{''.join(out)}</table>"
 
@@ -114,7 +121,8 @@ def html_email(fecha: str, mercado: list[dict], grupos: dict, ucits: dict, cids:
         f"<tr style='font-size:13px;border-top:1px solid #d8dee4'><td><b>{m['nombre']}</b></td><td>{_f(m['cierre'])}</td>"
         f"<td>{'🟢' if m['macd_sem'] > 0 else '🔴'} {'sobre' if m['macd_sem'] > 0 else 'bajo'} cero</td>"
         f"<td>{'🟢 alcista' if m['macd_men_alc'] else '🔴 bajista'}</td>"
-        f"<td>{'🟢 encima' if m['sobre_sma200'] else '🔴 debajo'}</td><td>{m['estado']}</td></tr>"
+        f"<td>{'🟢 encima' if m['sobre_sma200'] else '🔴 debajo'}</td>"
+        f"<td>{'–' if m.get('favorable') is None else ('🟢 a favor' if m['favorable'] else '🔴 en contra')}</td><td>{m['estado']}</td></tr>"
         for m in mercado)
     partes = [f"""
 <div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#1f2328;max-width:860px">
@@ -123,7 +131,7 @@ def html_email(fecha: str, mercado: list[dict], grupos: dict, ucits: dict, cids:
 🟢 {stats['SENAL']} señales · 🟠 {stats['TRAMPA']} trampas · 🟡 {stats['VIGILANCIA']} en vigilancia</p>
 <h3 style="margin:16px 0 6px">Semáforo de mercado</h3>
 <table cellpadding="6" cellspacing="0" style="border-collapse:collapse;width:100%">
-<tr style="background:#f6f8fa;color:#57606a;font-size:12px;text-align:left"><th>Índice</th><th>Cierre</th><th>MACD semanal</th><th>MACD mensual</th><th>Media 200</th><th>Estado</th></tr>
+<tr style="background:#f6f8fa;color:#57606a;font-size:12px;text-align:left"><th>Índice</th><th>Cierre</th><th>MACD semanal</th><th>MACD mensual</th><th>Media 200</th><th>Filtro mercado</th><th>Estado</th></tr>
 {sem}</table>"""]
     for est in ("SENAL", "TRAMPA", "VIGILANCIA"):
         filas = grupos.get(est, [])
@@ -161,12 +169,12 @@ def guardar(carpeta: Path, fecha: str, mercado: list[dict], resultados: list[Res
 
     md = [f"# Escáner método Cava · {fecha}", "",
           f"Analizados: {stats['analizados']} · Señales: {stats['SENAL']} · Trampas: {stats['TRAMPA']} · Vigilancia: {stats['VIGILANCIA']}", "",
-          "## Mercado", "| Índice | Cierre | MACD sem. | MACD mens. alcista | Sobre SMA200 | Estado |", "|---|---|---|---|---|---|"]
-    md += [f"| {m['nombre']} | {_f(m['cierre'])} | {_f(m['macd_sem'])} | {'sí' if m['macd_men_alc'] else 'no'} | {'sí' if m['sobre_sma200'] else 'no'} | {m['estado']} |" for m in mercado]
+          "## Mercado", "| Índice | Cierre | MACD sem. | MACD mens. alcista | Sobre SMA200 | Filtro mercado | Estado |", "|---|---|---|---|---|---|---|"]
+    md += [f"| {m['nombre']} | {_f(m['cierre'])} | {_f(m['macd_sem'])} | {'sí' if m['macd_men_alc'] else 'no'} | {'sí' if m['sobre_sma200'] else 'no'} | {'–' if m.get('favorable') is None else ('a favor' if m['favorable'] else 'en contra')} | {m['estado']} |" for m in mercado]
     for est in ("SENAL", "TRAMPA", "VIGILANCIA"):
         filas = [r for r in resultados if r.estado == est]
         md += ["", f"## {ESTADOS[est][1]} ({len(filas)})", ""]
         if filas:
             md += ["| Valor | Marco | Cierre | Entrada | Stop | Riesgo % | Obj1 | Obj2 | R/R | Punt. | Notas |", "|---|---|---|---|---|---|---|---|---|---|---|"]
-            md += [f"| {r.ticker} ({r.nombre}) | {r.marco} | {_f(r.cierre)} | {_f(r.entrada)} | {_f(r.stop)} | {_f(r.riesgo_pct, 1)} | {_f(r.objetivo1)} | {_f(r.objetivo2)} | {_f(r.rr, 1)} | {_f(r.puntuacion, 0)} | {'; '.join(r.confirmaciones + r.avisos)} |" for r in filas]
+            md += [f"| {'⭐ ' if r.seleccionada else ''}{r.ticker} ({r.nombre}) | {r.marco} | {_f(r.cierre)} | {_f(r.entrada)} | {_f(r.stop)} | {_f(r.riesgo_pct, 1)} | {_f(r.objetivo1)} | {_f(r.objetivo2)} | {_f(r.rr, 1)} | {_punt(r)} | {'; '.join(r.confirmaciones + r.avisos)} |" for r in filas]
     (carpeta / "latest.md").write_text("\n".join(md), encoding="utf-8")

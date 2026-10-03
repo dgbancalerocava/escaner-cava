@@ -70,6 +70,9 @@ class Resultado:
     adx: float = math.nan
     sar: float = math.nan
     disparo: str = ""          # recuperación / ruptura / degradada (sin R/R)
+    dist_sma200: float = math.nan
+    puntuacion2: float = math.nan   # puntuación aprendida del backtest (si existe)
+    seleccionada: bool = False      # entre las N mejores del día
     avisos: list = field(default_factory=list)
     confirmaciones: list = field(default_factory=list)
     # interno para los gráficos (no se exporta)
@@ -188,7 +191,7 @@ def _estructura(df: pd.DataFrame, top: int, cfg: dict):
 def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", grupo="",
             df_superior: pd.DataFrame | None = None, df_mensual: pd.DataFrame | None = None,
             precalculado: bool = False, macd_sup: float | None = None,
-            macd_men_alc: bool | None = None) -> Resultado:
+            macd_men_alc: bool | None = None, mercado_ok: bool | None = None) -> Resultado:
     """Evalúa el último día de `df_raw`.
     Para el backtest se pasa `precalculado=True` (df ya con indicadores) y los valores
     del MACD semanal/mensual ya calculados, así no se recalcula todo cada día."""
@@ -206,6 +209,9 @@ def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", 
     res.cierre = float(last.Close)
     for k in ("rsi14", "rsi2", "sto50", "sto89", "adx", "sar"):
         setattr(res, k, float(last[k]))
+    media_larga = last["sma200"] if marco == "D" else last["sma40"]
+    if media_larga and not np.isnan(media_larga):
+        res.dist_sma200 = float(100 * (last.Close / media_larga - 1))
 
     # ---------- 1. CONTEXTO
     if macd_sup is not None:
@@ -223,6 +229,9 @@ def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", 
         fallos.append("MACD del marco superior bajo cero")
     if ctx.get("exigir_macd_mensual_alcista") and not res.macd_mensual_alcista:
         fallos.append("MACD mensual bajista")
+    fm = cfg.get("filtro_mercado") or {}
+    if fm.get("activo") and mercado_ok is False:
+        fallos.append("índice de referencia en contra (filtro de mercado)")
     media = "sma200" if marco == "D" else "sma40"
     if ctx["precio_sobre_media_200"] and not (last.Close > last[media]):
         fallos.append("precio bajo la media larga")
@@ -330,25 +339,29 @@ def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", 
     # Dos disparos posibles tras la trampa (como en los ejemplos de Cava):
     #  a) recuperación del nivel barrido con volumen de manos fuertes (escape falso a la baja)
     #  b) ruptura de la directriz bajista / recta superior del triángulo
-    recup = (t is not None and today - t["r"] < dp["sesiones_ruptura_reciente"]
+    permitidos = dp.get("permitidos") or ["recuperacion", "ruptura"]
+    recup = ("recuperacion" in permitidos and t is not None and today - t["r"] < dp["sesiones_ruptura_reciente"]
              and not np.isnan(t["vrel"]) and t["vrel"] >= tr["volumen_manos_fuertes"])
-    rup_ok = t is not None and rup is not None and today - rup["t"] < dp["sesiones_ruptura_reciente"]
+    rup_ok = ("ruptura" in permitidos and t is not None and rup is not None
+              and today - rup["t"] < dp["sesiones_ruptura_reciente"])
     tipo_disparo = ""
     degradada = False
     if rup_ok or recup:
         p = plan(float(last.Close), t["min_barrida"])
         estado = "SENAL"
+        partes = []
+        if recup:
+            partes.append("recuperación del nivel barrido con volumen")
+            if t["r"] != today:
+                res.avisos.append(f"recuperó el nivel el {_fmt(idx, t['r'])}")
         if rup_ok:
-            tipo_disparo = "ruptura de directriz"
+            partes.append("ruptura de directriz")
             vr = V[rup["t"]] / vol20[rup["t"]] if vol20[rup["t"]] else np.nan
             if vr >= dp["volumen_ruptura"]:
                 conf.append(f"ruptura con volumen {vr:.1f}x")
             if rup["t"] != today:
                 res.avisos.append(f"la ruptura fue el {_fmt(idx, rup['t'])}")
-        else:
-            tipo_disparo = "recuperación del nivel barrido con volumen"
-            if t["r"] != today:
-                res.avisos.append(f"recuperó el nivel el {_fmt(idx, t['r'])}")
+        tipo_disparo = " + ".join(partes)
     elif t:
         p = plan(max(float(e["linea_man"]), float(last.Close)), t["min_barrida"])
         estado = "TRAMPA"

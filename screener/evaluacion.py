@@ -23,7 +23,7 @@ from . import indicators as ind
 
 COLS_SENAL = ["fecha", "ticker", "nombre", "grupo", "marco", "disparo", "pasa_filtro", "entrada_ref",
               "stop", "objetivo1", "objetivo2", "rr", "puntuacion", "vol_trampa", "n_confirmaciones",
-              "fecha_techo"]
+              "fecha_techo", "seleccionada", "puntuacion2"]
 
 
 def region(grupo: str) -> str:
@@ -38,7 +38,8 @@ def tramo_puntuacion(p: float) -> str:
 
 # ----------------------------------------------------------------- simulación
 def simular(df: pd.DataFrame, fecha: str, stop: float, obj1: float, obj2: float,
-            sar: pd.Series | None = None, max_sesiones: int = 120, max_seguimiento: int = 250) -> dict:
+            sar: pd.Series | None = None, max_sesiones: int = 120, max_seguimiento: int = 250,
+            be_R: float = 1.0, bloqueo_en_R: float = 2.0, bloqueo_a_R: float = 1.0) -> dict:
     """Simula una señal emitida al cierre de `fecha` sobre velas diarias `df`."""
     idx = df.index
     pos = idx.searchsorted(pd.Timestamp(fecha), side="right")   # primera sesión posterior
@@ -76,6 +77,31 @@ def simular(df: pd.DataFrame, fecha: str, stop: float, obj1: float, obj2: float,
     else:
         out.update(fija_estado="cerrada", fija_R=(salida - entrada) / riesgo, fija_motivo=motivo,
                    fija_salida=idx[j_out].strftime("%Y-%m-%d"), fija_sesiones=j_out - pos + 1)
+
+    # --- gestión GESTIONADA: como la fija, pero el stop sube a la entrada al ganar +be_R
+    #     y se bloquea +bloqueo_a_R al ganar +bloqueo_en_R (el stop nuevo vale desde la sesión siguiente)
+    st, salida3, j3, mot3 = stop, None, None, None
+    for j in range(pos, min(len(df), pos + max_sesiones)):
+        if L[j] <= st:
+            salida3, mot3 = (min(O[j], st) if j > pos else st), ("stop" if st < entrada else "stop protegido")
+        elif H[j] >= obj2:
+            salida3, mot3 = (max(O[j], obj2) if j > pos else obj2), "objetivo"
+        if salida3 is not None:
+            j3 = j
+            break
+        ganancia = (H[j] - entrada) / riesgo
+        if be_R and ganancia >= be_R:
+            st = max(st, entrada)
+        if bloqueo_en_R and ganancia >= bloqueo_en_R:
+            st = max(st, entrada + bloqueo_a_R * riesgo)
+    if salida3 is None and pos + max_sesiones <= len(df) - 1:
+        j3 = pos + max_sesiones - 1
+        salida3, mot3 = C[j3], "tiempo"
+    if salida3 is None:
+        out.update(ges_estado="abierta", ges_R=(C[-1] - entrada) / riesgo, ges_stop_actual=st)
+    else:
+        out.update(ges_estado="cerrada", ges_R=(salida3 - entrada) / riesgo, ges_motivo=mot3,
+                   ges_salida=idx[j3].strftime("%Y-%m-%d"), ges_sesiones=j3 - pos + 1)
 
     # --- gestión con SEGUIMIENTO
     st, alcanzo1, salida2, j2 = stop, False, None, None
@@ -124,7 +150,9 @@ def estadisticas(ops: pd.DataFrame, solo_filtradas=True) -> dict:
     base = ops[ops.pasa_filtro.astype(bool)] if solo_filtradas else ops
     cerr = base[base.fija_estado == "cerrada"].sort_values("fija_salida")
     cerr_s = base[base.seg_estado == "cerrada"].sort_values("seg_salida")
-    out = {"global": {"fija": _stats(cerr.fija_R), "seguimiento": _stats(cerr_s.seg_R),
+    cerr_g = base[base.ges_estado == "cerrada"].sort_values("ges_salida") if "ges_estado" in base else base.iloc[:0]
+    out = {"global": {"fija": _stats(cerr.fija_R), "gestionada": _stats(cerr_g.ges_R) if len(cerr_g) else {"n": 0},
+                      "seguimiento": _stats(cerr_s.seg_R),
                       "abiertas": int((base.estado == "abierta").sum()),
                       "anuladas": int((base.estado == "anulada").sum()),
                       "pendientes": int((base.estado == "pendiente").sum())},
@@ -132,10 +160,13 @@ def estadisticas(ops: pd.DataFrame, solo_filtradas=True) -> dict:
     cerr = cerr.assign(region=cerr.grupo.map(region), tramo=cerr.puntuacion.map(tramo_puntuacion),
                        anio=cerr.fecha.str[:4],
                        vol=np.where(cerr.vol_trampa.astype(bool), "con volumen", "sin volumen"),
-                       tipo=cerr.disparo.str.replace(" (sin R/R)", "", regex=False))
+                       tipo=cerr.disparo.str.replace(" (sin R/R)", "", regex=False),
+                       sel=np.where(cerr.get("seleccionada", pd.Series(False, index=cerr.index)).astype(str)
+                                    .str.lower().isin(["true", "1"]), "⭐ seleccionadas", "resto"))
     for col, nombre in [("region", "Mercado"), ("marco", "Marco"), ("tipo", "Disparo"),
-                        ("tramo", "Puntuación"), ("vol", "Volumen en la trampa"), ("anio", "Año")]:
-        out["grupos"][nombre] = {str(k): _stats(g.fija_R) | {"R_medio_seg": _stats(g.seg_R).get("R_medio")}
+                        ("tramo", "Puntuación"), ("vol", "Volumen en la trampa"), ("anio", "Año"),
+                        ("sel", "Selección diaria")]:
+        out["grupos"][nombre] = {str(k): _stats(g.fija_R) | {"R_medio_ges": _stats(g.ges_R).get("R_medio") if "ges_R" in g else None}
                                  for k, g in cerr.groupby(col)}
     # efecto del filtro R/R (señales técnicas que se descartaron por R/R < mínimo)
     if not solo_filtradas or (~ops.pasa_filtro.astype(bool)).any():
@@ -196,13 +227,16 @@ def registrar_senales(carpeta: Path, resultados) -> int:
                        "objetivo1": round(r.objetivo1, 4), "objetivo2": round(r.objetivo2, 4),
                        "rr": round(r.rr, 2), "puntuacion": r.puntuacion,
                        "vol_trampa": bool(r.volumen_barrida >= 1.3) if not math.isnan(r.volumen_barrida) else False,
-                       "n_confirmaciones": len(r.confirmaciones), "fecha_techo": r.fecha_techo})
+                       "n_confirmaciones": len(r.confirmaciones), "fecha_techo": r.fecha_techo,
+                       "seleccionada": bool(r.seleccionada),
+                       "puntuacion2": None if math.isnan(r.puntuacion2) else r.puntuacion2})
     if nuevas:
         pd.concat([previas, pd.DataFrame(nuevas)], ignore_index=True).to_csv(ruta, index=False)
     return len(nuevas)
 
 
-def evaluar_registro(senales: pd.DataFrame, precios: dict) -> pd.DataFrame:
+def evaluar_registro(senales: pd.DataFrame, precios: dict, cfg: dict | None = None) -> pd.DataFrame:
+    g = (cfg or {}).get("gestion") or {}
     filas = []
     sars = {}
     for _, s in senales.iterrows():
@@ -211,14 +245,16 @@ def evaluar_registro(senales: pd.DataFrame, precios: dict) -> pd.DataFrame:
             continue
         if s.ticker not in sars:
             sars[s.ticker] = ind.parabolic_sar(df["High"], df["Low"])
-        r = simular(df, s.fecha, float(s.stop), float(s.objetivo1), float(s.objetivo2), sars[s.ticker])
+        r = simular(df, s.fecha, float(s.stop), float(s.objetivo1), float(s.objetivo2), sars[s.ticker],
+                    be_R=g.get("breakeven_R", 1.0), bloqueo_en_R=g.get("bloqueo_en_R", 2.0),
+                    bloqueo_a_R=g.get("bloqueo_a_R", 1.0))
         filas.append({**s.to_dict(), **r})
     ops = pd.DataFrame(filas)
     if ops.empty:
         return ops
-    for c in ("fija_R", "seg_R", "puntuacion", "rr", "mfe_R", "mae_R", "entrada"):
+    for c in ("fija_R", "seg_R", "ges_R", "puntuacion", "rr", "mfe_R", "mae_R", "entrada"):
         ops[c] = pd.to_numeric(ops[c], errors="coerce") if c in ops else np.nan
-    for c in ("fija_estado", "seg_estado", "fija_salida", "seg_salida"):
+    for c in ("fija_estado", "seg_estado", "ges_estado", "fija_salida", "seg_salida", "ges_salida"):
         if c not in ops:
             ops[c] = None
     ops["pasa_filtro"] = ops.pasa_filtro.astype(str).str.lower().isin(["true", "1"])
@@ -226,18 +262,18 @@ def evaluar_registro(senales: pd.DataFrame, precios: dict) -> pd.DataFrame:
     return ops
 
 
-def actualizar_seguimiento(carpeta: Path, precios: dict) -> dict:
+def actualizar_seguimiento(carpeta: Path, precios: dict, cfg: dict | None = None) -> dict:
     """Recalcula desde cero el resultado de todas las señales registradas."""
     ruta = carpeta / "senales.csv"
     if not ruta.exists():
         return {}
-    ops = evaluar_registro(pd.read_csv(ruta, dtype=str), precios)
+    ops = evaluar_registro(pd.read_csv(ruta, dtype=str), precios, cfg)
     if ops.empty:
         return {}
     ops.to_csv(carpeta / "operaciones.csv", index=False)
     st = estadisticas(ops)
     abiertas = ops[(ops.estado == "abierta") & ops.pasa_filtro]
-    st["abiertas_detalle"] = abiertas[["fecha", "ticker", "marco", "entrada", "stop", "objetivo2", "fija_R", "seg_R"]] \
+    st["abiertas_detalle"] = abiertas[["fecha", "ticker", "marco", "entrada", "stop", "objetivo2", "fija_R", "ges_R"]] \
         .round(2).to_dict("records") if not abiertas.empty else []
     (carpeta / "resumen.json").write_text(json.dumps(st, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
     (carpeta / "resumen.md").write_text(markdown(st, "Seguimiento en vivo de las señales"), encoding="utf-8")
@@ -257,7 +293,8 @@ def markdown(st: dict, titulo: str) -> str:
     md = [f"# {titulo}", "",
           f"Operaciones abiertas: {g.get('abiertas', 0)} · pendientes de entrar: {g.get('pendientes', 0)} · anuladas (abren bajo el stop): {g.get('anuladas', 0)}", "",
           "| Gestión | Cerradas | Acierto | R medio | Profit factor | Máx. drawdown (R) |", "|---|---|---|---|---|---|",
-          _fila("Fija (stop / obj. 2)", g.get("fija")), _fila("Con seguimiento (SAR)", g.get("seguimiento"))]
+          _fila("Fija (stop / obj. 2)", g.get("fija")), _fila("Gestionada (stop a entrada en +1R)", g.get("gestionada")),
+          _fila("Con seguimiento (SAR)", g.get("seguimiento"))]
     for nombre, tabla in st.get("grupos", {}).items():
         md += ["", f"## Por {nombre[0].lower() + nombre[1:]}", "", "| Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |",
                "|---|---|---|---|---|---|"]
@@ -280,10 +317,11 @@ def html(st_vivo: dict, st_backtest: dict | None) -> str:
     th = ("<tr style='background:#f6f8fa;color:#57606a;font-size:12px;text-align:left'><th></th><th>Cerradas</th>"
           "<th>Acierto</th><th>R medio</th><th>Profit factor</th><th>Máx. drawdown</th></tr>")
     g = (st_vivo or {}).get("global", {})
-    filas = [fila("En vivo · gestión fija", g.get("fija")), fila("En vivo · con seguimiento", g.get("seguimiento"))]
+    filas = [fila("En vivo · gestión fija", g.get("fija")), fila("En vivo · gestionada (+1R → stop a entrada)", g.get("gestionada"))]
     if st_backtest and st_backtest.get("global"):
         b = st_backtest["global"]
-        filas += [fila("Histórico 5 años · fija", b.get("fija")), fila("Histórico 5 años · seguimiento", b.get("seguimiento"))]
+        etiqueta = st_backtest.get("version", "histórico")
+        filas += [fila(f"Backtest {etiqueta} · fija", b.get("fija")), fila(f"Backtest {etiqueta} · gestionada", b.get("gestionada"))]
     abiertas = (st_vivo or {}).get("abiertas_detalle", [])
     txt_ab = ""
     if abiertas:

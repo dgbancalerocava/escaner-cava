@@ -55,6 +55,27 @@ disparo:
   margen_stop_atr: 0.25         # stop = mínimo de la barrida - 0,25 ATR
   rr_minimo: 3.0                # relación riesgo/recompensa mínima (1:3)
   riesgo_max_pct: 12            # descarta operaciones con stop a más del 12 % de la entrada
+  # Disparos que generan señal verde: "recuperacion" (escape falso: recupera el nivel barrido
+  # con volumen) y/o "ruptura" (rompe la directriz bajista). Variante C/D/E: solo [recuperacion]
+  permitidos: [recuperacion, ruptura]
+
+# --- FILTRO DE MERCADO (variante D/E) -------------------------
+# Solo se dan señales si el índice de referencia tiene MACD semanal > 0 y está sobre su media de 200
+filtro_mercado:
+  activo: false
+  indice_por_grupo: {sp500: "^GSPC", nasdaq100: "^GSPC", etfs: "^GSPC", ibex35: "^IBEX", europe_tech: "^STOXX50E"}
+
+# --- GESTIÓN DE LA OPERACIÓN (usada en autoevaluación y backtest) ---
+gestion:
+  breakeven_R: 1.0      # al ganar +1R el stop sube a la entrada
+  bloqueo_en_R: 2.0     # al ganar +2R...
+  bloqueo_a_R: 1.0      # ...el stop asegura +1R
+
+# --- SELECCIÓN DIARIA (variante E) ----------------------------
+seleccion:
+  max_senales_dia: 2               # marca con ⭐ las N mejores señales del día (0 = no marcar)
+  usar_puntuacion_aprendida: false # ordenar con la puntuación aprendida en el backtest
+  variante_activa: A               # qué variante del backtest se usa como referencia en el email
 
 # Gestión monetaria opcional: si pones capital > 0 calcula nº de acciones
 capital: 0
