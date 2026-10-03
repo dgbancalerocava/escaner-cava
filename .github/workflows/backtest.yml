@@ -1,0 +1,42 @@
+name: Backtest historico metodo Cava
+
+# Se lanza a mano: pestaña Actions -> "Backtest historico metodo Cava" -> Run workflow.
+# Conviene repetirlo cada vez que se cambien parámetros en config.yaml, para comparar.
+on:
+  workflow_dispatch:
+    inputs:
+      anios:
+        description: "Años de histórico"
+        default: "8"
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Ejecutar backtest
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python backtest.py --anios ${{ github.event.inputs.anios }}
+      - name: Guardar resultados
+        run: |
+          git config user.name "escaner-bot"
+          git config user.email "escaner-bot@users.noreply.github.com"
+          git add reports/backtest
+          git commit -m "Backtest $(date -u +%Y-%m-%d)" || echo "Sin cambios"
+          git pull --rebase
+          git push
