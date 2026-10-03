@@ -1,0 +1,205 @@
+{
+ "filas": [
+  {
+   "variante": "A",
+   "descripcion": "Método actual",
+   "gestion": "fija",
+   "aprendizaje": {
+    "n": 3895,
+    "por_anio": 923.0,
+    "acierto_pct": 20.7,
+    "R_medio": 0.44,
+    "R_anio": 403.8,
+    "profit_factor": 1.53,
+    "racha_perdedora": 164,
+    "max_drawdown_R": -443.7
+   },
+   "validacion": {
+    "n": 2680,
+    "por_anio": 979.0,
+    "acierto_pct": 20.4,
+    "R_medio": 0.48,
+    "R_anio": 469.0,
+    "profit_factor": 1.57,
+    "racha_perdedora": 89,
+    "max_drawdown_R": -134.3
+   },
+   "total": {
+    "n": 6575,
+    "por_anio": 943.0,
+    "acierto_pct": 20.6,
+    "R_medio": 0.45,
+    "R_anio": 428.8,
+    "profit_factor": 1.54,
+    "racha_perdedora": 168,
+    "max_drawdown_R": -443.7
+   }
+  },
+  {
+   "variante": "B",
+   "descripcion": "A + stop a la entrada en +1R",
+   "gestion": "ges",
+   "aprendizaje": {
+    "n": 4463,
+    "por_anio": 1057.0,
+    "acierto_pct": 27.6,
+    "R_medio": 0.2,
+    "R_anio": 207.9,
+    "profit_factor": 1.37,
+    "racha_perdedora": 45,
+    "max_drawdown_R": -272.2
+   },
+   "validacion": {
+    "n": 3142,
+    "por_anio": 1148.0,
+    "acierto_pct": 27.9,
+    "R_medio": 0.17,
+    "R_anio": 193.1,
+    "profit_factor": 1.32,
+    "racha_perdedora": 30,
+    "max_drawdown_R": -107.3
+   },
+   "total": {
+    "n": 7605,
+    "por_anio": 1091.0,
+    "acierto_pct": 27.7,
+    "R_medio": 0.18,
+    "R_anio": 201.8,
+    "profit_factor": 1.35,
+    "racha_perdedora": 47,
+    "max_drawdown_R": -274.2
+   }
+  },
+  {
+   "variante": "C",
+   "descripcion": "B + solo disparo de recuperación con volumen",
+   "gestion": "ges",
+   "aprendizaje": {
+    "n": 3512,
+    "por_anio": 837.0,
+    "acierto_pct": 27.5,
+    "R_medio": 0.22,
+    "R_anio": 184.8,
+    "profit_factor": 1.41,
+    "racha_perdedora": 33,
+    "max_drawdown_R": -193.3
+   },
+   "validacion": {
+    "n": 2435,
+    "por_anio": 889.0,
+    "acierto_pct": 28.7,
+    "R_medio": 0.17,
+    "R_anio": 154.6,
+    "profit_factor": 1.33,
+    "racha_perdedora": 34,
+    "max_drawdown_R": -121.0
+   },
+   "total": {
+    "n": 5947,
+    "por_anio": 856.0,
+    "acierto_pct": 28.0,
+    "R_medio": 0.2,
+    "R_anio": 172.4,
+    "profit_factor": 1.37,
+    "racha_perdedora": 39,
+    "max_drawdown_R": -194.3
+   }
+  },
+  {
+   "variante": "D",
+   "descripcion": "C + filtro de tendencia del índice",
+   "gestion": "ges",
+   "aprendizaje": {
+    "n": 2740,
+    "por_anio": 653.0,
+    "acierto_pct": 28.0,
+    "R_medio": 0.25,
+    "R_anio": 163.0,
+    "profit_factor": 1.46,
+    "racha_perdedora": 26,
+    "max_drawdown_R": -130.4
+   },
+   "validacion": {
+    "n": 2277,
+    "por_anio": 832.0,
+    "acierto_pct": 28.0,
+    "R_medio": 0.16,
+    "R_anio": 128.9,
+    "profit_factor": 1.28,
+    "racha_perdedora": 36,
+    "max_drawdown_R": -161.2
+   },
+   "total": {
+    "n": 5017,
+    "por_anio": 722.0,
+    "acierto_pct": 28.0,
+    "R_medio": 0.21,
+    "R_anio": 149.1,
+    "profit_factor": 1.38,
+    "racha_perdedora": 39,
+    "max_drawdown_R": -160.5
+   }
+  },
+  {
+   "variante": "E",
+   "descripcion": "D + puntuación aprendida, máx. 2 señales/día",
+   "gestion": "ges",
+   "aprendizaje": {
+    "n": 1006,
+    "por_anio": 240.0,
+    "acierto_pct": 26.0,
+    "R_medio": 0.22,
+    "R_anio": 53.1,
+    "profit_factor": 1.39,
+    "racha_perdedora": 14,
+    "max_drawdown_R": -57.7
+   },
+   "validacion": {
+    "n": 948,
+    "por_anio": 346.0,
+    "acierto_pct": 25.2,
+    "R_medio": 0.02,
+    "R_anio": 6.2,
+    "profit_factor": 1.03,
+    "racha_perdedora": 24,
+    "max_drawdown_R": -86.5
+   },
+   "total": {
+    "n": 1954,
+    "por_anio": 281.0,
+    "acierto_pct": 25.6,
+    "R_medio": 0.12,
+    "R_anio": 34.5,
+    "profit_factor": 1.21,
+    "racha_perdedora": 24,
+    "max_drawdown_R": -84.3
+   }
+  }
+ ],
+ "puntuacion_validacion": {
+  "-2": {
+   "n": 562,
+   "R_medio": 0.27
+  },
+  "-1": {
+   "n": 448,
+   "R_medio": 0.27
+  },
+  "0": {
+   "n": 439,
+   "R_medio": 0.17
+  },
+  "1": {
+   "n": 385,
+   "R_medio": 0.11
+  },
+  "2": {
+   "n": 403,
+   "R_medio": 0.07
+  },
+  "3": {
+   "n": 203,
+   "R_medio": -0.24
+  }
+ }
+}
