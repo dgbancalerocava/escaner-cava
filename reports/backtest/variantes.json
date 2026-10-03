@@ -2,204 +2,229 @@
  "filas": [
   {
    "variante": "A",
-   "descripcion": "Método actual",
+   "descripcion": "Método actual (gestión fija)",
    "gestion": "fija",
    "aprendizaje": {
-    "n": 3895,
+    "n": 3897,
     "por_anio": 923.0,
-    "acierto_pct": 20.7,
+    "acierto_pct": 20.8,
     "R_medio": 0.44,
-    "R_anio": 403.8,
-    "profit_factor": 1.53,
-    "racha_perdedora": 164,
-    "max_drawdown_R": -443.7
+    "R_anio": 409.9,
+    "profit_factor": 1.54,
+    "racha_perdedora": 167,
+    "max_drawdown_R": -439.7
    },
    "validacion": {
-    "n": 2680,
-    "por_anio": 979.0,
+    "n": 2685,
+    "por_anio": 981.0,
     "acierto_pct": 20.4,
-    "R_medio": 0.48,
-    "R_anio": 469.0,
-    "profit_factor": 1.57,
-    "racha_perdedora": 89,
-    "max_drawdown_R": -134.3
+    "R_medio": 0.47,
+    "R_anio": 465.3,
+    "profit_factor": 1.56,
+    "racha_perdedora": 87,
+    "max_drawdown_R": -135.1
    },
    "total": {
-    "n": 6575,
-    "por_anio": 943.0,
-    "acierto_pct": 20.6,
-    "R_medio": 0.45,
-    "R_anio": 428.8,
-    "profit_factor": 1.54,
-    "racha_perdedora": 168,
-    "max_drawdown_R": -443.7
+    "n": 6582,
+    "por_anio": 944.0,
+    "acierto_pct": 20.7,
+    "R_medio": 0.46,
+    "R_anio": 431.0,
+    "profit_factor": 1.55,
+    "racha_perdedora": 167,
+    "max_drawdown_R": -439.7
    }
   },
   {
    "variante": "B",
-   "descripcion": "A + stop a la entrada en +1R",
+   "descripcion": "A con stop a la entrada en +1R",
    "gestion": "ges",
    "aprendizaje": {
-    "n": 4463,
+    "n": 4464,
     "por_anio": 1057.0,
-    "acierto_pct": 27.6,
+    "acierto_pct": 27.7,
     "R_medio": 0.2,
-    "R_anio": 207.9,
-    "profit_factor": 1.37,
-    "racha_perdedora": 45,
-    "max_drawdown_R": -272.2
+    "R_anio": 213.8,
+    "profit_factor": 1.38,
+    "racha_perdedora": 46,
+    "max_drawdown_R": -276.6
    },
    "validacion": {
-    "n": 3142,
-    "por_anio": 1148.0,
+    "n": 3149,
+    "por_anio": 1150.0,
     "acierto_pct": 27.9,
-    "R_medio": 0.17,
-    "R_anio": 193.1,
-    "profit_factor": 1.32,
-    "racha_perdedora": 30,
+    "R_medio": 0.16,
+    "R_anio": 186.5,
+    "profit_factor": 1.3,
+    "racha_perdedora": 38,
     "max_drawdown_R": -107.3
    },
    "total": {
-    "n": 7605,
-    "por_anio": 1091.0,
-    "acierto_pct": 27.7,
-    "R_medio": 0.18,
-    "R_anio": 201.8,
+    "n": 7613,
+    "por_anio": 1092.0,
+    "acierto_pct": 27.8,
+    "R_medio": 0.19,
+    "R_anio": 202.7,
     "profit_factor": 1.35,
     "racha_perdedora": 47,
-    "max_drawdown_R": -274.2
+    "max_drawdown_R": -272.5
    }
   },
   {
    "variante": "C",
-   "descripcion": "B + solo disparo de recuperación con volumen",
-   "gestion": "ges",
+   "descripcion": "Calidad ≥ 3",
+   "gestion": "fija",
    "aprendizaje": {
-    "n": 3512,
-    "por_anio": 837.0,
-    "acierto_pct": 27.5,
-    "R_medio": 0.22,
-    "R_anio": 184.8,
-    "profit_factor": 1.41,
-    "racha_perdedora": 33,
-    "max_drawdown_R": -193.3
+    "n": 905,
+    "por_anio": 218.0,
+    "acierto_pct": 15.9,
+    "R_medio": 0.88,
+    "R_anio": 192.1,
+    "profit_factor": 1.99,
+    "racha_perdedora": 74,
+    "max_drawdown_R": -117.7
    },
    "validacion": {
-    "n": 2435,
-    "por_anio": 889.0,
-    "acierto_pct": 28.7,
-    "R_medio": 0.17,
-    "R_anio": 154.6,
-    "profit_factor": 1.33,
-    "racha_perdedora": 34,
-    "max_drawdown_R": -121.0
+    "n": 647,
+    "por_anio": 238.0,
+    "acierto_pct": 15.8,
+    "R_medio": 1.01,
+    "R_anio": 240.9,
+    "profit_factor": 2.13,
+    "racha_perdedora": 47,
+    "max_drawdown_R": -65.3
    },
    "total": {
-    "n": 5947,
-    "por_anio": 856.0,
-    "acierto_pct": 28.0,
-    "R_medio": 0.2,
-    "R_anio": 172.4,
-    "profit_factor": 1.37,
-    "racha_perdedora": 39,
-    "max_drawdown_R": -194.3
+    "n": 1552,
+    "por_anio": 224.0,
+    "acierto_pct": 15.9,
+    "R_medio": 0.94,
+    "R_anio": 209.8,
+    "profit_factor": 2.05,
+    "racha_perdedora": 74,
+    "max_drawdown_R": -119.1
    }
   },
   {
    "variante": "D",
-   "descripcion": "C + filtro de tendencia del índice",
-   "gestion": "ges",
+   "descripcion": "Calidad ≥ 4 (⭐)",
+   "gestion": "fija",
    "aprendizaje": {
-    "n": 2740,
-    "por_anio": 653.0,
-    "acierto_pct": 28.0,
-    "R_medio": 0.25,
-    "R_anio": 163.0,
-    "profit_factor": 1.46,
-    "racha_perdedora": 26,
-    "max_drawdown_R": -130.4
+    "n": 120,
+    "por_anio": 30.0,
+    "acierto_pct": 19.2,
+    "R_medio": 1.94,
+    "R_anio": 58.5,
+    "profit_factor": 3.29,
+    "racha_perdedora": 20,
+    "max_drawdown_R": -23.4
    },
    "validacion": {
-    "n": 2277,
-    "por_anio": 832.0,
-    "acierto_pct": 28.0,
-    "R_medio": 0.16,
-    "R_anio": 128.9,
-    "profit_factor": 1.28,
-    "racha_perdedora": 36,
-    "max_drawdown_R": -161.2
+    "n": 91,
+    "por_anio": 33.0,
+    "acierto_pct": 22.0,
+    "R_medio": 2.32,
+    "R_anio": 77.6,
+    "profit_factor": 3.83,
+    "racha_perdedora": 18,
+    "max_drawdown_R": -19.8
    },
    "total": {
-    "n": 5017,
-    "por_anio": 722.0,
-    "acierto_pct": 28.0,
-    "R_medio": 0.21,
-    "R_anio": 149.1,
-    "profit_factor": 1.38,
-    "racha_perdedora": 39,
-    "max_drawdown_R": -160.5
+    "n": 211,
+    "por_anio": 31.0,
+    "acierto_pct": 20.4,
+    "R_medio": 2.1,
+    "R_anio": 64.4,
+    "profit_factor": 3.52,
+    "racha_perdedora": 20,
+    "max_drawdown_R": -23.4
    }
   },
   {
    "variante": "E",
-   "descripcion": "D + puntuación aprendida, máx. 2 señales/día",
-   "gestion": "ges",
+   "descripcion": "Calidad ≥ 3 + filtro de mercado",
+   "gestion": "fija",
    "aprendizaje": {
-    "n": 1006,
-    "por_anio": 240.0,
-    "acierto_pct": 26.0,
-    "R_medio": 0.22,
-    "R_anio": 53.1,
-    "profit_factor": 1.39,
-    "racha_perdedora": 14,
-    "max_drawdown_R": -57.7
+    "n": 763,
+    "por_anio": 183.0,
+    "acierto_pct": 15.5,
+    "R_medio": 0.75,
+    "R_anio": 137.0,
+    "profit_factor": 1.83,
+    "racha_perdedora": 73,
+    "max_drawdown_R": -105.7
    },
    "validacion": {
-    "n": 948,
-    "por_anio": 346.0,
-    "acierto_pct": 25.2,
-    "R_medio": 0.02,
-    "R_anio": 6.2,
-    "profit_factor": 1.03,
-    "racha_perdedora": 24,
-    "max_drawdown_R": -86.5
+    "n": 621,
+    "por_anio": 228.0,
+    "acierto_pct": 15.1,
+    "R_medio": 0.98,
+    "R_anio": 223.9,
+    "profit_factor": 2.09,
+    "racha_perdedora": 47,
+    "max_drawdown_R": -73.8
    },
    "total": {
-    "n": 1954,
-    "por_anio": 281.0,
-    "acierto_pct": 25.6,
-    "R_medio": 0.12,
-    "R_anio": 34.5,
-    "profit_factor": 1.21,
-    "racha_perdedora": 24,
-    "max_drawdown_R": -84.3
+    "n": 1384,
+    "por_anio": 200.0,
+    "acierto_pct": 15.3,
+    "R_medio": 0.85,
+    "R_anio": 170.1,
+    "profit_factor": 1.94,
+    "racha_perdedora": 73,
+    "max_drawdown_R": -107.0
    }
   }
  ],
- "puntuacion_validacion": {
-  "-2": {
-   "n": 562,
-   "R_medio": 0.27
+ "calidad_por_periodo": {
+  "aprendizaje": {
+   "0": {
+    "n": 645,
+    "R_medio": 0.28
+   },
+   "1": {
+    "n": 1811,
+    "R_medio": 0.36
+   },
+   "2": {
+    "n": 1655,
+    "R_medio": 0.48
+   },
+   "3": {
+    "n": 843,
+    "R_medio": 0.7
+   },
+   "4": {
+    "n": 124,
+    "R_medio": 1.85
+   }
   },
-  "-1": {
-   "n": 448,
-   "R_medio": 0.27
-  },
-  "0": {
-   "n": 439,
-   "R_medio": 0.17
-  },
-  "1": {
-   "n": 385,
-   "R_medio": 0.11
-  },
-  "2": {
-   "n": 403,
-   "R_medio": 0.07
-  },
-  "3": {
-   "n": 203,
-   "R_medio": -0.24
+  "validacion": {
+   "0": {
+    "n": 452,
+    "R_medio": -0.03
+   },
+   "1": {
+    "n": 1227,
+    "R_medio": 0.27
+   },
+   "2": {
+    "n": 1109,
+    "R_medio": 0.42
+   },
+   "3": {
+    "n": 609,
+    "R_medio": 0.81
+   },
+   "4": {
+    "n": 94,
+    "R_medio": 2.26
+   }
   }
+ },
+ "umbrales_sugeridos": {
+  "rr_alto": 9.5,
+  "retroceso_bajo": 0.28,
+  "ratio_tiempo_alto": 0.23
  }
 }
