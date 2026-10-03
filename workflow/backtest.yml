@@ -1,44 +1,42 @@
-name: Escaner diario metodo Cava
+name: Backtest historico metodo Cava
 
+# Se lanza a mano: pestaña Actions -> "Backtest historico metodo Cava" -> Run workflow.
+# Conviene repetirlo cada vez que se cambien parámetros en config.yaml, para comparar.
 on:
-  schedule:
-    # 21:30 UTC de lunes a viernes = 23:30 en Madrid (verano) / 22:30 (invierno),
-    # después del cierre de Wall Street. GitHub puede retrasarlo unos minutos.
-    - cron: "30 21 * * 1-5"
-  workflow_dispatch: {}   # permite lanzarlo a mano desde la pestaña Actions
+  workflow_dispatch:
+    inputs:
+      anios:
+        description: "Años de histórico"
+        default: "8"
 
 permissions:
   contents: write
 
 jobs:
-  escaner:
+  backtest:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
-
       - name: Instalar dependencias
         run: pip install -r requirements.txt
-
-      - name: Ejecutar escaner
+      - name: Ejecutar backtest
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: python run.py
-
-      - name: Guardar informe en el repositorio
+        run: python backtest.py --anios ${{ github.event.inputs.anios }}
+      - name: Guardar resultados
         run: |
           git config user.name "escaner-bot"
           git config user.email "escaner-bot@users.noreply.github.com"
-          git add reports universe
-          git commit -m "Informe $(date -u +%Y-%m-%d)" || echo "Sin cambios"
+          git add reports/backtest
+          git commit -m "Backtest $(date -u +%Y-%m-%d)" || echo "Sin cambios"
           git pull --rebase
           git push

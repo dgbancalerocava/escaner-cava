@@ -108,7 +108,8 @@ def _tabla(filas: list[Resultado], con_ucits: dict, cids: dict) -> str:
     return f"<table cellpadding='6' cellspacing='0' style='border-collapse:collapse;width:100%'>{th}{''.join(out)}</table>"
 
 
-def html_email(fecha: str, mercado: list[dict], grupos: dict, ucits: dict, cids: dict, stats: dict) -> str:
+def html_email(fecha: str, mercado: list[dict], grupos: dict, ucits: dict, cids: dict, stats: dict,
+               extra_html: str = "") -> str:
     sem = "".join(
         f"<tr style='font-size:13px;border-top:1px solid #d8dee4'><td><b>{m['nombre']}</b></td><td>{_f(m['cierre'])}</td>"
         f"<td>{'🟢' if m['macd_sem'] > 0 else '🔴'} {'sobre' if m['macd_sem'] > 0 else 'bajo'} cero</td>"
@@ -136,6 +137,7 @@ def html_email(fecha: str, mercado: list[dict], grupos: dict, ucits: dict, cids:
         if est == "VIGILANCIA":
             partes.append("<p style='font-size:12px;color:#57606a;margin:0 0 6px'>Aún sin trampa. Stop provisional bajo el mínimo de la corrección; se recalculará cuando haya barrida.</p>")
         partes.append(_tabla(filas, ucits, cids))
+    partes.append(extra_html)
     if cids:
         partes.append("<h3 style='margin:24px 0 6px'>Gráficos</h3>")
         for t, cid in cids.items():
@@ -146,10 +148,11 @@ reconstrucción pública del método de J. L. Cava. No es una recomendación de 
 
 
 # ----------------------------------------------------------------- JSON / Markdown
-def guardar(carpeta: Path, fecha: str, mercado: list[dict], resultados: list[Resultado], stats: dict):
+def guardar(carpeta: Path, fecha: str, mercado: list[dict], resultados: list[Resultado], stats: dict,
+            extra: dict | None = None):
     carpeta.mkdir(parents=True, exist_ok=True)
     datos = {"fecha": fecha, "estadisticas": stats, "mercado": mercado,
-             "candidatos": [r.to_dict() for r in resultados if r.estado != "NADA"]}
+             "candidatos": [r.to_dict() for r in resultados if r.estado != "NADA"], **(extra or {})}
     txt = json.dumps(datos, ensure_ascii=False, indent=1, default=str)
     (carpeta / "latest.json").write_text(txt, encoding="utf-8")
     hist = carpeta / "historico"

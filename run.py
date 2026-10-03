@@ -6,7 +6,7 @@ Uso:  python run.py            (descarga datos, analiza, guarda informe y envía
 from __future__ import annotations
 
 import argparse
-import datetime as dt
+import json
 import shutil
 import sys
 from pathlib import Path
@@ -16,6 +16,7 @@ import yaml
 from screener import data as D
 from screener import indicators as ind
 from screener.emailer import enviar
+from screener import evaluacion as EV
 from screener.engine import evaluar
 from screener.report import ESTADOS, grafico, guardar, html_email
 
@@ -56,6 +57,7 @@ def analizar(precios: dict, universo, cfg: dict):
                                 sobre_sma200=bool(dd.Close.iloc[-1] > dd.sma200.iloc[-1]),
                                 estado=ESTADOS.get(r.estado, ("", r.motivo))[1] if r.estado != "NADA" else r.motivo))
         resultados.append((r, df))
+        rw.fecha = df.index[-1].strftime("%Y-%m-%d")   # la vela semanal en curso lleva fecha del viernes
         if rw.estado in ("SENAL", "TRAMPA"):
             resultados.append((rw, sem))
     return resultados, mercado, analizados
@@ -108,10 +110,24 @@ def main():
         imagenes[cid] = ruta
 
     todos = [r for r, _ in resultados]
-    guardar(carpeta_r, fecha, mercado, [r for est in grupos.values() for r in est], stats)
+
+    # autoevaluación: registra las señales de hoy y recalcula el resultado de todas las anteriores
+    carpeta_seg = carpeta_r / "seguimiento"
+    nuevas = EV.registrar_senales(carpeta_seg, todos)
+    st_vivo = EV.actualizar_seguimiento(carpeta_seg, precios)
+    log(f"Seguimiento: {nuevas} señales nuevas registradas")
+    ruta_bt = carpeta_r / "backtest" / "resumen.json"
+    st_bt = json.loads(ruta_bt.read_text(encoding="utf-8")) if ruta_bt.exists() else None
+
+    guardar(carpeta_r, fecha, mercado, [r for est in grupos.values() for r in est], stats,
+            extra={"autoevaluacion_vivo": st_vivo, "autoevaluacion_backtest": (st_bt or {}).get("global")})
     ucits = dict(zip(universo.ticker, universo.ucits))
-    html = html_email(fecha, mercado, grupos, {k: v for k, v in ucits.items() if v}, cids, stats)
+    html = html_email(fecha, mercado, grupos, {k: v for k, v in ucits.items() if v}, cids, stats,
+                      extra_html=EV.html(st_vivo, st_bt))
     (carpeta_r / "latest.html").write_text(html, encoding="utf-8")
+    if st_vivo:
+        with open(carpeta_r / "latest.md", "a", encoding="utf-8") as f:
+            f.write("\n\n" + EV.markdown(st_vivo, "Autoevaluación en vivo").replace("# ", "## ", 1))
     texto = (carpeta_r / "latest.md").read_text(encoding="utf-8")
     log(f"Informe {fecha}: {stats}")
     log(f"Descartados: {sum(1 for r in todos if r.estado == 'NADA')}")

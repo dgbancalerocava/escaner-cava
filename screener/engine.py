@@ -69,6 +69,7 @@ class Resultado:
     sto89: float = math.nan
     adx: float = math.nan
     sar: float = math.nan
+    disparo: str = ""          # recuperación / ruptura / degradada (sin R/R)
     avisos: list = field(default_factory=list)
     confirmaciones: list = field(default_factory=list)
     # interno para los gráficos (no se exporta)
@@ -185,10 +186,15 @@ def _estructura(df: pd.DataFrame, top: int, cfg: dict):
 
 # --------------------------------------------------------------------- evaluación
 def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", grupo="",
-            df_superior: pd.DataFrame | None = None, df_mensual: pd.DataFrame | None = None) -> Resultado:
+            df_superior: pd.DataFrame | None = None, df_mensual: pd.DataFrame | None = None,
+            precalculado: bool = False, macd_sup: float | None = None,
+            macd_men_alc: bool | None = None) -> Resultado:
+    """Evalúa el último día de `df_raw`.
+    Para el backtest se pasa `precalculado=True` (df ya con indicadores) y los valores
+    del MACD semanal/mensual ya calculados, así no se recalcula todo cada día."""
     ctx, al, est, tr, dp = cfg["contexto"], cfg["alerta"], cfg["estructura"], cfg["trampa"], cfg["disparo"]
     res = Resultado(ticker=ticker, nombre=nombre, grupo=grupo, marco=marco)
-    df = ind.add_all(df_raw)
+    df = df_raw if precalculado else ind.add_all(df_raw)
     n = len(df)
     if n < 120:
         res.motivo = "histórico insuficiente"
@@ -202,10 +208,13 @@ def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", 
         setattr(res, k, float(last[k]))
 
     # ---------- 1. CONTEXTO
-    sup = ind.add_all(df_superior) if df_superior is not None and len(df_superior) > 35 else None
-    if sup is not None:
-        res.macd_superior = float(sup["macd"].iloc[-1])
-    if df_mensual is not None and len(df_mensual) > 35:
+    if macd_sup is not None:
+        res.macd_superior = float(macd_sup)
+    elif df_superior is not None and len(df_superior) > 35:
+        res.macd_superior = float(ind.add_all(df_superior)["macd"].iloc[-1])
+    if macd_men_alc is not None:
+        res.macd_mensual_alcista = bool(macd_men_alc)
+    elif df_mensual is not None and len(df_mensual) > 35:
         m = ind.add_all(df_mensual)
         res.macd_mensual_alcista = bool(m["macd"].iloc[-1] > m["macd_sig"].iloc[-1])
 
@@ -325,6 +334,7 @@ def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", 
              and not np.isnan(t["vrel"]) and t["vrel"] >= tr["volumen_manos_fuertes"])
     rup_ok = t is not None and rup is not None and today - rup["t"] < dp["sesiones_ruptura_reciente"]
     tipo_disparo = ""
+    degradada = False
     if rup_ok or recup:
         p = plan(float(last.Close), t["min_barrida"])
         estado = "SENAL"
@@ -361,20 +371,21 @@ def evaluar(df_raw: pd.DataFrame, ticker: str, cfg: dict, marco="D", nombre="", 
     if res.rr < dp["rr_minimo"]:
         res.avisos.append(f"R/R {res.rr:.1f} < {dp['rr_minimo']:.0f}: no cumple, esperar mejor precio")
         if estado == "SENAL":
-            estado, tipo_disparo = "TRAMPA", "degradada"   # señal técnica sin R/R: no se compra
+            estado, degradada = "TRAMPA", True   # señal técnica sin R/R: no se compra
     if res.riesgo_pct > dp["riesgo_max_pct"]:
         res.avisos.append(f"stop muy lejano ({res.riesgo_pct:.1f} %)")
         if estado == "SENAL":
-            estado, tipo_disparo = "TRAMPA", "degradada"
+            estado, degradada = "TRAMPA", True
     if 1.618 <= e["ratio_t"] <= 2.618:
         conf.append(f"duración de la corrección en zona Fibonacci ({e['ratio_t']:.2f}x)")
     if e["ratio_t"] > 2.0:
         res.avisos.append("corrección ya larga: vigilar agotamiento")
 
     res.estado = estado
+    res.disparo = tipo_disparo + (" (sin R/R)" if degradada else "")
     res.motivo = {"SENAL": f"trampa + {tipo_disparo}",
                   "TRAMPA": ("disparo técnico producido pero sin R/R o stop válido: esperar retroceso"
-                             if tipo_disparo == "degradada" else "trampa hecha, falta ruptura de directriz"),
+                             if degradada else "trampa hecha, falta ruptura de directriz"),
                   "VIGILANCIA": "contexto alcista y corrección madura, sin trampa aún"}[estado]
     res.puntuacion = _puntuar(res, e, adx_max)
     return res
