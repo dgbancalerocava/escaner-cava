@@ -1,0 +1,28 @@
+{
+ "global": {
+  "fija": {
+   "n": 0
+  },
+  "gestionada": {
+   "n": 0
+  },
+  "seguimiento": {
+   "n": 0
+  },
+  "abiertas": 0,
+  "anuladas": 0,
+  "pendientes": 32
+ },
+ "grupos": {
+  "Mercado": {},
+  "Marco": {},
+  "Disparo": {},
+  "Puntuación": {},
+  "Volumen en la trampa": {},
+  "Año": {},
+  "Selección diaria": {},
+  "Calidad": {},
+  "Filtro R/R": {}
+ },
+ "abiertas_detalle": []
+}
