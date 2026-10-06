@@ -56,3 +56,22 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-05,IWM,Russell 2000,etfs,D,recuperación del nivel barrido con volumen,True,283.38,274.5376,304.385,331.5554,5.45,69.2,True,4,2026-08-14,False,,3
 2026-10-05,EWP,España,etfs,D,recuperación del nivel barrido con volumen,True,58.57,57.3556,63.44,67.2301,7.13,64.0,True,3,2026-08-26,False,,3
 2026-10-05,EUFN,Bancos europeos,etfs,D,recuperación del nivel barrido con volumen,True,39.16,38.3224,43.07,46.0212,8.19,69.0,True,3,2026-09-03,False,,3
+2026-10-06,CVX,Chevron Corporation,sp500,D,ruptura de directriz,True,207.58,200.9228,217.78,255.2056,7.15,51.0,False,2,2026-09-15,False,,1
+2026-10-06,CIEN,Ciena,sp500,W,ruptura de directriz (sin R/R),False,443.65,295.919,637.51,899.9,3.09,57.4,True,4,2026-06-05,False,,1
+2026-10-06,KO,Coca-Cola Company (The),sp500,D,recuperación del nivel barrido con volumen,True,86.17,84.824,91.9414,103.439,12.83,54.0,True,3,2026-08-24,False,,3
+2026-10-06,CEG,Constellation Energy,sp500/nasdaq100,W,ruptura de directriz (sin R/R),False,300.4,221.3606,410.4058,526.2746,2.86,22.3,False,1,2025-10-17,False,,1
+2026-10-06,DELL,Dell Technologies,sp500,D,ruptura de directriz,True,574.0,513.0406,595.51,888.7949,5.16,33.8,False,1,2026-09-18,False,,1
+2026-10-06,EME,Emcor,sp500,W,ruptura de directriz (sin R/R),False,824.52,654.1727,951.4685,1300.3869,2.79,35.0,True,2,2026-05-08,False,,1
+2026-10-06,HST,Host Hotels & Resorts,sp500,D,ruptura de directriz,True,22.48,21.2341,25.4809,29.3083,5.48,45.4,False,1,2026-07-30,False,,1
+2026-10-06,JBL,Jabil,sp500,W,recuperación del nivel barrido con volumen,True,309.19,276.4003,428.8373,604.7845,9.01,64.0,True,3,2026-06-19,False,,2
+2026-10-06,LIN,Linde plc,sp500/nasdaq100,W,ruptura de directriz,True,489.95,448.9976,546.4006,616.5917,3.09,41.5,False,2,2026-07-10,False,,1
+2026-10-06,ROST,Ross Stores,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,224.21,220.4777,256.5043,272.7465,13.0,54.0,True,3,2026-08-03,False,,3
+2026-10-06,TGT,Target Corporation,sp500,D,recuperación del nivel barrido con volumen,True,154.33,149.7323,170.75,205.7393,11.18,51.0,True,2,2026-08-24,False,,3
+2026-10-06,V,Visa Inc.,sp500,D,ruptura de directriz,True,370.64,355.2637,385.57,439.0134,4.45,51.2,False,3,2026-08-26,False,,1
+2026-10-06,VST,Vistra Corp.,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,160.5,129.7966,218.5504,313.7825,4.99,46.0,True,2,2025-09-26,False,,2
+2026-10-06,ZBRA,Zebra Technologies,sp500,D,ruptura de directriz (sin R/R),False,385.78,335.9638,386.23,522.86,2.75,16.8,False,1,2026-08-12,False,,2
+2026-10-06,GRF.MC,Grifols,ibex35,D,ruptura de directriz (sin R/R),False,9.884,9.1748,10.805,11.6822,2.54,23.7,False,2,2026-07-29,False,,1
+2026-10-06,PUIG.MC,Puig,ibex35,D,ruptura de directriz (sin R/R),False,18.27,16.5964,18.66,20.7516,1.48,17.4,False,0,2026-09-01,False,,1
+2026-10-06,SAB.MC,Banco Sabadell,ibex35,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,3.657,3.3763,3.77,4.379,2.57,44.9,True,4,2026-09-28,False,,0
+2026-10-06,UNI.MC,Unicaja,ibex35,D,recuperación del nivel barrido con volumen,True,3.396,3.2859,3.646,4.3121,8.32,67.0,True,4,2026-09-22,False,,1
+2026-10-06,EWP,España,etfs,W,recuperación del nivel barrido con volumen,True,58.84,57.5957,63.44,91.6944,26.4,51.0,True,2,2026-08-28,True,,4

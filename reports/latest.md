@@ -1,167 +1,208 @@
-# Escáner método Cava · 2026-10-05
+# Escáner método Cava · 2026-10-06
 
-Analizados: 609 · Señales: 30 · Trampas: 30 · Vigilancia: 25
+Analizados: 609 · Señales: 26 · Trampas: 30 · Vigilancia: 25
 
 ## Mercado
 | Índice | Cierre | MACD sem. | MACD mens. alcista | Sobre SMA200 | Filtro mercado | Estado |
 |---|---|---|---|---|---|---|
-| S&P 500 | 7.773,95 | 174,61 | sí | sí | a favor | sin fuerza de tendencia (ADX máx 19) |
-| Nasdaq 100 | 31.076,44 | 944,77 | sí | sí | – | en máximos / tramo en marcha (esperar corrección) |
-| IBEX 35 | 19.299,70 | 435,21 | sí | sí | a favor | Trampa hecha · esperando ruptura |
-| Euro Stoxx 50 | 6.242,14 | 90,35 | sí | sí | a favor | Señal activada |
-| DAX | 25.254,21 | 276,20 | no | sí | – | Trampa hecha · esperando ruptura |
+| S&P 500 | 7.818,93 | 178,20 | sí | sí | a favor | en máximos / tramo en marcha (esperar corrección) |
+| Nasdaq 100 | 31.224,47 | 956,58 | sí | sí | – | en máximos / tramo en marcha (esperar corrección) |
+| IBEX 35 | 19.444,20 | 446,74 | sí | sí | a favor | Trampa hecha · esperando ruptura |
+| Euro Stoxx 50 | 6.272,23 | 92,75 | sí | sí | a favor | Señal activada |
+| DAX | 25.449,19 | 291,75 | no | sí | – | Señal activada |
 
-## Señal activada (30)
+## Señal activada (26)
 
 | Valor | Marco | Cierre | Entrada | Stop | Riesgo % | Obj1 | Obj2 | R/R | Calidad | Notas |
 |---|---|---|---|---|---|---|---|---|---|---|
-| HSIC (Henry Schein) | D | 84,23 | 84,23 | 82,97 | 1,5 | 92,18 | 106,78 | 17,9 | ★★★ | R/R alto; corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.6x (manos fuertes) |
-| CABK.MC (CaixaBank) | W | 12,22 | 12,22 | 11,57 | 5,3 | 13,56 | 20,72 | 13,1 | ★★★ | R/R alto; corrección poco profunda; escape falso puro; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes) |
-| EUFN (Bancos europeos) | D | 39,16 | 39,16 | 38,32 | 2,1 | 43,07 | 46,02 | 8,2 | ★★★ | corrección madura en tiempo; escape falso puro; ETF; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 2.9x (manos fuertes) |
-| EWP (España) | D | 58,57 | 58,57 | 57,36 | 2,1 | 63,44 | 67,23 | 7,1 | ★★★ | corrección madura en tiempo; escape falso puro; ETF; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.6x (manos fuertes); recuperó el nivel el 2026-10-02 |
-| IWM (Russell 2000) | D | 283,38 | 283,38 | 274,54 | 3,1 | 304,39 | 331,56 | 5,4 | ★★★ | corrección madura en tiempo; escape falso puro; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| UNH (UnitedHealth Group) | D | 378,58 | 378,58 | 360,40 | 4,8 | 458,79 | 568,44 | 10,4 | ★★ | R/R alto; corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| BNY (BNY Mellon) | D | 143,75 | 143,75 | 140,18 | 2,5 | 165,84 | 177,11 | 9,4 | ★★ | corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.6x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| NTRS (Northern Trust) | D | 170,67 | 170,67 | 165,23 | 3,2 | 194,86 | 220,34 | 9,1 | ★★ | corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes); recuperó el nivel el 2026-10-02 |
-| USB (U.S. Bancorp) | D | 57,27 | 57,27 | 55,77 | 2,6 | 65,47 | 70,10 | 8,5 | ★★ | corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| BEN (Franklin Resources) | D | 32,88 | 32,88 | 31,37 | 4,6 | 35,91 | 45,66 | 8,4 | ★★ | corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| BKT.MC (Bankinter) | D | 15,73 | 15,73 | 15,29 | 2,8 | 17,02 | 19,15 | 7,8 | ★★ | corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.7x (manos fuertes); recuperó el nivel el 2026-10-02 |
-| MAP.MC (Mapfre) | D | 4,26 | 4,26 | 4,12 | 3,4 | 4,62 | 5,29 | 7,2 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.4x (manos fuertes) |
-| BRK-B (Berkshire Hathaway) | D | 504,26 | 504,26 | 494,54 | 1,9 | 537,74 | 569,41 | 6,7 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.5x (manos fuertes); recuperó el nivel el 2026-10-02 |
-| MA (Mastercard) | D | 564,59 | 564,59 | 542,99 | 3,8 | 601,23 | 682,90 | 5,5 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.9x (manos fuertes) |
-| KDP (Keurig Dr Pepper) | D | 30,89 | 30,89 | 29,85 | 3,4 | 32,93 | 35,55 | 4,5 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.7x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| CHD (Church & Dwight) | D | 95,66 | 95,66 | 92,93 | 2,9 | 103,99 | 107,55 | 4,4 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| ECL (Ecolab) | D | 277,07 | 277,07 | 266,11 | 4,0 | 294,55 | 320,16 | 3,9 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; barrida con volumen 1.4x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| COP (ConocoPhillips) | D | 128,40 | 128,40 | 123,42 | 3,9 | 141,62 | 163,07 | 7,0 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| CPAY (Corpay) | D | 401,72 | 401,72 | 384,90 | 4,2 | 427,46 | 515,23 | 6,7 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| CABK.MC (CaixaBank) | D | 12,22 | 12,22 | 11,65 | 4,6 | 13,56 | 14,81 | 4,6 | ★ | escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.7x (manos fuertes) |
-| MAR (Marriott International) | W | 355,89 | 355,89 | 316,82 | 11,0 | 410,15 | 528,39 | 4,4 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-09-25; la ruptura fue el 2026-10-02 |
-| PSX (Phillips 66) | D | 269,72 | 269,72 | 246,31 | 8,7 | 277,12 | 362,40 | 4,0 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| FDS (FactSet) | D | 276,44 | 276,44 | 248,98 | 9,9 | 320,48 | 376,23 | 3,6 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes); ruptura con volumen 1.5x; la ruptura fue el 2026-10-01 |
-| OXY (Occidental Petroleum) | D | 58,31 | 58,31 | 54,36 | 6,8 | 63,77 | 70,98 | 3,2 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| PH (Parker Hannifin) | D | 975,68 | 975,68 | 906,16 | 7,1 | 1.097,73 | 1.195,77 | 3,2 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; barrida con volumen 1.7x (manos fuertes); la ruptura fue el 2026-10-02 |
-| XOM (ExxonMobil) | D | 164,00 | 164,00 | 154,97 | 5,5 | 169,64 | 191,41 | 3,0 | ★ | corrección madura en tiempo; MACD mensual alcista; la ruptura fue el 2026-10-02 |
-| EXPD (Expeditors International) | D | 194,12 | 194,12 | 182,34 | 6,1 | 194,59 | 229,57 | 3,0 | ★ | corrección poco profunda; estocástico rápido cruza al alza; MACD mensual alcista; ruptura con volumen 1.4x |
-| DSY.PA (Dassault Systèmes) | D | 21,40 | 21,40 | 19,78 | 7,6 | 23,18 | 26,28 | 3,0 | ★ | corrección madura en tiempo; escape falso puro; Europa tech (resta); RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-10-01 |
-| DGX (Quest Diagnostics) | D | 232,22 | 232,22 | 225,91 | 2,7 | 248,84 | 290,40 | 9,2 | 0 | MACD mensual alcista; barrida con volumen 2.5x (manos fuertes) |
-| ELE.MC (Endesa) | D | 42,10 | 42,10 | 41,12 | 2,3 | 43,80 | 50,12 | 8,2 | 0 | RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| ⭐ EWP (España) | W | 58,84 | 58,84 | 57,60 | 2,1 | 63,44 | 91,69 | 26,4 | ★★★★ | R/R alto; corrección poco profunda; escape falso puro; ETF; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes) |
+| ROST (Ross Stores) | D | 224,21 | 224,21 | 220,48 | 1,7 | 256,50 | 272,75 | 13,0 | ★★★ | R/R alto; corrección madura en tiempo; escape falso puro; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); duración de la corrección en zona Fibonacci (1.96x) |
+| KO (Coca-Cola Company (The)) | D | 86,17 | 86,17 | 84,82 | 1,6 | 91,94 | 103,44 | 12,8 | ★★★ | R/R alto; corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-10-05 |
+| HSIC (Henry Schein) | D | 84,84 | 84,84 | 82,96 | 2,2 | 92,18 | 106,78 | 11,7 | ★★★ | R/R alto; corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.6x (manos fuertes); recuperó el nivel el 2026-10-05 |
+| TGT (Target Corporation) | D | 154,33 | 154,33 | 149,73 | 3,0 | 170,75 | 205,74 | 11,2 | ★★★ | R/R alto; corrección madura en tiempo; escape falso puro; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes) |
+| CABK.MC (CaixaBank) | W | 12,36 | 12,36 | 11,57 | 6,4 | 13,56 | 20,72 | 10,5 | ★★★ | R/R alto; corrección poco profunda; escape falso puro; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes) |
+| EUFN (Bancos europeos) | D | 39,46 | 39,46 | 38,32 | 2,9 | 43,07 | 46,02 | 5,8 | ★★★ | corrección madura en tiempo; escape falso puro; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 2.9x (manos fuertes); recuperó el nivel el 2026-10-05 |
+| EWP (España) | D | 58,84 | 58,84 | 57,36 | 2,5 | 63,44 | 67,23 | 5,7 | ★★★ | corrección madura en tiempo; escape falso puro; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 5.1x (manos fuertes) |
+| DGX (Quest Diagnostics) | D | 228,39 | 228,39 | 224,43 | 1,7 | 248,84 | 288,94 | 15,3 | ★★ | R/R alto; escape falso puro; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes) |
+| JBL (Jabil) | W | 309,19 | 309,19 | 276,40 | 10,6 | 428,84 | 604,78 | 9,0 | ★★ | corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 2.0x (manos fuertes); recuperó el nivel el 2026-10-02 |
+| BKT.MC (Bankinter) | D | 15,84 | 15,84 | 15,29 | 3,4 | 17,02 | 19,15 | 6,1 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.7x (manos fuertes); recuperó el nivel el 2026-10-02 |
+| MAP.MC (Mapfre) | D | 4,29 | 4,29 | 4,12 | 4,0 | 4,62 | 5,29 | 5,8 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.4x (manos fuertes); recuperó el nivel el 2026-10-05 |
+| BRK-B (Berkshire Hathaway) | D | 505,54 | 505,54 | 494,56 | 2,2 | 537,74 | 569,41 | 5,8 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.5x (manos fuertes); recuperó el nivel el 2026-10-02 |
+| MA (Mastercard) | D | 566,58 | 566,58 | 543,04 | 4,2 | 601,23 | 682,90 | 4,9 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.9x (manos fuertes); recuperó el nivel el 2026-10-05 |
+| CABK.MC (CaixaBank) | D | 12,36 | 12,36 | 11,65 | 5,7 | 13,56 | 14,81 | 3,5 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.7x (manos fuertes); recuperó el nivel el 2026-10-05 |
+| UNI.MC (Unicaja) | D | 3,40 | 3,40 | 3,29 | 3,2 | 3,65 | 4,31 | 8,3 | ★ | escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.8x (manos fuertes) |
+| CVX (Chevron Corporation) | D | 207,58 | 207,58 | 200,92 | 3,2 | 217,78 | 255,21 | 7,2 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
+| COP (ConocoPhillips) | D | 129,35 | 129,35 | 123,44 | 4,6 | 141,62 | 163,07 | 5,7 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| HST (Host Hotels & Resorts) | D | 22,48 | 22,48 | 21,23 | 5,5 | 25,48 | 29,31 | 5,5 | ★ | corrección madura en tiempo; MACD mensual alcista; la ruptura fue el 2026-10-02 |
+| DELL (Dell Technologies) | D | 574,00 | 574,00 | 513,04 | 10,6 | 595,51 | 888,79 | 5,2 | ★ | corrección poco profunda; MACD mensual alcista |
+| CPAY (Corpay) | D | 406,79 | 406,79 | 384,95 | 5,4 | 427,46 | 515,23 | 5,0 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| V (Visa Inc.) | D | 370,64 | 370,64 | 355,26 | 4,1 | 385,57 | 439,01 | 4,4 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| PSX (Phillips 66) | D | 269,79 | 269,79 | 246,37 | 8,7 | 277,12 | 362,40 | 4,0 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; la ruptura fue el 2026-10-05 |
+| OXY (Occidental Petroleum) | D | 58,33 | 58,33 | 54,37 | 6,8 | 63,77 | 70,98 | 3,2 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); la ruptura fue el 2026-10-05 |
+| LIN (Linde plc) | W | 489,95 | 489,95 | 449,00 | 8,4 | 546,40 | 616,59 | 3,1 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
+| DE (Deere & Company) | D | 682,79 | 682,79 | 639,79 | 6,3 | 719,50 | 850,97 | 3,9 | 0 | RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; la ruptura fue el 2026-10-02 |
 
 ## Trampa hecha · esperando ruptura (30)
 
 | Valor | Marco | Cierre | Entrada | Stop | Riesgo % | Obj1 | Obj2 | R/R | Calidad | Notas |
 |---|---|---|---|---|---|---|---|---|---|---|
-| WDC (Western Digital) | W | 441,64 | 441,64 | 377,46 | 14,5 | 799,61 | 1.167,49 | 11,3 | ★★★ | R/R alto; corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-10-02; stop muy lejano (14.5 %) |
-| EWP (España) | W | 58,57 | 60,68 | 57,63 | 5,0 | 63,44 | 91,69 | 10,2 | ★★★ | R/R alto; corrección poco profunda; ETF; MACD mensual alcista |
-| QQQ (Nasdaq 100) | W | 756,20 | 756,20 | 654,17 | 13,5 | 747,05 | 1.007,91 | 2,5 | ★★★ | corrección poco profunda; corrección madura en tiempo; ETF; MACD mensual alcista; la ruptura fue el 2026-10-02; R/R 2.5 < 3: no cumple, esperar mejor precio; stop muy lejano (13.5 %) |
-| SPG (Simon Property Group) | D | 201,40 | 202,74 | 199,03 | 1,8 | 235,97 | 260,30 | 15,5 | ★★ | R/R alto; corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| MET (MetLife) | D | 96,88 | 97,95 | 91,73 | 6,4 | 100,93 | 126,73 | 4,6 | ★★ | corrección poco profunda; corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| C (Citigroup) | W | 128,55 | 144,34 | 121,71 | 15,7 | 147,21 | 217,21 | 3,2 | ★★ | corrección poco profunda; corrección madura en tiempo; MACD mensual alcista; stop muy lejano (15.7 %) |
-| XLF (Financiero EEUU) | D | 53,88 | 54,63 | 52,63 | 3,7 | 58,39 | 61,04 | 3,2 | ★★ | corrección madura en tiempo; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
+| QQQ (Nasdaq 100) | W | 759,66 | 759,66 | 654,06 | 13,9 | 747,05 | 1.007,91 | 2,4 | ★★★ | corrección poco profunda; corrección madura en tiempo; ETF; MACD mensual alcista; la ruptura fue el 2026-10-02; R/R 2.4 < 3: no cumple, esperar mejor precio; stop muy lejano (13.9 %) |
+| AMCR (Amcor) | D | 41,77 | 42,04 | 41,36 | 1,6 | 48,25 | 54,06 | 17,8 | ★★ | R/R alto; corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
+| SPG (Simon Property Group) | D | 201,74 | 202,64 | 199,02 | 1,8 | 235,97 | 260,30 | 15,9 | ★★ | R/R alto; corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| UNH (UnitedHealth Group) | D | 376,32 | 379,03 | 360,43 | 4,9 | 458,79 | 568,44 | 10,2 | ★★ | R/R alto; corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| WELL (Welltower) | W | 225,78 | 232,35 | 219,51 | 5,5 | 254,24 | 356,76 | 9,7 | ★★ | R/R alto; corrección poco profunda; MACD mensual alcista |
+| VST (Vistra Corp.) | W | 160,50 | 160,50 | 129,80 | 19,1 | 218,55 | 313,78 | 5,0 | ★★ | corrección madura en tiempo; escape falso puro; estocástico rápido cruza al alza; barrida con volumen 1.5x (manos fuertes); recuperó el nivel el 2026-10-02; stop muy lejano (19.1 %) |
+| MET (MetLife) | D | 97,16 | 99,02 | 91,73 | 7,4 | 100,93 | 126,73 | 3,8 | ★★ | corrección poco profunda; corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| IWM (Russell 2000) | D | 281,34 | 286,71 | 274,53 | 4,2 | 304,39 | 331,56 | 3,7 | ★★ | corrección madura en tiempo; ETF; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes) |
+| XLF (Financiero EEUU) | D | 54,01 | 54,46 | 52,64 | 3,3 | 58,39 | 61,04 | 3,6 | ★★ | corrección madura en tiempo; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
+| C (Citigroup) | W | 128,52 | 144,34 | 121,70 | 15,7 | 147,21 | 217,21 | 3,2 | ★★ | corrección poco profunda; corrección madura en tiempo; MACD mensual alcista; stop muy lejano (15.7 %) |
 | WBD (Warner Bros. Discovery) | W | 30,95 | 30,95 | 25,00 | 19,2 | 30,00 | 48,61 | 3,0 | ★★ | corrección poco profunda; corrección madura en tiempo; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); ruptura con volumen 4.3x; la ruptura fue el 2026-09-25; R/R 3.0 < 3: no cumple, esperar mejor precio; stop muy lejano (19.2 %) |
-| PGR (Progressive Corporation) | W | 212,62 | 212,62 | 198,11 | 6,8 | 239,26 | 252,44 | 2,7 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-09-25; R/R 2.7 < 3: no cumple, esperar mejor precio |
-| SOLV (Solventum) | D | 88,03 | 93,68 | 85,79 | 8,4 | 94,16 | 114,98 | 2,7 | ★★ | corrección poco profunda; corrección madura en tiempo; R/R 2.7 < 3: no cumple, esperar mejor precio |
-| XLE (Energía EEUU) | D | 63,45 | 65,48 | 60,73 | 7,3 | 65,78 | 74,42 | 1,9 | ★★ | corrección madura en tiempo; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.9 < 3: no cumple, esperar mejor precio |
-| COPX (Mineras de cobre) | D | 86,33 | 93,54 | 81,94 | 12,4 | 97,59 | 109,12 | 1,3 | ★★ | corrección madura en tiempo; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.3 < 3: no cumple, esperar mejor precio; stop muy lejano (12.4 %) |
-| AMCR (Amcor) | D | 41,80 | 42,09 | 40,73 | 3,2 | 48,25 | 54,06 | 8,8 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
-| CVX (Chevron Corporation) | D | 206,47 | 206,48 | 200,92 | 2,7 | 217,78 | 255,21 | 8,8 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
-| WDAY (Workday, Inc.) | D | 188,96 | 192,95 | 180,69 | 6,4 | 227,49 | 298,60 | 8,6 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista |
-| TROW (T. Rowe Price) | D | 103,93 | 106,44 | 101,79 | 4,4 | 120,50 | 138,78 | 7,0 | ★ | corrección madura en tiempo; MACD mensual alcista |
-| TRV (Travelers Companies (The)) | W | 360,70 | 376,36 | 353,90 | 6,0 | 397,34 | 527,12 | 6,7 | ★ | corrección poco profunda; MACD mensual alcista |
-| DELL (Dell Technologies) | D | 552,29 | 562,50 | 513,16 | 8,8 | 595,51 | 888,79 | 6,6 | ★ | corrección poco profunda; MACD mensual alcista |
-| LH (Labcorp) | D | 308,65 | 313,53 | 300,97 | 4,0 | 341,07 | 396,40 | 6,6 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| ALLE (Allegion) | D | 153,67 | 156,64 | 150,32 | 4,0 | 170,27 | 196,38 | 6,3 | ★ | corrección madura en tiempo |
-| CVS (CVS Health) | D | 87,01 | 90,10 | 83,70 | 7,1 | 110,00 | 125,75 | 5,6 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| MET (MetLife) | W | 96,88 | 97,39 | 91,21 | 6,3 | 100,93 | 130,68 | 5,4 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; MACD mensual alcista |
-| IBKR (Interactive Brokers) | W | 89,05 | 92,65 | 82,03 | 11,5 | 98,66 | 149,67 | 5,4 | ★ | corrección poco profunda; MACD mensual alcista |
-| V (Visa Inc.) | D | 369,71 | 369,89 | 355,22 | 4,0 | 385,57 | 439,01 | 4,7 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| MAP.MC (Mapfre) | W | 4,26 | 4,54 | 4,09 | 9,8 | 4,62 | 6,57 | 4,5 | ★ | corrección poco profunda |
-| NUE (Nucor) | W | 251,41 | 259,44 | 224,96 | 13,3 | 279,45 | 412,98 | 4,5 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; MACD mensual alcista; stop muy lejano (13.3 %) |
-| HST (Host Hotels & Resorts) | D | 22,44 | 22,72 | 21,23 | 6,6 | 25,48 | 29,31 | 4,4 | ★ | corrección madura en tiempo; MACD mensual alcista |
-| KO (Coca-Cola Company (The)) | D | 86,51 | 88,42 | 84,82 | 4,1 | 91,94 | 103,44 | 4,2 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| GOOG (Alphabet Inc. (Class C)) | W | 343,83 | 361,20 | 309,50 | 14,3 | 403,96 | 576,66 | 4,2 | ★ | corrección madura en tiempo; MACD mensual alcista; stop muy lejano (14.3 %) |
-| GOOGL (Alphabet Inc. (Class A)) | W | 346,47 | 362,53 | 309,38 | 14,7 | 408,10 | 582,93 | 4,1 | ★ | corrección madura en tiempo; MACD mensual alcista; stop muy lejano (14.7 %) |
+| PGR (Progressive Corporation) | W | 212,05 | 212,05 | 198,09 | 6,6 | 239,26 | 252,44 | 2,9 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-09-25; R/R 2.9 < 3: no cumple, esperar mejor precio |
+| ZBRA (Zebra Technologies) | D | 385,78 | 385,78 | 335,96 | 12,9 | 386,23 | 522,86 | 2,8 | ★★ | corrección poco profunda; corrección madura en tiempo; MACD mensual alcista; R/R 2.8 < 3: no cumple, esperar mejor precio; stop muy lejano (12.9 %) |
+| SOLV (Solventum) | D | 87,04 | 93,66 | 85,79 | 8,4 | 94,16 | 114,98 | 2,7 | ★★ | corrección poco profunda; corrección madura en tiempo; R/R 2.7 < 3: no cumple, esperar mejor precio |
+| XLE (Energía EEUU) | D | 63,75 | 65,46 | 60,73 | 7,2 | 65,78 | 74,42 | 1,9 | ★★ | corrección madura en tiempo; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.9 < 3: no cumple, esperar mejor precio |
+| COPX (Mineras de cobre) | D | 86,28 | 93,39 | 81,94 | 12,3 | 97,59 | 109,12 | 1,4 | ★★ | corrección madura en tiempo; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.4 < 3: no cumple, esperar mejor precio; stop muy lejano (12.3 %) |
+| WDAY (Workday, Inc.) | D | 186,55 | 192,02 | 180,73 | 5,9 | 227,49 | 298,60 | 9,4 | ★ | corrección madura en tiempo; MACD mensual alcista |
+| EXPE (Expedia Group) | D | 260,07 | 264,21 | 250,28 | 5,3 | 341,51 | 389,05 | 9,0 | ★ | corrección madura en tiempo; MACD mensual alcista |
+| TROW (T. Rowe Price) | D | 103,60 | 106,15 | 101,80 | 4,1 | 120,50 | 138,78 | 7,5 | ★ | corrección madura en tiempo; MACD mensual alcista |
+| LH (Labcorp) | D | 311,71 | 312,51 | 300,95 | 3,7 | 341,07 | 396,40 | 7,3 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| ALLE (Allegion) | D | 155,20 | 156,30 | 150,34 | 3,8 | 170,27 | 196,38 | 6,7 | ★ | corrección madura en tiempo |
+| TRV (Travelers Companies (The)) | W | 360,64 | 376,36 | 353,88 | 6,0 | 397,34 | 527,12 | 6,7 | ★ | corrección poco profunda; MACD mensual alcista |
+| BEN (Franklin Resources) | D | 32,44 | 33,58 | 31,37 | 6,6 | 35,91 | 45,66 | 5,5 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes) |
+| IBKR (Interactive Brokers) | W | 90,58 | 92,65 | 81,99 | 11,5 | 98,66 | 149,67 | 5,4 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; MACD mensual alcista |
+| HLT (Hilton Worldwide) | W | 322,61 | 322,61 | 296,43 | 8,1 | 357,84 | 462,41 | 5,3 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
+| MAP.MC (Mapfre) | W | 4,29 | 4,54 | 4,09 | 9,9 | 4,62 | 6,57 | 4,5 | ★ | corrección poco profunda |
+| NUE (Nucor) | W | 251,07 | 259,44 | 224,96 | 13,3 | 279,45 | 412,98 | 4,5 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; MACD mensual alcista; stop muy lejano (13.3 %) |
+| VRTX (Vertex Pharmaceuticals) | D | 502,31 | 521,24 | 493,38 | 5,3 | 560,25 | 644,13 | 4,4 | ★ | corrección madura en tiempo; MACD mensual alcista |
+| GOOG (Alphabet Inc. (Class C)) | W | 344,59 | 361,20 | 309,49 | 14,3 | 403,96 | 576,66 | 4,2 | ★ | corrección madura en tiempo; MACD mensual alcista; stop muy lejano (14.3 %) |
+| MET (MetLife) | W | 97,16 | 98,85 | 91,18 | 7,8 | 100,93 | 130,68 | 4,1 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; MACD mensual alcista |
 
 ## En vigilancia (25)
 
 | Valor | Marco | Cierre | Entrada | Stop | Riesgo % | Obj1 | Obj2 | R/R | Calidad | Notas |
 |---|---|---|---|---|---|---|---|---|---|---|
-| DVA (DaVita) | D | 178,72 | 178,72 | 170,13 | 4,8 | 247,49 | 275,82 | 11,3 | ★★ | R/R alto; corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
-| QCOM (Qualcomm) | D | 180,79 | 182,19 | 178,28 | 2,1 | 205,85 | 244,04 | 15,8 | ★ | R/R alto; MACD mensual alcista |
-| SJM (J.M. Smucker Company (The)) | D | 116,23 | 119,87 | 114,40 | 4,6 | 135,89 | 158,63 | 7,1 | ★ | corrección madura en tiempo; MACD mensual alcista |
-| BAX (Baxter International) | D | 24,22 | 24,22 | 22,38 | 7,6 | 29,99 | 36,83 | 6,8 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
-| MSI (Motorola Solutions) | D | 455,37 | 456,61 | 441,56 | 3,3 | 493,57 | 558,12 | 6,7 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
-| NWS (News Corp (Class B)) | D | 32,00 | 32,00 | 30,89 | 3,5 | 35,65 | 39,04 | 6,3 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza |
-| CTAS (Cintas) | D | 195,40 | 199,25 | 190,11 | 4,6 | 218,60 | 249,39 | 5,5 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa |
-| APA (APA Corporation) | D | 43,85 | 44,23 | 40,84 | 7,7 | 47,44 | 57,12 | 3,8 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| AIZ (Assurant) | D | 266,41 | 279,66 | 259,28 | 7,3 | 303,00 | 352,90 | 3,6 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
-| NWSA (News Corp (Class A)) | D | 28,95 | 29,66 | 27,80 | 6,2 | 31,55 | 35,27 | 3,0 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
-| NEM (Newmont) | D | 115,82 | 124,45 | 112,63 | 9,5 | 135,01 | 160,02 | 3,0 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| LOG.MC (Logista) | D | 34,38 | 35,94 | 33,88 | 5,7 | 37,15 | 41,71 | 2,8 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.8 < 3: no cumple, esperar mejor precio |
-| DOC (Healthpeak Properties) | D | 18,84 | 20,78 | 18,69 | 10,1 | 22,72 | 26,20 | 2,6 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 2.6 < 3: no cumple, esperar mejor precio |
-| SCHW (Charles Schwab Corporation) | D | 97,96 | 104,59 | 95,78 | 8,4 | 114,53 | 127,13 | 2,6 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; R/R 2.6 < 3: no cumple, esperar mejor precio |
-| CSX (CSX Corporation) | D | 47,43 | 50,17 | 45,57 | 9,2 | 53,45 | 61,58 | 2,5 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.5 < 3: no cumple, esperar mejor precio |
-| IDR.MC (Indra) | D | 59,72 | 62,30 | 55,92 | 10,2 | 66,00 | 76,50 | 2,2 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.2 < 3: no cumple, esperar mejor precio |
-| HAS (Hasbro) | D | 92,38 | 92,38 | 84,78 | 8,2 | 98,20 | 108,94 | 2,2 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.2 < 3: no cumple, esperar mejor precio |
-| JNJ (Johnson & Johnson) | D | 252,93 | 272,12 | 251,27 | 7,7 | 281,07 | 315,57 | 2,1 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 2.1 < 3: no cumple, esperar mejor precio |
-| FCX (Freeport-McMoRan) | D | 72,60 | 74,64 | 66,32 | 11,1 | 80,24 | 91,89 | 2,1 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; R/R 2.1 < 3: no cumple, esperar mejor precio |
-| MDT (Medtronic) | D | 87,97 | 92,76 | 84,70 | 8,7 | 94,63 | 107,79 | 1,9 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; R/R 1.9 < 3: no cumple, esperar mejor precio |
-| INCY (Incyte) | D | 114,13 | 128,19 | 112,03 | 12,6 | 132,60 | 156,21 | 1,7 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 1.7 < 3: no cumple, esperar mejor precio; stop muy lejano (12.6 %) |
-| MCK (McKesson Corporation) | D | 915,45 | 923,30 | 841,24 | 8,9 | 929,95 | 1.055,13 | 1,6 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; R/R 1.6 < 3: no cumple, esperar mejor precio |
-| TXN (Texas Instruments) | D | 294,90 | 296,58 | 246,12 | 17,0 | 311,34 | 376,44 | 1,6 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 1.6 < 3: no cumple, esperar mejor precio; stop muy lejano (17.0 %) |
-| VZ (Verizon) | D | 45,85 | 50,02 | 45,24 | 9,5 | 51,67 | 57,06 | 1,5 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.5 < 3: no cumple, esperar mejor precio |
-| NDSN (Nordson Corporation) | D | 334,43 | 336,65 | 304,51 | 9,5 | 338,10 | 375,45 | 1,2 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 1.2 < 3: no cumple, esperar mejor precio |
+| QCOM (Qualcomm) | D | 181,03 | 181,03 | 177,38 | 2,0 | 205,85 | 243,06 | 17,0 | ★ | R/R alto; MACD mensual alcista |
+| DVA (DaVita) | D | 180,40 | 180,40 | 170,17 | 5,7 | 247,49 | 275,82 | 9,3 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
+| SJM (J.M. Smucker Company (The)) | D | 116,80 | 119,27 | 114,41 | 4,1 | 135,89 | 158,63 | 8,1 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
+| NWS (News Corp (Class B)) | D | 31,52 | 31,90 | 30,89 | 3,2 | 35,65 | 39,04 | 7,1 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza |
+| BAX (Baxter International) | D | 24,36 | 24,36 | 22,38 | 8,1 | 29,99 | 36,83 | 6,3 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
+| MSI (Motorola Solutions) | D | 456,28 | 457,72 | 441,61 | 3,5 | 493,57 | 558,12 | 6,2 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
+| CTAS (Cintas) | D | 195,96 | 198,85 | 190,13 | 4,4 | 218,60 | 249,39 | 5,8 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
+| AMZN (Amazon) | D | 256,29 | 256,29 | 242,91 | 5,2 | 287,20 | 332,36 | 5,7 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza |
+| APA (APA Corporation) | D | 44,10 | 44,19 | 40,85 | 7,6 | 47,44 | 57,12 | 3,9 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| AIZ (Assurant) | D | 270,96 | 279,10 | 259,27 | 7,1 | 303,00 | 352,90 | 3,7 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
+| ENG.MC (Enagás) | D | 16,22 | 16,74 | 15,93 | 4,9 | 17,64 | 19,77 | 3,7 | ★ | corrección madura en tiempo; MACD mensual alcista |
+| REGN (Regeneron Pharmaceuticals) | D | 738,72 | 778,29 | 716,86 | 7,9 | 859,34 | 990,53 | 3,5 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista |
+| NWSA (News Corp (Class A)) | D | 28,55 | 29,59 | 27,80 | 6,0 | 31,55 | 35,27 | 3,2 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista |
+| NEM (Newmont) | D | 116,39 | 124,08 | 112,65 | 9,2 | 135,01 | 160,02 | 3,1 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
+| LOG.MC (Logista) | D | 34,42 | 35,91 | 33,88 | 5,7 | 37,15 | 41,71 | 2,9 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.9 < 3: no cumple, esperar mejor precio |
+| DOC (Healthpeak Properties) | D | 19,00 | 20,74 | 18,69 | 9,9 | 22,72 | 26,20 | 2,7 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.7 < 3: no cumple, esperar mejor precio |
+| CSX (CSX Corporation) | D | 47,50 | 50,10 | 45,58 | 9,0 | 53,45 | 61,58 | 2,5 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.5 < 3: no cumple, esperar mejor precio |
+| IDR.MC (Indra) | D | 59,60 | 62,20 | 55,92 | 10,1 | 66,00 | 76,50 | 2,3 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.3 < 3: no cumple, esperar mejor precio |
+| IAG.MC (IAG) | D | 5,18 | 5,21 | 4,70 | 9,8 | 5,38 | 6,32 | 2,2 | ★ | corrección madura en tiempo; R/R 2.2 < 3: no cumple, esperar mejor precio |
+| FCX (Freeport-McMoRan) | D | 72,56 | 74,44 | 66,33 | 10,9 | 80,24 | 91,89 | 2,2 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; R/R 2.2 < 3: no cumple, esperar mejor precio |
+| HAS (Hasbro) | D | 91,03 | 92,75 | 84,78 | 8,6 | 98,20 | 108,94 | 2,0 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 2.0 < 3: no cumple, esperar mejor precio |
+| JNJ (Johnson & Johnson) | D | 254,78 | 271,73 | 249,92 | 8,0 | 281,07 | 314,21 | 1,9 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.9 < 3: no cumple, esperar mejor precio |
+| MDT (Medtronic) | D | 87,09 | 92,68 | 84,70 | 8,6 | 94,63 | 107,79 | 1,9 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; R/R 1.9 < 3: no cumple, esperar mejor precio |
+| NTRS (Northern Trust) | D | 169,46 | 184,85 | 165,26 | 10,6 | 194,86 | 220,34 | 1,8 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.8 < 3: no cumple, esperar mejor precio |
+| WST (West Pharmaceutical Services) | D | 372,64 | 382,09 | 322,83 | 15,5 | 385,75 | 479,70 | 1,6 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; R/R 1.6 < 3: no cumple, esperar mejor precio; stop muy lejano (15.5 %) |
 
 ## Autoevaluación en vivo
 
-Operaciones abiertas: 0 · pendientes de entrar: 32 · anuladas (abren bajo el stop): 0
+Operaciones abiertas: 31 · pendientes de entrar: 11 · anuladas (abren bajo el stop): 0
 
 | Gestión | Cerradas | Acierto | R medio | Profit factor | Máx. drawdown (R) |
 |---|---|---|---|---|---|
-| Fija (stop / obj. 2) | 0 | – | – | – | – |
-| Gestionada (stop a entrada en +1R) | 0 | – | – | – | – |
-| Con seguimiento (SAR) | 0 | – | – | – | – |
+| Fija (stop / obj. 2) | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
+| Gestionada (stop a entrada en +1R) | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
+| Con seguimiento (SAR) | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por mercado
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| EEUU | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por marco
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| D | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por disparo
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| ruptura de directriz | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por puntuación
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| 50-69 | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por volumen en la trampa
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| con volumen | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por año
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| 2026 | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por selección diaria
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| resto | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por calidad
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| 0 | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
 
 ## Por filtro R/R
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
+| pasa (R/R ≥ mínimo) | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
+
+## Operaciones abiertas
+
+| Fecha | Valor | Marco | Entrada | Stop | Obj. 2 | R actual |
+|---|---|---|---|---|---|---|
+| 2026-10-05 | BRK-B | D | 504.33 | 494.5424 | 569.41 | +0.12 |
+| 2026-10-05 | BNY | D | 144.11 | 140.1839 | 177.106 | -0.10 |
+| 2026-10-05 | CAT | W | 853.0 | 757.4769 | 1580.1787 | +0.11 |
+| 2026-10-05 | CHD | D | 96.13 | 92.9285 | 107.5488 | +0.13 |
+| 2026-10-05 | COP | D | 128.19 | 123.4242 | 163.0704 | +0.24 |
+| 2026-10-05 | CPAY | D | 403.53 | 384.896 | 515.23 | +0.17 |
+| 2026-10-05 | DE | D | 684.1 | 639.7071 | 850.968 | -0.03 |
+| 2026-10-05 | ECL | D | 278.76 | 266.1116 | 320.1608 | +0.16 |
+| 2026-10-05 | EXPD | D | 193.54 | 182.3425 | 229.5746 | -0.16 |
+| 2026-10-05 | XOM | D | 163.06 | 154.9717 | 191.4082 | +0.18 |
+| 2026-10-05 | FDS | D | 275.53 | 248.9829 | 376.2312 | -0.13 |
+| 2026-10-05 | BEN | D | 32.98 | 31.3665 | 45.6625 | -0.33 |
+| 2026-10-05 | HSIC | D | 84.78 | 82.9704 | 106.78 | +0.03 |
+| 2026-10-05 | KDP | D | 30.98 | 29.8539 | 35.5471 | +0.13 |
+| 2026-10-05 | MAR | W | 357.54 | 316.8172 | 528.3929 | +0.09 |
+| 2026-10-05 | MA | D | 563.5 | 542.9926 | 682.8974 | +0.15 |
+| 2026-10-05 | NTRS | D | 170.33 | 165.2282 | 220.3409 | -0.17 |
+| 2026-10-05 | OXY | D | 57.53 | 54.3634 | 70.9782 | +0.25 |
+| 2026-10-05 | PH | D | 980.0 | 906.1578 | 1195.7672 | +0.07 |
+| 2026-10-05 | PSX | D | 266.75 | 246.3117 | 362.3963 | +0.15 |
+| 2026-10-05 | USB | D | 57.54 | 55.7674 | 70.1022 | -0.14 |
+| 2026-10-05 | UNH | D | 379.03 | 360.3952 | 568.4362 | -0.15 |
+| 2026-10-05 | BKT.MC | D | 15.92 | 15.2934 | 19.1529 | -0.14 |
+| 2026-10-05 | CABK.MC | D | 12.31 | 11.6524 | 14.81 | +0.07 |
+| 2026-10-05 | CABK.MC | W | 12.31 | 11.5709 | 20.7196 | +0.06 |
+| 2026-10-05 | ELE.MC | D | 42.4 | 41.1206 | 50.1229 | -0.54 |
+| 2026-10-05 | MAP.MC | D | 4.3 | 4.1167 | 5.2854 | -0.04 |
+| 2026-10-05 | DSY.PA | D | 21.44 | 19.7776 | 26.275 | +0.04 |
+| 2026-10-05 | IWM | D | 284.4 | 274.5376 | 331.5554 | -0.31 |
+| 2026-10-05 | EWP | D | 58.8 | 57.3556 | 67.2301 | +0.03 |
+| 2026-10-05 | EUFN | D | 39.67 | 38.3224 | 46.0212 | -0.16 |
