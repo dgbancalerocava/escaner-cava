@@ -75,3 +75,6 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-06,SAB.MC,Banco Sabadell,ibex35,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,3.657,3.3763,3.77,4.379,2.57,44.9,True,4,2026-09-28,False,,0
 2026-10-06,UNI.MC,Unicaja,ibex35,D,recuperación del nivel barrido con volumen,True,3.396,3.2859,3.646,4.3121,8.32,67.0,True,4,2026-09-22,False,,1
 2026-10-06,EWP,España,etfs,W,recuperación del nivel barrido con volumen,True,58.84,57.5957,63.44,91.6944,26.4,51.0,True,2,2026-08-28,True,,4
+2026-10-07,COR,Cencora,sp500,D,ruptura de directriz,True,317.25,293.0385,338.71,389.9353,3.0,46.0,True,2,2026-09-03,False,,1
+2026-10-07,GDDY,GoDaddy,sp500,D,ruptura de directriz,True,97.21,90.7787,110.35,130.6,5.19,39.0,False,1,2026-09-24,False,,0
+2026-10-07,RMD,ResMed|,sp500,D,ruptura de directriz,True,225.98,216.6342,242.4,278.4458,5.61,54.1,False,2,2026-09-01,False,,1
