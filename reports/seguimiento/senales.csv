@@ -78,3 +78,25 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-07,COR,Cencora,sp500,D,ruptura de directriz,True,317.25,293.0385,338.71,389.9353,3.0,46.0,True,2,2026-09-03,False,,1
 2026-10-07,GDDY,GoDaddy,sp500,D,ruptura de directriz,True,97.21,90.7787,110.35,130.6,5.19,39.0,False,1,2026-09-24,False,,0
 2026-10-07,RMD,ResMed|,sp500,D,ruptura de directriz,True,225.98,216.6342,242.4,278.4458,5.61,54.1,False,2,2026-09-01,False,,1
+2026-10-08,AMCR,Amcor,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,41.88,40.5593,48.2468,53.8808,9.09,77.0,True,4,2026-08-24,False,,1
+2026-10-08,BBY,Best Buy,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,88.4,82.9051,96.53,125.6846,6.79,62.0,True,4,2026-09-23,False,,0
+2026-10-08,CAH,Cardinal Health,sp500,D,ruptura de directriz (sin R/R),False,238.96,214.7121,257.701,294.2579,2.28,37.4,False,2,2026-08-11,False,,1
+2026-10-08,CAH,Cardinal Health,sp500,W,ruptura de directriz,True,238.96,212.7382,257.701,361.9804,4.69,52.5,False,3,2026-08-14,False,,0
+2026-10-08,CBOE,Cboe Global Markets,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,294.08,246.7009,369.3776,411.044,2.47,23.3,True,2,2026-05-22,False,,2
+2026-10-08,CME,CME Group,sp500,D,ruptura de directriz,True,276.44,258.8205,288.5455,330.1255,3.05,54.2,False,3,2026-09-01,False,,1
+2026-10-08,CTSH,Cognizant,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,60.01,54.0804,65.42,83.2561,3.92,40.6,True,2,2026-09-03,False,,2
+2026-10-08,DLTR,Dollar Tree,sp500,W,recuperación del nivel barrido con volumen,True,118.62,108.7022,142.4,167.79,4.96,48.8,True,3,2026-01-16,False,,2
+2026-10-08,EXPE,Expedia Group,sp500,D,ruptura de directriz,True,270.13,251.149,341.5077,389.0513,6.27,59.0,False,3,2026-08-26,False,,1
+2026-10-08,HCA,HCA Healthcare,sp500,W,ruptura de directriz (sin R/R),False,445.01,346.3868,553.5613,620.6088,1.78,11.9,True,1,2026-03-13,False,,1
+2026-10-08,HUM,Humana,sp500,D,recuperación del nivel barrido con volumen,True,387.12,372.1885,428.88,620.6662,15.64,51.0,True,2,2026-07-16,False,,3
+2026-10-08,ICE,Intercontinental Exchange,sp500,D,ruptura de directriz,True,155.35,146.6512,164.1143,190.2279,4.01,51.0,False,2,2026-09-03,False,,1
+2026-10-08,LH,Labcorp,sp500,D,ruptura de directriz,True,314.2,301.0144,341.0687,396.4003,6.23,69.0,False,3,2026-08-27,False,,1
+2026-10-08,LLY,Lilly (Eli),sp500,D,recuperación del nivel barrido con volumen,True,1169.6,1122.4906,1292.65,1558.1066,8.25,64.0,True,3,2026-08-19,False,,2
+2026-10-08,MET,MetLife,sp500,W,ruptura de directriz,True,98.47,91.1784,100.93,130.6828,4.42,43.1,False,2,2026-08-07,False,,1
+2026-10-08,SOLV,Solventum,sp500,D,recuperación del nivel barrido con volumen,True,86.41,84.7811,94.16,113.97,16.92,43.0,True,1,2026-09-01,False,,3
+2026-10-08,SWK,Stanley Black & Decker,sp500,D,recuperación del nivel barrido con volumen,True,89.17,85.0096,103.7768,124.9787,8.61,61.0,True,2,2026-08-11,False,,2
+2026-10-08,VRTX,Vertex Pharmaceuticals,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,503.25,496.0454,560.25,644.13,19.55,69.0,True,3,2026-09-03,False,,3
+2026-10-08,DIS,Walt Disney Company (The),sp500,D,ruptura de directriz (sin R/R),False,107.02,100.6047,111.87,120.53,2.11,44.5,False,3,2026-08-24,False,,1
+2026-10-08,CCEP,Coca-Cola Europacific,nasdaq100,W,recuperación del nivel barrido con volumen,True,103.64,97.7918,113.67,141.9117,6.54,54.0,True,3,2026-07-31,False,,1
+2026-10-08,TRI,Thomson Reuters,nasdaq100,D,ruptura de directriz (sin R/R),False,101.55,91.631,112.77,129.5552,2.82,24.1,False,0,2026-09-03,False,,1
+2026-10-08,XLV,Salud EEUU,etfs,D,recuperación del nivel barrido con volumen,True,168.16,164.5462,175.9267,199.5995,8.7,67.0,True,4,2026-08-19,False,,3
