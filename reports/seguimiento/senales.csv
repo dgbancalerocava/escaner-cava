@@ -100,3 +100,17 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-08,CCEP,Coca-Cola Europacific,nasdaq100,W,recuperación del nivel barrido con volumen,True,103.64,97.7918,113.67,141.9117,6.54,54.0,True,3,2026-07-31,False,,1
 2026-10-08,TRI,Thomson Reuters,nasdaq100,D,ruptura de directriz (sin R/R),False,101.55,91.631,112.77,129.5552,2.82,24.1,False,0,2026-09-03,False,,1
 2026-10-08,XLV,Salud EEUU,etfs,D,recuperación del nivel barrido con volumen,True,168.16,164.5462,175.9267,199.5995,8.7,67.0,True,4,2026-08-19,False,,3
+2026-10-09,ALLE,Allegion,sp500,D,recuperación del nivel barrido con volumen,True,150.48,141.0463,170.2652,188.219,4.0,43.0,True,1,2026-08-07,False,,2
+2026-10-09,BLK,BlackRock,sp500,D,ruptura de directriz,True,1082.39,1046.3604,1181.1088,1256.1949,4.82,29.1,False,0,2026-08-27,False,,1
+2026-10-09,EL,Estée Lauder Companies (The),sp500,D,ruptura de directriz (sin R/R),False,98.05,87.9015,108.0131,122.5526,2.41,46.1,False,3,2026-08-27,False,,1
+2026-10-09,EVRG,Evergy,sp500,W,recuperación del nivel barrido con volumen,True,80.96,76.5031,87.8862,110.01,6.52,54.0,True,3,2026-07-10,False,,1
+2026-10-09,GILD,Gilead Sciences,sp500/nasdaq100,D,ruptura de directriz (sin R/R),False,151.17,141.7126,154.2,176.878,2.72,37.6,False,3,2026-09-23,False,,0
+2026-10-09,DOC,Healthpeak Properties,sp500,D,recuperación del nivel barrido con volumen,True,18.8,18.248,22.7227,25.756,12.6,77.0,True,4,2026-07-28,False,,3
+2026-10-09,HLT,Hilton Worldwide,sp500,W,ruptura de directriz,True,326.56,296.3754,357.8371,462.406,4.5,43.5,False,2,2026-06-19,False,,1
+2026-10-09,KMI,Kinder Morgan,sp500,W,ruptura de directriz,True,32.49,29.0316,34.4876,44.9943,3.62,31.1,False,1,2026-05-22,False,,0
+2026-10-09,PNW,Pinnacle West Capital,sp500,W,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,98.92,89.2874,110.1584,124.2983,2.63,42.2,True,3,2026-07-17,False,,0
+2026-10-09,VEEV,Veeva Systems,sp500,D,ruptura de directriz (sin R/R),False,296.13,255.5864,296.24,403.72,2.65,16.3,False,1,2026-08-27,False,,2
+2026-10-09,SAP.DE,SAP,europe_tech,D,ruptura de directriz,True,191.46,179.9686,192.12,236.78,3.94,24.7,False,0,2026-08-31,False,,0
+2026-10-09,SGE.L,Sage Group,europe_tech,D,ruptura de directriz (sin R/R),False,1071.5,947.2406,1112.0,1272.843,1.62,26.1,False,1,2026-08-25,False,,0
+2026-10-09,NEXI.MI,Nexi,europe_tech,D,ruptura de directriz,True,4.204,3.9862,4.519,5.237,4.74,65.7,False,4,2026-08-26,False,,0
+2026-10-09,XLF,Financiero EEUU,etfs,D,ruptura de directriz,True,54.73,52.639,58.3933,61.0372,3.02,28.1,False,1,2026-09-03,False,,2
