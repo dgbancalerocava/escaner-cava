@@ -1,51 +1,51 @@
 {
  "global": {
   "fija": {
-   "n": 11,
-   "acierto_pct": 0.0,
-   "R_medio": -1.16,
-   "R_total": -12.7,
-   "ganancia_media_R": 0.0,
-   "perdida_media_R": -1.16,
-   "profit_factor": 0.0,
-   "max_drawdown_R": -11.7
-  },
-  "gestionada": {
-   "n": 11,
-   "acierto_pct": 0.0,
-   "R_medio": -1.06,
-   "R_total": -11.7,
-   "ganancia_media_R": 0.0,
-   "perdida_media_R": -1.06,
-   "profit_factor": 0.0,
-   "max_drawdown_R": -10.7
-  },
-  "seguimiento": {
    "n": 12,
    "acierto_pct": 0.0,
-   "R_medio": -1.06,
-   "R_total": -12.7,
+   "R_medio": -1.14,
+   "R_total": -13.7,
    "ganancia_media_R": 0.0,
-   "perdida_media_R": -1.06,
+   "perdida_media_R": -1.14,
    "profit_factor": 0.0,
+   "max_drawdown_R": -12.7
+  },
+  "gestionada": {
+   "n": 13,
+   "acierto_pct": 7.7,
+   "R_medio": -0.9,
+   "R_total": -11.7,
+   "ganancia_media_R": 1.0,
+   "perdida_media_R": -1.06,
+   "profit_factor": 0.08,
    "max_drawdown_R": -11.7
   },
-  "abiertas": 52,
+  "seguimiento": {
+   "n": 14,
+   "acierto_pct": 0.0,
+   "R_medio": -0.99,
+   "R_total": -13.9,
+   "ganancia_media_R": 0.0,
+   "perdida_media_R": -0.99,
+   "profit_factor": 0.0,
+   "max_drawdown_R": -12.9
+  },
+  "abiertas": 60,
   "anuladas": 0,
-  "pendientes": 9
+  "pendientes": 7
  },
  "grupos": {
   "Mercado": {
    "EEUU": {
-    "n": 5,
+    "n": 6,
     "acierto_pct": 0.0,
-    "R_medio": -1.33,
-    "R_total": -6.7,
+    "R_medio": -1.28,
+    "R_total": -7.7,
     "ganancia_media_R": 0.0,
-    "perdida_media_R": -1.33,
+    "perdida_media_R": -1.28,
     "profit_factor": 0.0,
-    "max_drawdown_R": -5.7,
-    "R_medio_ges": -1.13
+    "max_drawdown_R": -6.7,
+    "R_medio_ges": -1.11
    },
    "ETFs": {
     "n": 4,
@@ -72,15 +72,15 @@
   },
   "Marco": {
    "D": {
-    "n": 10,
+    "n": 11,
     "acierto_pct": 0.0,
-    "R_medio": -1.17,
-    "R_total": -11.7,
+    "R_medio": -1.16,
+    "R_total": -12.7,
     "ganancia_media_R": 0.0,
-    "perdida_media_R": -1.17,
+    "perdida_media_R": -1.16,
     "profit_factor": 0.0,
-    "max_drawdown_R": -10.7,
-    "R_medio_ges": -1.07
+    "max_drawdown_R": -11.7,
+    "R_medio_ges": -1.06
    },
    "W": {
     "n": 1,
@@ -96,15 +96,15 @@
   },
   "Disparo": {
    "recuperación del nivel barrido con volumen": {
-    "n": 9,
+    "n": 10,
     "acierto_pct": 0.0,
-    "R_medio": -1.19,
-    "R_total": -10.7,
+    "R_medio": -1.17,
+    "R_total": -11.7,
     "ganancia_media_R": 0.0,
-    "perdida_media_R": -1.19,
+    "perdida_media_R": -1.17,
     "profit_factor": 0.0,
-    "max_drawdown_R": -9.7,
-    "R_medio_ges": -1.08
+    "max_drawdown_R": -10.7,
+    "R_medio_ges": -1.07
    },
    "ruptura de directriz": {
     "n": 2,
@@ -131,28 +131,28 @@
     "R_medio_ges": -1.07
    },
    "<50": {
-    "n": 1,
+    "n": 2,
     "acierto_pct": 0.0,
     "R_medio": -1.0,
-    "R_total": -1.0,
+    "R_total": -2.0,
     "ganancia_media_R": 0.0,
     "perdida_media_R": -1.0,
     "profit_factor": 0.0,
-    "max_drawdown_R": 0.0,
+    "max_drawdown_R": -1.0,
     "R_medio_ges": -1.0
    }
   },
   "Volumen en la trampa": {
    "con volumen": {
-    "n": 10,
+    "n": 11,
     "acierto_pct": 0.0,
-    "R_medio": -1.17,
-    "R_total": -11.7,
+    "R_medio": -1.16,
+    "R_total": -12.7,
     "ganancia_media_R": 0.0,
-    "perdida_media_R": -1.17,
+    "perdida_media_R": -1.16,
     "profit_factor": 0.0,
-    "max_drawdown_R": -10.7,
-    "R_medio_ges": -1.07
+    "max_drawdown_R": -11.7,
+    "R_medio_ges": -1.06
    },
    "sin volumen": {
     "n": 1,
@@ -168,6 +168,19 @@
   },
   "Año": {
    "2026": {
+    "n": 12,
+    "acierto_pct": 0.0,
+    "R_medio": -1.14,
+    "R_total": -13.7,
+    "ganancia_media_R": 0.0,
+    "perdida_media_R": -1.14,
+    "profit_factor": 0.0,
+    "max_drawdown_R": -12.7,
+    "R_medio_ges": -1.06
+   }
+  },
+  "Selección diaria": {
+   "resto": {
     "n": 11,
     "acierto_pct": 0.0,
     "R_medio": -1.16,
@@ -177,19 +190,6 @@
     "profit_factor": 0.0,
     "max_drawdown_R": -11.7,
     "R_medio_ges": -1.06
-   }
-  },
-  "Selección diaria": {
-   "resto": {
-    "n": 10,
-    "acierto_pct": 0.0,
-    "R_medio": -1.17,
-    "R_total": -11.7,
-    "ganancia_media_R": 0.0,
-    "perdida_media_R": -1.17,
-    "profit_factor": 0.0,
-    "max_drawdown_R": -10.7,
-    "R_medio_ges": -1.07
    },
    "⭐ seleccionadas": {
     "n": 1,
@@ -238,15 +238,15 @@
     "R_medio_ges": -1.0
    },
    "3": {
-    "n": 5,
+    "n": 6,
     "acierto_pct": 0.0,
-    "R_medio": -1.34,
-    "R_total": -6.7,
+    "R_medio": -1.29,
+    "R_total": -7.7,
     "ganancia_media_R": 0.0,
-    "perdida_media_R": -1.34,
+    "perdida_media_R": -1.29,
     "profit_factor": 0.0,
-    "max_drawdown_R": -5.7,
-    "R_medio_ges": -1.14
+    "max_drawdown_R": -6.7,
+    "R_medio_ges": -1.12
    },
    "≥4 ⭐": {
     "n": 1,
@@ -262,14 +262,14 @@
   },
   "Filtro R/R": {
    "pasa (R/R ≥ mínimo)": {
-    "n": 11,
+    "n": 12,
     "acierto_pct": 0.0,
-    "R_medio": -1.16,
-    "R_total": -12.7,
+    "R_medio": -1.14,
+    "R_total": -13.7,
     "ganancia_media_R": 0.0,
-    "perdida_media_R": -1.16,
+    "perdida_media_R": -1.14,
     "profit_factor": 0.0,
-    "max_drawdown_R": -11.7
+    "max_drawdown_R": -12.7
    }
   }
  },
@@ -281,8 +281,8 @@
    "entrada": 504.34,
    "stop": "494.5424",
    "objetivo2": "569.41",
-   "fija_R": 1.15,
-   "ges_R": 1.15
+   "fija_R": 1.35,
+   "ges_R": 1.35
   },
   {
    "fecha": "2026-10-05",
@@ -291,8 +291,8 @@
    "entrada": 144.11,
    "stop": "140.1839",
    "objetivo2": "177.106",
-   "fija_R": -0.36,
-   "ges_R": -0.36
+   "fija_R": -0.32,
+   "ges_R": -0.32
   },
   {
    "fecha": "2026-10-05",
@@ -301,8 +301,8 @@
    "entrada": 853.0,
    "stop": "757.4769",
    "objetivo2": "1580.1787",
-   "fija_R": -0.55,
-   "ges_R": -0.55
+   "fija_R": -0.56,
+   "ges_R": -0.56
   },
   {
    "fecha": "2026-10-05",
@@ -311,8 +311,8 @@
    "entrada": 96.13,
    "stop": "92.9285",
    "objetivo2": "107.5488",
-   "fija_R": 0.62,
-   "ges_R": 0.62
+   "fija_R": 1.17,
+   "ges_R": 1.17
   },
   {
    "fecha": "2026-10-05",
@@ -321,8 +321,8 @@
    "entrada": 128.19,
    "stop": "123.4242",
    "objetivo2": "163.0704",
-   "fija_R": 1.24,
-   "ges_R": 1.24
+   "fija_R": 1.97,
+   "ges_R": 1.97
   },
   {
    "fecha": "2026-10-05",
@@ -331,8 +331,8 @@
    "entrada": 403.53,
    "stop": "384.896",
    "objetivo2": "515.23",
-   "fija_R": -0.3,
-   "ges_R": -0.3
+   "fija_R": -0.31,
+   "ges_R": -0.31
   },
   {
    "fecha": "2026-10-05",
@@ -341,8 +341,8 @@
    "entrada": 278.76,
    "stop": "266.1116",
    "objetivo2": "320.1608",
-   "fija_R": 0.24,
-   "ges_R": 0.24
+   "fija_R": 0.44,
+   "ges_R": 0.44
   },
   {
    "fecha": "2026-10-05",
@@ -351,8 +351,8 @@
    "entrada": 193.54,
    "stop": "182.3425",
    "objetivo2": "229.5746",
-   "fija_R": -0.03,
-   "ges_R": -0.03
+   "fija_R": -0.01,
+   "ges_R": -0.01
   },
   {
    "fecha": "2026-10-05",
@@ -361,8 +361,8 @@
    "entrada": 163.06,
    "stop": "154.9717",
    "objetivo2": "191.4082",
-   "fija_R": 0.73,
-   "ges_R": 0.73
+   "fija_R": 1.12,
+   "ges_R": 1.12
   },
   {
    "fecha": "2026-10-05",
@@ -371,8 +371,8 @@
    "entrada": 275.53,
    "stop": "248.9829",
    "objetivo2": "376.2312",
-   "fija_R": 0.44,
-   "ges_R": 0.44
+   "fija_R": 0.49,
+   "ges_R": 0.49
   },
   {
    "fecha": "2026-10-05",
@@ -381,8 +381,8 @@
    "entrada": 32.98,
    "stop": "31.3665",
    "objetivo2": "45.6625",
-   "fija_R": -0.61,
-   "ges_R": -0.61
+   "fija_R": -0.73,
+   "ges_R": -0.73
   },
   {
    "fecha": "2026-10-05",
@@ -391,8 +391,8 @@
    "entrada": 30.98,
    "stop": "29.8539",
    "objetivo2": "35.5471",
-   "fija_R": 0.69,
-   "ges_R": 0.69
+   "fija_R": 1.57,
+   "ges_R": 1.57
   },
   {
    "fecha": "2026-10-05",
@@ -401,18 +401,18 @@
    "entrada": 357.52,
    "stop": "316.8172",
    "objetivo2": "528.3929",
-   "fija_R": 0.21,
-   "ges_R": 0.21
+   "fija_R": 0.29,
+   "ges_R": 0.29
   },
   {
    "fecha": "2026-10-05",
    "ticker": "MA",
    "marco": "D",
-   "entrada": 563.5,
+   "entrada": 562.65,
    "stop": "542.9926",
    "objetivo2": "682.8974",
-   "fija_R": 1.25,
-   "ges_R": 1.25
+   "fija_R": 1.65,
+   "ges_R": 1.65
   },
   {
    "fecha": "2026-10-05",
@@ -421,8 +421,8 @@
    "entrada": 170.33,
    "stop": "165.2282",
    "objetivo2": "220.3409",
-   "fija_R": -0.42,
-   "ges_R": -0.42
+   "fija_R": -0.22,
+   "ges_R": -0.22
   },
   {
    "fecha": "2026-10-05",
@@ -431,8 +431,8 @@
    "entrada": 57.53,
    "stop": "54.3634",
    "objetivo2": "70.9782",
-   "fija_R": 0.81,
-   "ges_R": 0.81
+   "fija_R": 1.14,
+   "ges_R": 1.14
   },
   {
    "fecha": "2026-10-05",
@@ -441,8 +441,8 @@
    "entrada": 980.0,
    "stop": "906.1578",
    "objetivo2": "1195.7672",
-   "fija_R": -0.24,
-   "ges_R": -0.24
+   "fija_R": -0.31,
+   "ges_R": -0.31
   },
   {
    "fecha": "2026-10-05",
@@ -451,8 +451,8 @@
    "entrada": 266.75,
    "stop": "246.3117",
    "objetivo2": "362.3963",
-   "fija_R": 0.56,
-   "ges_R": 0.56
+   "fija_R": 0.72,
+   "ges_R": 0.72
   },
   {
    "fecha": "2026-10-05",
@@ -461,8 +461,8 @@
    "entrada": 379.03,
    "stop": "360.3952",
    "objetivo2": "568.4362",
-   "fija_R": 0.01,
-   "ges_R": 0.01
+   "fija_R": -0.03,
+   "ges_R": -0.03
   },
   {
    "fecha": "2026-10-05",
@@ -471,8 +471,8 @@
    "entrada": 12.31,
    "stop": "11.6524",
    "objetivo2": "14.81",
-   "fija_R": -0.7,
-   "ges_R": -0.7
+   "fija_R": -0.55,
+   "ges_R": -0.55
   },
   {
    "fecha": "2026-10-05",
@@ -481,8 +481,8 @@
    "entrada": 12.31,
    "stop": "11.5709",
    "objetivo2": "20.7196",
-   "fija_R": -0.62,
-   "ges_R": -0.62
+   "fija_R": -0.49,
+   "ges_R": -0.49
   },
   {
    "fecha": "2026-10-05",
@@ -491,8 +491,8 @@
    "entrada": 42.4,
    "stop": "41.1206",
    "objetivo2": "50.1229",
-   "fija_R": -0.23,
-   "ges_R": -0.23
+   "fija_R": 0.23,
+   "ges_R": 0.23
   },
   {
    "fecha": "2026-10-05",
@@ -501,8 +501,8 @@
    "entrada": 4.3,
    "stop": "4.1167",
    "objetivo2": "5.2854",
-   "fija_R": -0.5,
-   "ges_R": -0.5
+   "fija_R": -0.09,
+   "ges_R": -0.09
   },
   {
    "fecha": "2026-10-05",
@@ -511,8 +511,8 @@
    "entrada": 21.44,
    "stop": "19.7776",
    "objetivo2": "26.275",
-   "fija_R": 0.19,
-   "ges_R": 0.19
+   "fija_R": 0.44,
+   "ges_R": 0.44
   },
   {
    "fecha": "2026-10-06",
@@ -521,8 +521,8 @@
    "entrada": 208.44,
    "stop": "200.9228",
    "objetivo2": "255.2056",
-   "fija_R": 0.47,
-   "ges_R": 0.47
+   "fija_R": 0.87,
+   "ges_R": 0.87
   },
   {
    "fecha": "2026-10-06",
@@ -531,8 +531,8 @@
    "entrada": 86.73,
    "stop": "84.824",
    "objetivo2": "103.439",
-   "fija_R": 0.69,
-   "ges_R": 0.69
+   "fija_R": 1.61,
+   "ges_R": 1.61
   },
   {
    "fecha": "2026-10-06",
@@ -541,8 +541,8 @@
    "entrada": 563.27,
    "stop": "513.0406",
    "objetivo2": "888.7949",
-   "fija_R": 0.45,
-   "ges_R": 0.45
+   "fija_R": 0.27,
+   "ges_R": 0.27
   },
   {
    "fecha": "2026-10-06",
@@ -551,8 +551,8 @@
    "entrada": 22.46,
    "stop": "21.2341",
    "objetivo2": "29.3083",
-   "fija_R": 0.15,
-   "ges_R": 0.15
+   "fija_R": 0.23,
+   "ges_R": 0.23
   },
   {
    "fecha": "2026-10-06",
@@ -561,8 +561,8 @@
    "entrada": 302.18,
    "stop": "276.4003",
    "objetivo2": "604.7845",
-   "fija_R": 0.16,
-   "ges_R": 0.16
+   "fija_R": 0.38,
+   "ges_R": 0.38
   },
   {
    "fecha": "2026-10-06",
@@ -571,8 +571,8 @@
    "entrada": 490.54,
    "stop": "448.9976",
    "objetivo2": "616.5917",
-   "fija_R": -0.16,
-   "ges_R": -0.16
+   "fija_R": -0.08,
+   "ges_R": -0.08
   },
   {
    "fecha": "2026-10-06",
@@ -591,8 +591,8 @@
    "entrada": 369.72,
    "stop": "355.2637",
    "objetivo2": "439.0134",
-   "fija_R": 1.09,
-   "ges_R": 1.09
+   "fija_R": 1.35,
+   "ges_R": 1.35
   },
   {
    "fecha": "2026-10-07",
@@ -601,8 +601,8 @@
    "entrada": 316.59,
    "stop": "293.0385",
    "objetivo2": "389.9353",
-   "fija_R": 0.31,
-   "ges_R": 0.31
+   "fija_R": 0.36,
+   "ges_R": 0.36
   },
   {
    "fecha": "2026-10-07",
@@ -611,8 +611,8 @@
    "entrada": 97.2,
    "stop": "90.7787",
    "objetivo2": "130.6",
-   "fija_R": 1.11,
-   "ges_R": 1.11
+   "fija_R": 0.8,
+   "ges_R": 0.8
   },
   {
    "fecha": "2026-10-07",
@@ -621,8 +621,8 @@
    "entrada": 225.79,
    "stop": "216.6342",
    "objetivo2": "278.4458",
-   "fija_R": 0.47,
-   "ges_R": 0.47
+   "fija_R": 0.96,
+   "ges_R": 0.96
   },
   {
    "fecha": "2026-10-08",
@@ -631,8 +631,8 @@
    "entrada": 41.9,
    "stop": "40.5593",
    "objetivo2": "53.8808",
-   "fija_R": -0.13,
-   "ges_R": -0.13
+   "fija_R": -0.24,
+   "ges_R": -0.24
   },
   {
    "fecha": "2026-10-08",
@@ -641,8 +641,8 @@
    "entrada": 87.92,
    "stop": "82.9051",
    "objetivo2": "125.6846",
-   "fija_R": -0.18,
-   "ges_R": -0.18
+   "fija_R": -0.19,
+   "ges_R": -0.19
   },
   {
    "fecha": "2026-10-08",
@@ -651,18 +651,18 @@
    "entrada": 237.79,
    "stop": "212.7382",
    "objetivo2": "361.9804",
-   "fija_R": -0.01,
-   "ges_R": -0.01
+   "fija_R": 0.01,
+   "ges_R": 0.01
   },
   {
    "fecha": "2026-10-08",
    "ticker": "CME",
    "marco": "D",
-   "entrada": 278.0,
+   "entrada": 278.38,
    "stop": "258.8205",
    "objetivo2": "330.1255",
-   "fija_R": 0.13,
-   "ges_R": 0.13
+   "fija_R": -0.06,
+   "ges_R": -0.06
   },
   {
    "fecha": "2026-10-08",
@@ -671,8 +671,8 @@
    "entrada": 60.01,
    "stop": "54.0804",
    "objetivo2": "83.2561",
-   "fija_R": -0.14,
-   "ges_R": -0.14
+   "fija_R": -0.06,
+   "ges_R": -0.06
   },
   {
    "fecha": "2026-10-08",
@@ -681,8 +681,8 @@
    "entrada": 118.67,
    "stop": "108.7022",
    "objetivo2": "167.79",
-   "fija_R": -0.0,
-   "ges_R": -0.0
+   "fija_R": -0.11,
+   "ges_R": -0.11
   },
   {
    "fecha": "2026-10-08",
@@ -691,8 +691,8 @@
    "entrada": 272.09,
    "stop": "251.149",
    "objetivo2": "389.0513",
-   "fija_R": 0.1,
-   "ges_R": 0.1
+   "fija_R": -0.17,
+   "ges_R": -0.17
   },
   {
    "fecha": "2026-10-08",
@@ -701,8 +701,8 @@
    "entrada": 450.49,
    "stop": "372.1885",
    "objetivo2": "620.6662",
-   "fija_R": -0.24,
-   "ges_R": -0.24
+   "fija_R": -0.22,
+   "ges_R": -0.22
   },
   {
    "fecha": "2026-10-08",
@@ -711,8 +711,8 @@
    "entrada": 155.59,
    "stop": "146.6512",
    "objetivo2": "190.2279",
-   "fija_R": 0.07,
-   "ges_R": 0.07
+   "fija_R": 0.2,
+   "ges_R": 0.2
   },
   {
    "fecha": "2026-10-08",
@@ -721,8 +721,8 @@
    "entrada": 313.39,
    "stop": "301.0144",
    "objetivo2": "396.4003",
-   "fija_R": -0.1,
-   "ges_R": -0.1
+   "fija_R": 0.17,
+   "ges_R": 0.17
   },
   {
    "fecha": "2026-10-08",
@@ -731,8 +731,8 @@
    "entrada": 1153.56,
    "stop": "1122.4906",
    "objetivo2": "1558.1066",
-   "fija_R": 0.83,
-   "ges_R": 0.83
+   "fija_R": 0.94,
+   "ges_R": 0.94
   },
   {
    "fecha": "2026-10-08",
@@ -741,18 +741,8 @@
    "entrada": 98.1,
    "stop": "91.1784",
    "objetivo2": "130.6828",
-   "fija_R": 0.03,
-   "ges_R": 0.03
-  },
-  {
-   "fecha": "2026-10-08",
-   "ticker": "SOLV",
-   "marco": "D",
-   "entrada": 86.66,
-   "stop": "84.7811",
-   "objetivo2": "113.97",
-   "fija_R": 0.34,
-   "ges_R": 0.34
+   "fija_R": 0.3,
+   "ges_R": 0.3
   },
   {
    "fecha": "2026-10-08",
@@ -761,8 +751,8 @@
    "entrada": 88.79,
    "stop": "85.0096",
    "objetivo2": "124.9787",
-   "fija_R": -0.06,
-   "ges_R": -0.06
+   "fija_R": -0.04,
+   "ges_R": -0.04
   },
   {
    "fecha": "2026-10-08",
@@ -771,8 +761,8 @@
    "entrada": 502.11,
    "stop": "496.0454",
    "objetivo2": "644.13",
-   "fija_R": 1.31,
-   "ges_R": 1.31
+   "fija_R": 0.81,
+   "ges_R": 1.0
   },
   {
    "fecha": "2026-10-08",
@@ -781,8 +771,8 @@
    "entrada": 103.26,
    "stop": "97.7918",
    "objetivo2": "141.9117",
-   "fija_R": 0.18,
-   "ges_R": 0.18
+   "fija_R": 0.33,
+   "ges_R": 0.33
   },
   {
    "fecha": "2026-10-08",
@@ -791,8 +781,98 @@
    "entrada": 167.73,
    "stop": "164.5462",
    "objetivo2": "199.5995",
-   "fija_R": 0.97,
-   "ges_R": 0.97
+   "fija_R": 1.34,
+   "ges_R": 1.34
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "ALLE",
+   "marco": "D",
+   "entrada": 150.26,
+   "stop": "141.0463",
+   "objetivo2": "188.219",
+   "fija_R": -0.02,
+   "ges_R": -0.02
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "BLK",
+   "marco": "D",
+   "entrada": 1087.29,
+   "stop": "1046.3604",
+   "objetivo2": "1256.1949",
+   "fija_R": -0.08,
+   "ges_R": -0.08
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "EVRG",
+   "marco": "W",
+   "entrada": 81.09,
+   "stop": "76.5031",
+   "objetivo2": "110.01",
+   "fija_R": 0.09,
+   "ges_R": 0.09
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "DOC",
+   "marco": "D",
+   "entrada": 18.75,
+   "stop": "18.248",
+   "objetivo2": "25.756",
+   "fija_R": 0.38,
+   "ges_R": 0.38
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "HLT",
+   "marco": "W",
+   "entrada": 325.79,
+   "stop": "296.3754",
+   "objetivo2": "462.406",
+   "fija_R": 0.06,
+   "ges_R": 0.06
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "KMI",
+   "marco": "W",
+   "entrada": 32.64,
+   "stop": "29.0316",
+   "objetivo2": "44.9943",
+   "fija_R": 0.12,
+   "ges_R": 0.12
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "SAP.DE",
+   "marco": "D",
+   "entrada": 190.58,
+   "stop": "179.9686",
+   "objetivo2": "236.78",
+   "fija_R": 0.37,
+   "ges_R": 0.37
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "NEXI.MI",
+   "marco": "D",
+   "entrada": 4.21,
+   "stop": "3.9862",
+   "objetivo2": "5.237",
+   "fija_R": 0.41,
+   "ges_R": 0.41
+  },
+  {
+   "fecha": "2026-10-09",
+   "ticker": "XLF",
+   "marco": "D",
+   "entrada": 54.86,
+   "stop": "52.639",
+   "objetivo2": "61.0372",
+   "fija_R": 0.09,
+   "ges_R": 0.09
   }
  ]
 }
