@@ -126,3 +126,7 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-12,WRB,W. R. Berkley Corporation,sp500,D,ruptura de directriz (sin R/R),False,72.9,65.9201,77.3393,81.3802,1.21,1.1,False,0,2026-07-28,False,,1
 2026-10-12,ZBH,Zimmer Biomet,sp500,D,ruptura de directriz,True,92.17,86.6924,102.5897,110.9968,3.44,38.2,False,2,2026-09-01,False,,1
 2026-10-12,XLE,Energía EEUU,etfs,D,ruptura de directriz (sin R/R),False,66.01,60.717,65.779,74.4199,1.59,23.9,False,2,2026-09-10,False,,2
+2026-10-13,CDW,CDW Corporation,sp500,D,ruptura de directriz (sin R/R),False,151.97,126.3697,158.05,189.7315,1.48,31.4,False,3,2026-09-03,False,,1
+2026-10-13,IFF,International Flavors & Fragrances,sp500,D,ruptura de directriz (sin R/R),False,88.2,81.096,88.8992,101.728,1.9,43.5,False,3,2026-08-05,False,,1
+2026-10-13,QCOM,Qualcomm,sp500/nasdaq100,D,ruptura de directriz,True,176.86,170.0025,205.85,234.7535,8.44,64.0,False,3,2026-09-25,False,,1
+2026-10-13,ENG.MC,Enagás,ibex35,W,ruptura de directriz,True,16.7,15.8549,17.64,22.7758,7.19,59.0,True,3,2026-07-31,False,,1
