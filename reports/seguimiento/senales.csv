@@ -130,3 +130,17 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-13,IFF,International Flavors & Fragrances,sp500,D,ruptura de directriz (sin R/R),False,88.2,81.096,88.8992,101.728,1.9,43.5,False,3,2026-08-05,False,,1
 2026-10-13,QCOM,Qualcomm,sp500/nasdaq100,D,ruptura de directriz,True,176.86,170.0025,205.85,234.7535,8.44,64.0,False,3,2026-09-25,False,,1
 2026-10-13,ENG.MC,Enagás,ibex35,W,ruptura de directriz,True,16.7,15.8549,17.64,22.7758,7.19,59.0,True,3,2026-07-31,False,,1
+2026-10-14,AWK,American Water Works,sp500,D,ruptura de directriz (sin R/R),False,131.71,125.7026,142.37,148.9367,2.87,30.3,False,2,2026-09-10,False,,1
+2026-10-14,AIZ,Assurant,sp500,W,recuperación del nivel barrido con volumen,True,276.33,257.8164,303.0037,392.4958,6.27,67.0,True,4,2026-08-07,False,,1
+2026-10-14,CVS,CVS Health,sp500,D,ruptura de directriz,True,90.39,83.6368,110.0,125.7488,5.24,47.2,False,2,2026-07-29,False,,1
+2026-10-14,DG,Dollar General,sp500,W,ruptura de directriz,True,129.94,114.4389,155.9093,190.4403,3.9,32.5,False,1,2026-02-27,False,,1
+2026-10-14,FAST,Fastenal,sp500/nasdaq100,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,52.0,46.9744,52.92,57.5442,1.1,42.5,True,4,2026-08-11,False,,1
+2026-10-14,FAST,Fastenal,sp500/nasdaq100,W,ruptura de directriz (sin R/R),False,52.0,46.649,52.92,66.1555,2.65,29.2,False,2,2026-08-14,False,,0
+2026-10-14,GL,Globe Life,sp500,D,ruptura de directriz,True,167.41,162.303,188.1245,216.8169,9.67,64.0,False,3,2026-08-10,False,,2
+2026-10-14,INCY,Incyte,sp500,D,recuperación del nivel barrido con volumen,True,111.57,106.9527,132.6,151.13,8.57,77.0,True,4,2026-07-28,False,,2
+2026-10-14,JNJ,Johnson & Johnson,sp500,D,recuperación del nivel barrido con volumen,True,253.91,243.6523,281.07,308.2055,5.29,57.5,True,2,2026-09-02,False,,2
+2026-10-14,JCI,Johnson Controls,sp500,D,recuperación del nivel barrido con volumen,True,152.44,149.6366,160.41,180.422,9.98,46.0,True,2,2026-10-06,False,,2
+2026-10-14,MSI,Motorola Solutions,sp500,D,ruptura de directriz,True,451.73,441.5065,493.5737,555.4933,10.15,61.0,False,2,2026-09-01,False,,2
+2026-10-14,PFE,Pfizer,sp500,D,ruptura de directriz (sin R/R),False,29.21,27.0593,29.21,33.1161,1.82,33.1,False,3,2026-09-03,False,,1
+2026-10-14,STT,State Street Corporation,sp500,D,recuperación del nivel barrido con volumen,True,166.89,155.3345,194.8976,206.9159,3.46,38.3,True,2,2026-08-27,False,,2
+2026-10-14,TRV,Travelers Companies (The),sp500,W,ruptura de directriz,True,377.82,353.2676,397.3415,527.1234,6.08,51.0,False,2,2026-07-31,False,,1
