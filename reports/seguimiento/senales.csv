@@ -144,3 +144,17 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-14,PFE,Pfizer,sp500,D,ruptura de directriz (sin R/R),False,29.21,27.0593,29.21,33.1161,1.82,33.1,False,3,2026-09-03,False,,1
 2026-10-14,STT,State Street Corporation,sp500,D,recuperación del nivel barrido con volumen,True,166.89,155.3345,194.8976,206.9159,3.46,38.3,True,2,2026-08-27,False,,2
 2026-10-14,TRV,Travelers Companies (The),sp500,W,ruptura de directriz,True,377.82,353.2676,397.3415,527.1234,6.08,51.0,False,2,2026-07-31,False,,1
+2026-10-15,ANET,Arista Networks,sp500,D,recuperación del nivel barrido con volumen,True,185.58,176.3868,217.41,250.5605,7.07,56.0,True,2,2026-10-09,False,,1
+2026-10-15,FCX,Freeport-McMoRan,sp500,D,recuperación del nivel barrido con volumen,True,70.06,65.4624,80.24,91.0144,4.56,48.8,True,2,2026-08-26,False,,2
+2026-10-15,LITE,Lumentum,sp500,D,recuperación del nivel barrido con volumen,True,869.54,781.8337,1143.0,1348.16,5.46,43.3,True,2,2026-10-09,False,,1
+2026-10-15,MU,Micron Technology,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,931.24,845.8421,1108.5455,1314.5384,4.49,56.4,True,3,2026-09-25,False,,1
+2026-10-15,CRM,Salesforce,sp500,D,ruptura de directriz,True,246.74,218.1305,267.7989,342.0258,3.33,55.7,False,3,2026-09-03,False,,1
+2026-10-15,NOW,ServiceNow,sp500,D,ruptura de directriz (sin R/R),False,148.57,126.6224,149.6,192.77,2.01,13.1,False,1,2026-08-31,False,,1
+2026-10-15,TEL,TE Connectivity,sp500,D,recuperación del nivel barrido con volumen,True,212.99,205.934,223.52,241.3001,4.01,38.1,True,1,2026-10-06,False,,1
+2026-10-15,URI,United Rentals,sp500,D,recuperación del nivel barrido con volumen,True,1047.58,997.6283,1177.1487,1437.9607,7.82,69.0,True,3,2026-08-07,False,,2
+2026-10-15,UNH,UnitedHealth Group,sp500,D,ruptura de directriz (sin R/R),False,406.67,359.6705,433.6498,543.291,2.91,40.5,False,2,2026-07-22,False,,1
+2026-10-15,WELL,Welltower,sp500,W,ruptura de directriz,True,234.63,217.2314,254.2402,354.5425,6.89,51.0,False,2,2026-07-31,False,,1
+2026-10-15,WST,West Pharmaceutical Services,sp500,D,ruptura de directriz,True,383.02,360.8679,385.748,479.7009,4.36,52.8,False,2,2026-07-23,False,,1
+2026-10-15,WDAY,"Workday, Inc.",sp500/nasdaq100,D,ruptura de directriz,True,196.63,180.8282,227.49,298.6,6.45,69.0,False,3,2026-08-13,False,,1
+2026-10-15,AENA.MC,Aena,ibex35,D,ruptura de directriz,True,25.7,24.3734,27.82,29.88,3.15,44.8,True,3,2026-08-26,False,,1
+2026-10-15,SMH,Semiconductores,etfs,D,recuperación del nivel barrido con volumen,True,558.84,536.517,639.47,676.43,5.27,50.3,True,3,2026-10-06,False,,2
