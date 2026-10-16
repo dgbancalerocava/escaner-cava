@@ -158,3 +158,15 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-15,WDAY,"Workday, Inc.",sp500/nasdaq100,D,ruptura de directriz,True,196.63,180.8282,227.49,298.6,6.45,69.0,False,3,2026-08-13,False,,1
 2026-10-15,AENA.MC,Aena,ibex35,D,ruptura de directriz,True,25.7,24.3734,27.82,29.88,3.15,44.8,True,3,2026-08-26,False,,1
 2026-10-15,SMH,Semiconductores,etfs,D,recuperación del nivel barrido con volumen,True,558.84,536.517,639.47,676.43,5.27,50.3,True,3,2026-10-06,False,,2
+2026-10-16,ELV,Elevance Health,sp500,D,ruptura de directriz (sin R/R),False,428.26,373.1738,427.17,441.503,0.24,2.2,False,2,2026-09-14,False,,1
+2026-10-16,HPE,Hewlett Packard Enterprise,sp500,D,recuperación del nivel barrido con volumen,True,55.13,53.7277,73.56,87.6627,23.2,61.0,True,2,2026-10-09,False,,2
+2026-10-16,KVUE,Kenvue,sp500,D,ruptura de directriz (sin R/R),False,18.91,17.0785,19.5913,20.6834,0.97,15.8,False,2,2026-07-28,False,,1
+2026-10-16,KR,Kroger,sp500,W,ruptura de directriz (sin R/R),False,63.63,54.7256,75.6596,82.7329,2.15,0.7,False,0,2026-03-13,False,,1
+2026-10-16,LYB,LyondellBasell,sp500,D,ruptura de directriz (sin R/R),False,64.01,56.6792,68.4236,72.8548,1.21,14.0,False,1,2026-08-21,False,,1
+2026-10-16,NDSN,Nordson Corporation,sp500,D,recuperación del nivel barrido con volumen,True,322.31,317.0608,338.18,380.1176,11.01,51.0,True,2,2026-10-06,False,,2
+2026-10-16,PLTR,Palantir Technologies,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,186.03,182.5107,212.94,291.02,29.83,43.0,True,1,2026-10-12,False,,3
+2026-10-16,PM,Philip Morris International,sp500,D,ruptura de directriz (sin R/R),False,205.2,182.8614,205.9935,236.3599,1.39,15.0,False,1,2026-07-28,False,,1
+2026-10-16,UNH,UnitedHealth Group,sp500,D,ruptura de directriz,True,401.43,359.5823,429.0381,538.6794,3.28,32.4,False,2,2026-07-29,False,,1
+2026-10-16,WFC,Wells Fargo,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,83.87,77.5248,91.99,97.6255,2.17,21.8,True,2,2026-09-15,False,,1
+2026-10-16,WTW,Willis Towers Watson,sp500,D,ruptura de directriz (sin R/R),False,315.49,282.7871,350.3406,394.8208,2.43,22.1,False,0,2026-08-25,False,,1
+2026-10-16,XLB,Materiales básicos,etfs,W,recuperación del nivel barrido con volumen + ruptura de directriz,True,50.92,47.3629,53.9418,66.1915,4.29,58.5,True,4,2026-08-28,False,,1
