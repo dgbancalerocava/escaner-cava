@@ -170,3 +170,8 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-16,WFC,Wells Fargo,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,83.87,77.5248,91.99,97.6255,2.17,21.8,True,2,2026-09-15,False,,1
 2026-10-16,WTW,Willis Towers Watson,sp500,D,ruptura de directriz (sin R/R),False,315.49,282.7871,350.3406,394.8208,2.43,22.1,False,0,2026-08-25,False,,1
 2026-10-16,XLB,Materiales básicos,etfs,W,recuperación del nivel barrido con volumen + ruptura de directriz,True,50.92,47.3629,53.9418,66.1915,4.29,58.5,True,4,2026-08-28,False,,1
+2026-10-19,DG,Dollar General,sp500,D,ruptura de directriz (sin R/R),False,133.27,115.7719,133.4668,151.6218,1.05,8.2,False,1,2026-09-02,False,,1
+2026-10-19,EOG,EOG Resources,sp500,D,ruptura de directriz (sin R/R),False,157.65,135.5523,153.1297,164.0441,0.29,12.4,False,2,2026-09-15,False,,1
+2026-10-19,FTNT,Fortinet,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,171.5,165.0929,197.13,230.83,9.26,61.0,True,2,2026-10-13,False,,1
+2026-10-19,WST,West Pharmaceutical Services,sp500,D,ruptura de directriz (sin R/R),False,383.91,361.008,382.71,445.6337,2.7,24.5,False,2,2026-09-24,False,,1
+2026-10-19,CIBR,Ciberseguridad,etfs,D,recuperación del nivel barrido con volumen,True,99.92,97.3605,110.68,127.2724,10.69,61.0,True,2,2026-10-12,False,,3
