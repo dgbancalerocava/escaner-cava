@@ -175,3 +175,12 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-19,FTNT,Fortinet,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,171.5,165.0929,197.13,230.83,9.26,61.0,True,2,2026-10-13,False,,1
 2026-10-19,WST,West Pharmaceutical Services,sp500,D,ruptura de directriz (sin R/R),False,383.91,361.008,382.71,445.6337,2.7,24.5,False,2,2026-09-24,False,,1
 2026-10-19,CIBR,Ciberseguridad,etfs,D,recuperación del nivel barrido con volumen,True,99.92,97.3605,110.68,127.2724,10.69,61.0,True,2,2026-10-12,False,,3
+2026-10-20,DVA,DaVita,sp500,D,recuperación del nivel barrido con volumen,True,175.35,169.6691,247.49,275.5101,17.63,51.0,True,2,2026-08-03,False,,3
+2026-10-20,DAL,Delta Air Lines,sp500,D,recuperación del nivel barrido con volumen,True,76.66,73.4579,94.7435,106.4304,9.3,59.0,True,3,2026-08-05,False,,2
+2026-10-20,FITB,Fifth Third Bancorp,sp500,D,ruptura de directriz (sin R/R),False,52.41,48.8051,58.1469,61.1495,2.42,36.1,False,3,2026-08-17,False,,1
+2026-10-20,FOXA,Fox Corporation (Class A),sp500,D,ruptura de directriz (sin R/R),False,67.0,60.6401,70.6379,82.7705,2.48,30.4,False,1,2026-08-18,False,,1
+2026-10-20,MRSH,Marsh McLennan,sp500,D,ruptura de directriz (sin R/R),False,191.26,165.4972,197.339,208.7932,0.68,0.0,False,0,2026-07-29,False,,1
+2026-10-20,SBUX,Starbucks,sp500/nasdaq100,W,recuperación del nivel barrido con volumen (sin R/R),False,99.37,85.959,109.8788,124.6014,1.88,41.4,True,4,2026-08-14,False,,1
+2026-10-20,TROW,T. Rowe Price,sp500,W,recuperación del nivel barrido con volumen,True,102.13,96.8315,120.501,146.451,8.36,61.0,True,2,2026-07-31,False,,1
+2026-10-20,SOI.PA,Soitec,europe_tech,D,recuperación del nivel barrido con volumen,True,123.65,117.7632,173.5,211.99,15.01,61.0,True,2,2026-10-06,False,,1
+2026-10-20,SIE.DE,Siemens,europe_tech,D,recuperación del nivel barrido con volumen,True,260.25,253.4005,291.7,307.45,6.89,46.0,True,2,2026-08-28,False,,1
