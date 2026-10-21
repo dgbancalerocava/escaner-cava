@@ -184,3 +184,12 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-20,TROW,T. Rowe Price,sp500,W,recuperación del nivel barrido con volumen,True,102.13,96.8315,120.501,146.451,8.36,61.0,True,2,2026-07-31,False,,1
 2026-10-20,SOI.PA,Soitec,europe_tech,D,recuperación del nivel barrido con volumen,True,123.65,117.7632,173.5,211.99,15.01,61.0,True,2,2026-10-06,False,,1
 2026-10-20,SIE.DE,Siemens,europe_tech,D,recuperación del nivel barrido con volumen,True,260.25,253.4005,291.7,307.45,6.89,46.0,True,2,2026-08-28,False,,1
+2026-10-21,CRWD,CrowdStrike,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,239.34,218.3133,286.99,353.915,5.45,74.2,True,4,2026-10-06,False,,1
+2026-10-21,GRMN,Garmin,sp500,W,ruptura de directriz,True,291.13,261.041,313.0677,410.392,3.96,27.8,False,1,2026-08-14,False,,0
+2026-10-21,GPC,Genuine Parts Company,sp500,D,recuperación del nivel barrido con volumen,True,124.78,120.4157,138.8095,170.9965,10.59,46.0,True,2,2026-08-26,False,,3
+2026-10-21,IBKR,Interactive Brokers,sp500,D,recuperación del nivel barrido con volumen,True,85.33,79.7638,98.6607,104.6836,3.48,49.4,True,4,2026-08-25,False,,2
+2026-10-21,IQV,IQVIA,sp500,D,ruptura de directriz,True,276.63,250.5851,277.4,368.21,3.52,38.6,False,2,2026-09-23,False,,2
+2026-10-21,NUE,Nucor,sp500,W,ruptura de directriz (sin R/R),False,264.54,225.0638,279.446,412.9768,3.76,34.8,False,2,2026-08-07,False,,1
+2026-10-21,SMCI,Supermicro,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,35.57,30.2598,45.77,53.31,3.34,48.7,True,4,2026-10-07,False,,0
+2026-10-21,WMB,Williams Companies,sp500,W,recuperación del nivel barrido con volumen,True,72.8,67.4629,78.9199,105.4975,6.13,54.0,True,3,2026-05-22,False,,2
+2026-10-21,ZBRA,Zebra Technologies,sp500,D,ruptura de directriz,True,391.0,364.9365,390.8,544.7,5.9,50.5,False,2,2026-10-06,False,,1
