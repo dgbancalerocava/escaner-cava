@@ -193,3 +193,27 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-21,SMCI,Supermicro,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,35.57,30.2598,45.77,53.31,3.34,48.7,True,4,2026-10-07,False,,0
 2026-10-21,WMB,Williams Companies,sp500,W,recuperación del nivel barrido con volumen,True,72.8,67.4629,78.9199,105.4975,6.13,54.0,True,3,2026-05-22,False,,2
 2026-10-21,ZBRA,Zebra Technologies,sp500,D,ruptura de directriz,True,391.0,364.9365,390.8,544.7,5.9,50.5,False,2,2026-10-06,False,,1
+2026-10-22,MMM,3M,sp500,D,ruptura de directriz (sin R/R),False,175.56,158.514,183.885,203.0456,1.61,42.1,False,3,2026-08-13,False,,1
+2026-10-22,AVY,Avery Dennison,sp500,D,ruptura de directriz (sin R/R),False,184.66,165.7148,186.8243,200.0931,0.81,15.1,False,2,2026-07-30,False,,1
+2026-10-22,ED,Consolidated Edison,sp500,W,ruptura de directriz (sin R/R),False,116.26,101.3726,114.3268,134.4788,1.22,25.1,False,3,2026-03-20,False,,1
+2026-10-22,DVA,DaVita,sp500,W,ruptura de directriz,True,186.1,167.7103,247.49,317.58,7.15,61.0,False,2,2026-08-07,False,,1
+2026-10-22,DLTR,Dollar Tree,sp500,D,ruptura de directriz (sin R/R),False,131.04,110.133,137.07,162.31,1.5,20.5,False,1,2026-08-24,False,,1
+2026-10-22,ESS,Essex Property Trust,sp500,W,ruptura de directriz (sin R/R),False,282.45,264.0296,300.4818,335.7855,2.9,48.5,False,3,2026-07-10,False,,1
+2026-10-22,EG,Everest Group,sp500,D,ruptura de directriz (sin R/R),False,407.56,359.3483,397.6678,446.6348,0.81,17.1,False,1,2026-07-29,False,,1
+2026-10-22,IEX,IDEX Corporation,sp500,D,recuperación del nivel barrido con volumen,True,226.88,221.9811,243.0257,280.5905,10.96,61.0,True,2,2026-07-29,False,,3
+2026-10-22,JKHY,Jack Henry & Associates,sp500,D,ruptura de directriz (sin R/R),False,161.8,140.651,174.356,195.4946,1.59,13.0,False,0,2026-08-26,False,,1
+2026-10-22,KVUE,Kenvue,sp500,D,ruptura de directriz (sin R/R),False,19.88,17.0698,19.3606,20.4527,0.2,0.0,False,1,2026-07-29,False,,1
+2026-10-22,KIM,Kimco Realty,sp500,W,ruptura de directriz,True,23.59,21.5114,26.338,31.356,3.74,57.7,False,3,2026-07-31,False,,0
+2026-10-22,LMT,Lockheed Martin,sp500,W,ruptura de directriz (sin R/R),False,589.91,475.6294,683.2731,770.544,1.58,34.9,False,4,2026-03-06,False,,1
+2026-10-22,MAS,Masco,sp500,D,ruptura de directriz (sin R/R),False,78.05,65.7554,77.5101,85.8923,0.64,19.2,False,2,2026-08-07,False,,1
+2026-10-22,MSCI,MSCI,sp500,D,ruptura de directriz (sin R/R),False,620.24,531.6818,587.8875,605.0551,-0.17,0.0,False,1,2026-07-29,False,,1
+2026-10-22,PM,Philip Morris International,sp500,D,ruptura de directriz (sin R/R),False,201.74,182.6027,210.45,225.0295,1.22,9.1,False,1,2026-10-15,False,,0
+2026-10-22,SHW,Sherwin-Williams,sp500,D,ruptura de directriz (sin R/R),False,345.63,309.2295,371.3018,393.2302,1.31,1.5,False,0,2026-08-07,False,,1
+2026-10-22,SYY,Sysco,sp500,D,ruptura de directriz (sin R/R),False,83.97,75.7187,85.8287,95.16,1.36,19.8,False,1,2026-08-03,False,,1
+2026-10-22,TROW,T. Rowe Price,sp500,D,ruptura de directriz,True,103.45,97.4778,120.0071,134.8722,5.26,73.3,True,4,2026-07-29,False,,1
+2026-10-22,WAB,Wabtec,sp500,D,recuperación del nivel barrido con volumen,True,276.47,270.5095,306.3238,346.4764,11.75,61.0,True,2,2026-07-29,False,,3
+2026-10-22,WAB,Wabtec,sp500,W,recuperación del nivel barrido con volumen,True,276.47,268.7737,306.3238,428.0335,19.69,51.0,True,2,2026-07-31,False,,3
+2026-10-22,WEC,WEC Energy Group,sp500,W,ruptura de directriz (sin R/R),False,112.15,98.7228,118.8738,132.0086,1.48,36.4,True,3,2026-07-10,False,,0
+2026-10-21,ITX.MC,Inditex,ibex35,W,ruptura de directriz (sin R/R),False,56.8,50.9148,59.42,71.5329,2.5,54.5,True,4,2026-08-14,False,,0
+2026-10-22,QQQ,Nasdaq 100,etfs,D,recuperación del nivel barrido con volumen,True,704.47,698.9495,762.86,804.3082,18.09,56.0,True,2,2026-10-06,True,,4
+2026-10-22,XLK,Tecnología EEUU,etfs,D,recuperación del nivel barrido con volumen,True,182.34,180.5192,203.25,218.494,19.86,64.0,True,3,2026-10-06,True,,4
