@@ -217,3 +217,6 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-21,ITX.MC,Inditex,ibex35,W,ruptura de directriz (sin R/R),False,56.8,50.9148,59.42,71.5329,2.5,54.5,True,4,2026-08-14,False,,0
 2026-10-22,QQQ,Nasdaq 100,etfs,D,recuperación del nivel barrido con volumen,True,704.47,698.9495,762.86,804.3082,18.09,56.0,True,2,2026-10-06,True,,4
 2026-10-22,XLK,Tecnología EEUU,etfs,D,recuperación del nivel barrido con volumen,True,182.34,180.5192,203.25,218.494,19.86,64.0,True,3,2026-10-06,True,,4
+2026-10-23,MRSH,Marsh McLennan,sp500,D,ruptura de directriz (sin R/R),False,197.48,165.4253,194.5354,205.9895,0.27,0.0,False,0,2026-08-24,False,,1
+2026-10-23,SPG,Simon Property Group,sp500,D,ruptura de directriz (sin R/R),False,211.63,195.8791,232.7716,255.4504,2.78,26.9,False,1,2026-07-30,False,,1
+2026-10-23,TROW,T. Rowe Price,sp500,D,ruptura de directriz,True,104.2,97.4762,118.407,133.2722,4.32,60.6,True,3,2026-07-30,False,,1
