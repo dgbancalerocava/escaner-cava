@@ -220,3 +220,9 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-23,MRSH,Marsh McLennan,sp500,D,ruptura de directriz (sin R/R),False,197.48,165.4253,194.5354,205.9895,0.27,0.0,False,0,2026-08-24,False,,1
 2026-10-23,SPG,Simon Property Group,sp500,D,ruptura de directriz (sin R/R),False,211.63,195.8791,232.7716,255.4504,2.78,26.9,False,1,2026-07-30,False,,1
 2026-10-23,TROW,T. Rowe Price,sp500,D,ruptura de directriz,True,104.2,97.4762,118.407,133.2722,4.32,60.6,True,3,2026-07-30,False,,1
+2026-10-26,AVY,Avery Dennison,sp500,D,ruptura de directriz (sin R/R),False,183.43,165.6982,184.6966,197.9654,0.82,20.1,False,2,2026-08-24,False,,1
+2026-10-26,MSFT,Microsoft,sp500/nasdaq100,D,ruptura de directriz,True,532.6,512.8757,551.15,718.3062,9.42,51.0,False,2,2026-10-13,False,,1
+2026-10-26,SPG,Simon Property Group,sp500,D,ruptura de directriz (sin R/R),False,212.69,195.8978,229.4077,252.0865,2.35,24.7,False,1,2026-07-31,False,,1
+2026-10-26,TDY,Teledyne Technologies,sp500,W,ruptura de directriz,True,645.47,582.7147,697.67,868.77,3.56,56.8,False,3,2026-08-14,False,,0
+2026-10-26,WAB,Wabtec,sp500,D,recuperación del nivel barrido con volumen,True,277.67,269.2673,304.0462,324.2951,5.55,56.7,True,3,2026-08-17,False,,2
+2026-10-26,ASML,ASML (ADR),nasdaq100,D,recuperación del nivel barrido con volumen,True,1590.9,1536.296,1896.35,2083.3027,9.02,54.0,True,3,2026-08-17,False,,2
