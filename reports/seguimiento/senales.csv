@@ -226,3 +226,11 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-26,TDY,Teledyne Technologies,sp500,W,ruptura de directriz,True,645.47,582.7147,697.67,868.77,3.56,56.8,False,3,2026-08-14,False,,0
 2026-10-26,WAB,Wabtec,sp500,D,recuperación del nivel barrido con volumen,True,277.67,269.2673,304.0462,324.2951,5.55,56.7,True,3,2026-08-17,False,,2
 2026-10-26,ASML,ASML (ADR),nasdaq100,D,recuperación del nivel barrido con volumen,True,1590.9,1536.296,1896.35,2083.3027,9.02,54.0,True,3,2026-08-17,False,,2
+2026-10-27,CNP,CenterPoint Energy,sp500,W,ruptura de directriz (sin R/R),False,41.97,35.943,44.9911,54.1138,2.01,31.1,False,2,2026-07-31,False,,0
+2026-10-27,MRVL,Marvell Technology,sp500/nasdaq100,D,ruptura de directriz,True,243.57,216.2849,301.2042,358.5498,4.21,52.1,False,2,2026-10-06,False,,1
+2026-10-27,MRNA,Moderna,sp500,D,ruptura de directriz (sin R/R),False,207.97,174.0545,254.48,384.39,5.2,42.0,False,2,2026-10-21,False,,0
+2026-10-27,NEM,Newmont,sp500,D,recuperación del nivel barrido con volumen,True,112.64,105.9963,135.009,153.4033,6.14,72.0,True,4,2026-08-25,False,,2
+2026-10-27,PYPL,PayPal,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,56.09,53.9884,62.5754,73.2765,8.18,69.0,True,3,2026-08-20,False,,2
+2026-10-27,HOOD,Robinhood Markets,sp500,D,recuperación del nivel barrido con volumen,True,94.56,90.2935,126.74,145.191,11.87,38.0,True,1,2026-09-23,False,,3
+2026-10-27,SNDK,Sandisk,sp500,D,recuperación del nivel barrido con volumen,True,1304.84,1206.1115,1909.48,2140.18,8.46,59.0,True,3,2026-09-22,False,,2
+2026-10-27,BBVA.MC,BBVA,ibex35,D,ruptura de directriz,True,22.7,21.68,25.1681,28.2228,5.41,58.1,False,2,2026-09-29,False,,1
