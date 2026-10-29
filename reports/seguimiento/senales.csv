@@ -238,3 +238,17 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-28,BE,Bloom Energy,sp500,D,recuperación del nivel barrido con volumen (sin R/R),False,228.08,184.0705,302.354,334.02,2.41,34.0,True,4,2026-09-29,False,,2
 2026-10-28,STLD,Steel Dynamics,sp500,W,ruptura de directriz (sin R/R),False,249.99,213.0948,287.3985,401.9223,4.12,54.6,True,3,2026-06-19,False,,1
 2026-10-28,URI,United Rentals,sp500,W,ruptura de directriz (sin R/R),False,1174.61,948.3328,1177.1487,1625.3879,1.99,21.0,False,2,2026-08-07,False,,0
+2026-10-29,AMP,Ameriprise Financial,sp500,D,recuperación del nivel barrido con volumen,True,497.9,475.8397,572.56,630.5105,6.01,51.0,True,2,2026-08-14,False,,2
+2026-10-29,APH,Amphenol,sp500,W,ruptura de directriz (sin R/R),False,82.08,69.5539,89.93,133.429,4.1,31.5,False,2,2026-10-09,False,,0
+2026-10-29,DVA,DaVita,sp500,D,ruptura de directriz (sin R/R),False,193.31,170.2442,208.53,236.55,1.87,38.4,True,3,2026-08-05,False,,1
+2026-10-29,DLR,Digital Realty,sp500,W,ruptura de directriz,True,182.91,165.6528,206.0571,248.6505,3.81,50.0,False,2,2026-07-24,False,,0
+2026-10-29,EW,Edwards Lifesciences,sp500,D,ruptura de directriz (sin R/R),False,94.44,82.6935,93.91,99.85,0.46,8.3,False,2,2026-08-11,False,,1
+2026-10-29,EXR,Extra Space Storage,sp500,D,ruptura de directriz (sin R/R),False,149.9,129.7704,150.8266,156.5377,0.33,7.6,True,2,2026-08-06,False,,1
+2026-10-29,IDXX,Idexx Laboratories,sp500/nasdaq100,W,ruptura de directriz (sin R/R),False,575.98,492.3388,769.98,914.45,4.05,23.2,False,1,2025-11-28,False,,1
+2026-10-29,ICE,Intercontinental Exchange,sp500,D,ruptura de directriz,True,163.04,152.9215,164.69,197.2036,3.38,37.9,False,2,2026-10-23,False,,1
+2026-10-29,IFF,International Flavors & Fragrances,sp500,D,recuperación del nivel barrido con volumen,True,90.81,89.601,94.65,112.9497,18.31,46.0,True,2,2026-10-26,False,,3
+2026-10-29,KEY,KeyCorp,sp500,W,recuperación del nivel barrido con volumen,True,21.49,19.1945,23.8417,31.3526,4.3,53.5,True,4,2026-07-17,False,,1
+2026-10-29,PWR,Quanta Services,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,635.18,511.6118,788.4945,1088.7766,3.67,52.4,True,3,2026-05-08,False,,2
+2026-10-29,TROW,T. Rowe Price,sp500,D,ruptura de directriz (sin R/R),False,106.63,97.4795,115.4834,128.0354,2.34,37.7,True,2,2026-08-05,False,,1
+2026-10-29,TEAM,Atlassian,nasdaq100,D,recuperación del nivel barrido con volumen,True,204.1,197.6599,229.96,355.6,23.52,51.0,True,2,2026-10-22,False,,3
+2026-10-29,PUIG.MC,Puig,ibex35,D,recuperación del nivel barrido con volumen,True,18.9,18.5206,19.76,22.67,9.94,43.0,True,1,2026-10-26,False,,3
