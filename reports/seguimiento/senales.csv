@@ -261,3 +261,16 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-10-30,SW,Smurfit Westrock,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,43.09,38.7227,50.52,54.4011,2.59,31.9,True,3,2026-08-26,False,,1
 2026-10-30,CCEP,Coca-Cola Europacific,nasdaq100,D,ruptura de directriz,True,113.22,109.0649,114.55,128.24,3.61,39.1,False,2,2026-10-22,False,,1
 2026-10-30,REP.MC,Repsol,ibex35,D,ruptura de directriz,True,30.73,27.9414,31.64,39.4942,3.14,52.7,False,4,2026-09-24,False,,1
+2026-11-02,AMZN,Amazon,sp500/nasdaq100,W,recuperación del nivel barrido con volumen,True,245.63,225.3323,287.2,355.18,5.4,53.0,True,2,2026-08-07,False,,1
+2026-11-02,BF-B,Brown–Forman,sp500,D,ruptura de directriz (sin R/R),False,30.0,27.301,30.2,33.0201,1.12,39.6,False,3,2026-10-22,False,,0
+2026-11-02,COF,Capital One,sp500,D,ruptura de directriz (sin R/R),False,210.77,191.7297,227.3372,243.4903,1.72,24.6,True,2,2026-08-14,False,,1
+2026-11-02,CCL,Carnival Corporation,sp500,W,ruptura de directriz (sin R/R),False,30.05,20.9006,33.4918,41.3797,1.24,22.2,True,2,2026-02-06,False,,1
+2026-11-02,DASH,DoorDash,sp500/nasdaq100,W,recuperación del nivel barrido con volumen (sin R/R),False,190.07,159.1378,285.5,329.48,4.51,33.5,True,2,2025-10-17,False,,2
+2026-11-02,DOC,Healthpeak Properties,sp500,W,ruptura de directriz,True,19.48,18.0964,22.6005,25.9688,4.69,62.4,False,3,2026-07-31,False,,1
+2026-11-02,MDLZ,Mondelez International,sp500/nasdaq100,D,ruptura de directriz (sin R/R),False,66.38,61.1594,65.22,69.4565,0.59,28.9,False,2,2026-10-22,False,,0
+2026-11-02,NI,NiSource,sp500,W,ruptura de directriz (sin R/R),False,44.86,37.7255,48.5547,55.0886,1.43,39.2,True,4,2026-07-03,False,,0
+2026-11-02,PPL,PPL Corporation,sp500,W,ruptura de directriz (sin R/R),False,36.14,31.4642,39.462,44.3758,1.76,24.8,False,2,2026-04-17,False,,1
+2026-11-02,UAL,United Airlines Holdings,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,109.24,92.0526,138.77,181.31,4.19,45.0,True,3,2026-07-03,False,,2
+2026-11-02,UHS,Universal Health Services,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,180.65,167.6099,191.58,220.6147,3.06,52.3,True,4,2026-10-27,False,,0
+2026-11-02,VTR,Ventas,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,86.72,75.5406,100.9921,123.6086,3.3,45.5,True,3,2026-07-31,False,,1
+2026-11-02,WRB,W. R. Berkley Corporation,sp500,D,ruptura de directriz (sin R/R),False,75.16,70.9723,75.88,80.98,1.39,32.9,False,2,2026-10-22,False,,1
