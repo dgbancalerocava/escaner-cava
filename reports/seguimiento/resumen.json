@@ -720,11 +720,11 @@
    "fecha": "2026-10-09",
    "ticker": "KMI",
    "marco": "W",
-   "entrada": 32.64,
+   "entrada": 32.35,
    "stop": "29.0316",
    "objetivo2": "44.9943",
-   "fija_R": 0.02,
-   "ges_R": 0.02
+   "fija_R": 0.11,
+   "ges_R": 0.11
   },
   {
    "fecha": "2026-10-09",
@@ -1230,11 +1230,11 @@
    "fecha": "2026-10-30",
    "ticker": "CCEP",
    "marco": "D",
-   "entrada": 114.44,
+   "entrada": 114.58,
    "stop": "109.0649",
    "objetivo2": "128.24",
-   "fija_R": 0.21,
-   "ges_R": 0.21
+   "fija_R": 0.18,
+   "ges_R": 0.18
   },
   {
    "fecha": "2026-10-30",

@@ -1,12 +1,12 @@
-# Escáner método Cava · 2026-11-02
+# Escáner método Cava · 2026-11-03
 
-Analizados: 608 · Señales: 15 · Trampas: 30 · Vigilancia: 25
+Analizados: 607 · Señales: 15 · Trampas: 30 · Vigilancia: 25
 
 ## Mercado
 | Índice | Cierre | MACD sem. | MACD mens. alcista | Sobre SMA200 | Filtro mercado | Estado |
 |---|---|---|---|---|---|---|
-| S&P 500 | 7.541,40 | 113,04 | sí | sí | a favor | sin fuerza de tendencia (ADX máx 16) |
-| Nasdaq 100 | 27.989,82 | 376,75 | no | sí | – | retroceso excesivo (81%): tendencia dañada |
+| S&P 500 | 7.568,92 | 115,23 | sí | sí | a favor | sin fuerza de tendencia (ADX máx 17) |
+| Nasdaq 100 | 28.180,26 | 391,95 | no | sí | – | retroceso excesivo (81%): tendencia dañada |
 | IBEX 35 | 18.957,80 | 182,97 | no | sí | a favor | Trampa hecha · esperando ruptura |
 | Euro Stoxx 50 | 6.176,06 | 29,98 | no | sí | a favor | Trampa hecha · esperando ruptura |
 | DAX | 25.981,09 | 247,42 | no | sí | – | En vigilancia |
@@ -29,7 +29,7 @@ Analizados: 608 · Señales: 15 · Trampas: 30 · Vigilancia: 25
 | PUIG.MC (Puig) | D | 19,48 | 19,48 | 18,52 | 4,9 | 19,76 | 22,67 | 3,3 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; barrida con volumen 1.7x (manos fuertes); recuperó el nivel el 2026-10-29 |
 | MET (MetLife) | W | 100,94 | 100,94 | 91,22 | 9,6 | 100,93 | 130,68 | 3,1 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; MACD mensual alcista |
 | TROW (T. Rowe Price) | W | 105,85 | 105,85 | 96,82 | 8,5 | 120,50 | 146,45 | 4,5 | 0 | RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); ruptura con volumen 1.3x; recuperó el nivel el 2026-10-23; la ruptura fue el 2026-10-30 |
-| UHS (Universal Health Services) | D | 180,65 | 180,65 | 167,61 | 7,2 | 191,58 | 220,61 | 3,1 | 0 | RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 2.5x (manos fuertes); ruptura con volumen 1.4x; recuperó el nivel el 2026-10-29 |
+| UHS (Universal Health Services) | D | 180,65 | 180,65 | 167,57 | 7,2 | 191,58 | 220,61 | 3,1 | 0 | RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 2.5x (manos fuertes); ruptura con volumen 1.4x; recuperó el nivel el 2026-10-29 |
 
 ## Trampa hecha · esperando ruptura (30)
 
@@ -43,7 +43,7 @@ Analizados: 608 · Señales: 15 · Trampas: 30 · Vigilancia: 25
 | PFG (Principal Financial Group) | W | 112,81 | 113,05 | 104,80 | 7,3 | 121,18 | 162,42 | 6,0 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
 | MTS.MC (ArcelorMittal) | D | 55,50 | 56,42 | 52,15 | 7,6 | 68,52 | 73,70 | 4,0 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
 | HSIC (Henry Schein) | D | 86,62 | 87,17 | 83,27 | 4,5 | 91,69 | 102,36 | 3,9 | ★ | corrección madura en tiempo; MACD mensual alcista |
-| STLD (Steel Dynamics) | W | 251,91 | 251,91 | 213,18 | 15,4 | 287,40 | 401,92 | 3,9 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); la ruptura fue el 2026-10-30; stop muy lejano (15.4 %) |
+| STLD (Steel Dynamics) | W | 251,91 | 251,91 | 213,19 | 15,4 | 287,40 | 401,92 | 3,9 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); la ruptura fue el 2026-10-30; stop muy lejano (15.4 %) |
 | DOC (Healthpeak Properties) | D | 19,48 | 19,57 | 18,22 | 6,9 | 21,57 | 24,59 | 3,7 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista |
 | BBVA.MC (BBVA) | D | 21,58 | 22,40 | 20,87 | 6,8 | 25,17 | 27,43 | 3,3 | ★ | corrección madura en tiempo; MACD mensual alcista |
 | VTR (Ventas) | W | 86,72 | 86,72 | 75,54 | 12,9 | 100,99 | 123,61 | 3,3 | ★ | escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.3x (manos fuertes); recuperó el nivel el 2026-10-30; stop muy lejano (12.9 %) |
@@ -79,7 +79,7 @@ Analizados: 608 · Señales: 15 · Trampas: 30 · Vigilancia: 25
 | ACX.MC (Acerinox) | D | 15,82 | 17,06 | 15,35 | 10,0 | 18,50 | 20,46 | 2,0 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 2.0 < 3: no cumple, esperar mejor precio |
 | HPE (Hewlett Packard Enterprise) | D | 51,19 | 61,49 | 49,92 | 18,8 | 73,56 | 83,78 | 1,9 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 1.9 < 3: no cumple, esperar mejor precio; stop muy lejano (18.8 %) |
 | WM (Waste Management) | D | 237,71 | 238,14 | 223,33 | 6,2 | 241,47 | 265,53 | 1,8 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; R/R 1.8 < 3: no cumple, esperar mejor precio |
-| EXPE (Expedia Group) | D | 298,99 | 300,14 | 250,25 | 16,6 | 341,51 | 389,05 | 1,8 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; R/R 1.8 < 3: no cumple, esperar mejor precio; stop muy lejano (16.6 %) |
+| EXPE (Expedia Group) | D | 298,99 | 300,22 | 250,25 | 16,6 | 341,51 | 389,05 | 1,8 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; R/R 1.8 < 3: no cumple, esperar mejor precio; stop muy lejano (16.6 %) |
 | NWS (News Corp (Class B)) | D | 32,46 | 33,92 | 30,90 | 8,9 | 35,65 | 39,04 | 1,7 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; R/R 1.7 < 3: no cumple, esperar mejor precio |
 | UNH (UnitedHealth Group) | D | 400,44 | 416,15 | 391,30 | 6,0 | 426,55 | 458,06 | 1,7 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 1.7 < 3: no cumple, esperar mejor precio |
 | ABNB (Airbnb) | D | 171,11 | 175,55 | 147,85 | 15,8 | 193,45 | 215,22 | 1,4 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 1.4 < 3: no cumple, esperar mejor precio; stop muy lejano (15.8 %) |
@@ -91,10 +91,10 @@ Analizados: 608 · Señales: 15 · Trampas: 30 · Vigilancia: 25
 | IDR.MC (Indra) | D | 64,66 | 65,98 | 55,85 | 15,4 | 66,00 | 76,50 | 1,0 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; R/R 1.0 < 3: no cumple, esperar mejor precio; stop muy lejano (15.4 %) |
 | CVS (CVS Health) | D | 88,51 | 94,28 | 83,08 | 11,9 | 97,80 | 104,99 | 1,0 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 1.0 < 3: no cumple, esperar mejor precio |
 | SYY (Sysco) | D | 81,74 | 83,99 | 75,69 | 9,9 | 84,80 | 91,23 | 0,9 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 0.9 < 3: no cumple, esperar mejor precio |
-| DELL (Dell Technologies) | D | 392,78 | 593,73 | 383,26 | 35,4 | 594,69 | 759,40 | 0,8 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 0.8 < 3: no cumple, esperar mejor precio; stop muy lejano (35.4 %) |
+| DELL (Dell Technologies) | D | 392,78 | 593,73 | 383,22 | 35,5 | 594,69 | 759,36 | 0,8 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 0.8 < 3: no cumple, esperar mejor precio; stop muy lejano (35.5 %) |
 | AENA.MC (Aena) | D | 27,60 | 27,62 | 24,36 | 11,8 | 27,82 | 29,88 | 0,7 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 0.7 < 3: no cumple, esperar mejor precio |
 | SNPS (Synopsys) | D | 466,08 | 504,16 | 412,82 | 18,1 | 512,49 | 567,54 | 0,7 | ★ | corrección madura en tiempo; R/R 0.7 < 3: no cumple, esperar mejor precio; stop muy lejano (18.1 %) |
-| UNP (Union Pacific Corporation) | D | 307,00 | 307,78 | 266,87 | 13,3 | 312,70 | 334,89 | 0,7 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 0.7 < 3: no cumple, esperar mejor precio; stop muy lejano (13.3 %) |
+| UNP (Union Pacific Corporation) | D | 307,00 | 307,79 | 266,87 | 13,3 | 312,70 | 334,89 | 0,7 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 0.7 < 3: no cumple, esperar mejor precio; stop muy lejano (13.3 %) |
 
 ## Autoevaluación en vivo
 
@@ -219,7 +219,7 @@ Operaciones abiertas: 94 · pendientes de entrar: 3 · anuladas (abren bajo el s
 | 2026-10-09 | EVRG | W | 81.09 | 76.5031 | 110.01 | +1.19 |
 | 2026-10-09 | DOC | D | 18.66 | 18.248 | 25.756 | +2.00 |
 | 2026-10-09 | HLT | W | 325.79 | 296.3754 | 462.406 | +1.32 |
-| 2026-10-09 | KMI | W | 32.64 | 29.0316 | 44.9943 | +0.02 |
+| 2026-10-09 | KMI | W | 32.35 | 29.0316 | 44.9943 | +0.11 |
 | 2026-10-09 | SAP.DE | D | 190.58 | 179.9686 | 236.78 | +1.88 |
 | 2026-10-09 | NEXI.MI | D | 4.21 | 3.9862 | 5.237 | +1.29 |
 | 2026-10-09 | XLF | D | 54.86 | 52.639 | 61.0372 | +1.22 |
@@ -270,5 +270,5 @@ Operaciones abiertas: 94 · pendientes de entrar: 3 · anuladas (abren bajo el s
 | 2026-10-29 | KEY | W | 21.5 | 19.1945 | 31.3526 | -0.00 |
 | 2026-10-29 | PUIG.MC | D | 19.02 | 18.5206 | 22.67 | +0.92 |
 | 2026-10-30 | BAX | D | 23.34 | 22.2697 | 34.3488 | +0.82 |
-| 2026-10-30 | CCEP | D | 114.44 | 109.0649 | 128.24 | +0.21 |
+| 2026-10-30 | CCEP | D | 114.58 | 109.0649 | 128.24 | +0.18 |
 | 2026-10-30 | REP.MC | D | 30.24 | 27.9414 | 39.4942 | -0.12 |

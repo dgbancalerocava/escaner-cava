@@ -274,3 +274,4 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-02,UHS,Universal Health Services,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,180.65,167.6099,191.58,220.6147,3.06,52.3,True,4,2026-10-27,False,,0
 2026-11-02,VTR,Ventas,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,86.72,75.5406,100.9921,123.6086,3.3,45.5,True,3,2026-07-31,False,,1
 2026-11-02,WRB,W. R. Berkley Corporation,sp500,D,ruptura de directriz (sin R/R),False,75.16,70.9723,75.88,80.98,1.39,32.9,False,2,2026-10-22,False,,1
+2026-11-02,APD,Air Products,sp500,W,ruptura de directriz (sin R/R),False,316.03,263.8939,314.87,357.5129,0.8,28.0,False,3,2026-07-10,False,,1
