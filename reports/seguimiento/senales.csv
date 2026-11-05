@@ -275,3 +275,7 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-02,VTR,Ventas,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,86.72,75.5406,100.9921,123.6086,3.3,45.5,True,3,2026-07-31,False,,1
 2026-11-02,WRB,W. R. Berkley Corporation,sp500,D,ruptura de directriz (sin R/R),False,75.16,70.9723,75.88,80.98,1.39,32.9,False,2,2026-10-22,False,,1
 2026-11-02,APD,Air Products,sp500,W,ruptura de directriz (sin R/R),False,316.03,263.8939,314.87,357.5129,0.8,28.0,False,3,2026-07-10,False,,1
+2026-11-03,AAPL,Apple Inc.,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,331.9,323.469,351.73,403.5459,8.5,46.0,True,2,2026-10-23,False,,1
+2026-11-03,DAL,Delta Air Lines,sp500,D,ruptura de directriz (sin R/R),False,83.28,73.4296,91.9514,101.5548,1.86,15.3,True,2,2026-08-13,False,,1
+2026-11-03,DD,DuPont,sp500,W,ruptura de directriz (sin R/R),False,153.46,120.8276,156.0402,213.2557,1.83,20.2,False,2,2026-02-13,False,,1
+2026-11-03,HSIC,Henry Schein,sp500,D,recuperación del nivel barrido con volumen,True,82.5,80.4805,91.69,102.36,9.83,56.0,True,2,2026-09-03,False,,3
