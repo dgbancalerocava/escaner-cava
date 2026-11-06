@@ -279,3 +279,24 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-03,DAL,Delta Air Lines,sp500,D,ruptura de directriz (sin R/R),False,83.28,73.4296,91.9514,101.5548,1.86,15.3,True,2,2026-08-13,False,,1
 2026-11-03,DD,DuPont,sp500,W,ruptura de directriz (sin R/R),False,153.46,120.8276,156.0402,213.2557,1.83,20.2,False,2,2026-02-13,False,,1
 2026-11-03,HSIC,Henry Schein,sp500,D,recuperación del nivel barrido con volumen,True,82.5,80.4805,91.69,102.36,9.83,56.0,True,2,2026-09-03,False,,3
+2026-11-04,AEP,American Electric Power,sp500/nasdaq100,D,recuperación del nivel barrido con volumen (sin R/R),False,129.24,123.0793,132.17,139.18,1.61,26.1,True,1,2026-10-30,False,,1
+2026-11-04,AIG,American International Group,sp500,D,recuperación del nivel barrido con volumen (sin R/R),False,81.71,77.9009,83.07,88.75,1.85,35.2,True,2,2026-10-22,False,,2
+2026-11-04,CBRE,CBRE Group,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,141.11,118.9536,174.27,211.47,3.18,44.9,True,3,2026-02-13,False,,2
+2026-11-04,CSCO,Cisco,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,103.61,100.6271,124.45,149.6053,15.42,61.0,True,2,2026-08-12,False,,3
+2026-11-04,EQIX,Equinix,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,1054.09,915.06,1118.655,1370.9588,2.28,43.4,True,4,2026-06-26,False,,2
+2026-11-04,BEN,Franklin Resources,sp500,D,ruptura de directriz (sin R/R),False,33.87,29.8804,35.0325,39.1901,1.33,32.7,False,2,2026-08-27,False,,1
+2026-11-04,BEN,Franklin Resources,sp500,W,ruptura de directriz (sin R/R),False,33.87,29.6513,35.9135,50.9395,4.05,44.2,False,3,2026-08-07,False,,1
+2026-11-04,DOC,Healthpeak Properties,sp500,D,ruptura de directriz (sin R/R),False,20.17,18.2166,21.5739,24.591,2.26,45.3,False,3,2026-08-26,False,,1
+2026-11-04,HPQ,HP Inc.,sp500,D,recuperación del nivel barrido con volumen,True,29.93,26.5703,36.23,43.2587,3.97,58.8,True,3,2026-09-11,False,,2
+2026-11-04,JPM,JPMorgan Chase,sp500,D,ruptura de directriz (sin R/R),False,352.11,324.7104,364.6806,398.9921,1.71,26.6,False,1,2026-08-13,False,,1
+2026-11-04,MPC,Marathon Petroleum,sp500,D,recuperación del nivel barrido con volumen,True,392.68,374.0263,493.98,635.4507,13.01,61.0,True,2,2026-10-19,False,,2
+2026-11-04,NEE,NextEra Energy,sp500,W,ruptura de directriz (sin R/R),False,88.45,73.4962,97.3003,112.6527,1.62,37.1,True,3,2026-05-01,False,,1
+2026-11-04,PFG,Principal Financial Group,sp500,W,ruptura de directriz,True,117.31,104.7325,121.18,162.4208,3.59,46.9,False,3,2026-09-04,False,,1
+2026-11-04,PRU,Prudential Financial,sp500,D,ruptura de directriz (sin R/R),False,126.63,111.2045,124.8882,145.1274,1.2,27.0,False,2,2026-08-17,False,,1
+2026-11-04,SHW,Sherwin-Williams,sp500,D,ruptura de directriz (sin R/R),False,363.5,310.538,367.0815,389.01,0.48,16.4,True,3,2026-08-11,False,,1
+2026-11-04,SWKS,Skyworks Solutions,sp500,D,recuperación del nivel barrido con volumen (sin R/R),False,82.92,71.8089,92.8,110.26,2.46,33.3,True,2,2026-09-23,False,,2
+2026-11-04,TROW,T. Rowe Price,sp500,D,ruptura de directriz (sin R/R),False,112.57,97.3549,113.5968,126.1489,0.89,33.5,True,3,2026-08-11,False,,1
+2026-11-04,VLO,Valero Energy,sp500,D,recuperación del nivel barrido con volumen,True,365.34,342.4089,461.52,576.9459,9.23,61.0,True,2,2026-10-14,False,,1
+2026-11-04,GWW,W. W. Grainger,sp500,W,ruptura de directriz (sin R/R),False,1489.39,1219.8179,1417.1425,1770.806,1.04,24.2,False,3,2026-07-17,False,,1
+2026-11-04,IAG.MC,IAG,ibex35,D,ruptura de directriz (sin R/R),False,5.222,4.6778,5.254,5.8652,1.18,26.9,False,2,2026-08-26,False,,1
+2026-11-04,RED.MC,Redeia,ibex35,D,ruptura de directriz (sin R/R),False,15.61,14.4321,15.42,16.128,0.44,23.2,False,2,2026-08-12,False,,1
