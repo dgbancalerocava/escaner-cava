@@ -300,3 +300,5 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-04,GWW,W. W. Grainger,sp500,W,ruptura de directriz (sin R/R),False,1489.39,1219.8179,1417.1425,1770.806,1.04,24.2,False,3,2026-07-17,False,,1
 2026-11-04,IAG.MC,IAG,ibex35,D,ruptura de directriz (sin R/R),False,5.222,4.6778,5.254,5.8652,1.18,26.9,False,2,2026-08-26,False,,1
 2026-11-04,RED.MC,Redeia,ibex35,D,ruptura de directriz (sin R/R),False,15.61,14.4321,15.42,16.128,0.44,23.2,False,2,2026-08-12,False,,1
+2026-11-05,P,Everpure,sp500,D,recuperación del nivel barrido con volumen,True,93.44,89.1815,157.57,184.3,21.34,51.0,True,2,2026-10-13,False,,2
+2026-11-05,GM,General Motors,sp500,D,ruptura de directriz (sin R/R),False,89.33,73.8224,88.9361,93.3934,0.26,0.0,False,1,2026-08-12,False,,1
