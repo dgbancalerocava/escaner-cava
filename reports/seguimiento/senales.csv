@@ -302,3 +302,23 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-04,RED.MC,Redeia,ibex35,D,ruptura de directriz (sin R/R),False,15.61,14.4321,15.42,16.128,0.44,23.2,False,2,2026-08-12,False,,1
 2026-11-05,P,Everpure,sp500,D,recuperación del nivel barrido con volumen,True,93.44,89.1815,157.57,184.3,21.34,51.0,True,2,2026-10-13,False,,2
 2026-11-05,GM,General Motors,sp500,D,ruptura de directriz (sin R/R),False,89.33,73.8224,88.9361,93.3934,0.26,0.0,False,1,2026-08-12,False,,1
+2026-11-09,AMCR,Amcor,sp500,D,ruptura de directriz,True,45.14,43.7534,49.71,53.02,5.68,41.4,False,1,2026-11-04,False,,0
+2026-11-09,AME,Ametek,sp500,W,recuperación del nivel barrido con volumen,True,238.24,218.9175,260.78,339.3547,5.23,55.2,True,3,2026-08-14,False,,1
+2026-11-09,XYZ,"Block, Inc.",sp500,D,ruptura de directriz (sin R/R),False,88.56,72.9503,86.92,93.74,0.33,7.7,False,2,2026-08-27,False,,1
+2026-11-09,HUM,Humana,sp500,D,ruptura de directriz,True,423.22,400.942,455.5325,538.1739,5.16,54.8,False,3,2026-10-09,False,,1
+2026-11-09,IEX,IDEX Corporation,sp500,D,recuperación del nivel barrido con volumen (sin R/R),False,235.93,219.5714,241.9591,265.7028,1.82,33.1,True,3,2026-08-18,False,,2
+2026-11-09,IVZ,Invesco,sp500,D,recuperación del nivel barrido con volumen,True,28.91,26.6087,33.66,36.2635,3.2,37.0,True,2,2026-08-28,False,,2
+2026-11-09,IQV,IQVIA,sp500,D,ruptura de directriz,True,278.84,250.0114,284.5,374.66,3.32,45.6,False,3,2026-10-27,False,,1
+2026-11-09,IQV,IQVIA,sp500,W,ruptura de directriz,True,278.84,248.091,277.4,395.13,3.78,31.9,False,1,2026-09-25,False,,1
+2026-11-09,MPWR,Monolithic Power Systems,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,1388.05,1085.8975,1708.9543,2399.709,3.35,53.7,True,4,2026-05-29,False,,2
+2026-11-09,PANW,Palo Alto Networks,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,330.89,307.0807,432.33,496.04,6.94,54.0,True,3,2026-10-06,False,,2
+2026-11-09,PH,Parker Hannifin,sp500,W,recuperación del nivel barrido con volumen,True,956.59,854.3682,1097.7291,1484.3069,5.16,49.8,True,3,2026-08-07,False,,1
+2026-11-09,PSX,Phillips 66,sp500,D,recuperación del nivel barrido con volumen,True,253.02,238.2159,299.39,377.0864,8.38,77.0,True,4,2026-10-19,False,,1
+2026-11-09,PSX,Phillips 66,sp500,W,recuperación del nivel barrido con volumen,True,253.02,236.2696,299.39,453.6264,11.98,51.0,True,2,2026-10-23,False,,3
+2026-11-09,PNW,Pinnacle West Capital,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,105.26,101.1095,108.34,120.5157,3.68,42.4,True,3,2026-11-03,False,,0
+2026-11-09,TEL,TE Connectivity,sp500,D,ruptura de directriz (sin R/R),False,218.75,203.4391,230.0,245.9101,1.77,21.9,False,1,2026-10-28,False,,0
+2026-11-09,TXN,Texas Instruments,sp500/nasdaq100,D,recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R),False,295.73,268.048,317.2,341.5052,1.65,27.3,True,3,2026-11-04,False,,0
+2026-11-06,LOG.MC,Logista,ibex35,D,recuperación del nivel barrido con volumen,True,36.6,35.6428,37.54,40.6937,4.28,58.4,True,4,2026-10-16,False,,1
+2026-11-09,SPY,S&P 500,etfs,W,recuperación del nivel barrido con volumen,True,752.69,727.8822,781.62,1040.3915,11.6,54.0,True,3,2026-10-09,True,,4
+2026-11-09,CIBR,Ciberseguridad,etfs,W,recuperación del nivel barrido con volumen,True,94.68,88.9517,110.68,146.6668,9.08,51.0,True,2,2026-10-16,False,,2
+2026-11-09,AMD,Advanced Micro Devices,sp500/nasdaq100,W,recuperación del nivel barrido con volumen (sin R/R),False,508.58,385.5956,658.52,984.14,3.87,48.3,True,3,2026-10-09,False,,1
