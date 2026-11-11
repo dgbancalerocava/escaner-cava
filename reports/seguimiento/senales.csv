@@ -322,3 +322,5 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-09,SPY,S&P 500,etfs,W,recuperación del nivel barrido con volumen,True,752.69,727.8822,781.62,1040.3915,11.6,54.0,True,3,2026-10-09,True,,4
 2026-11-09,CIBR,Ciberseguridad,etfs,W,recuperación del nivel barrido con volumen,True,94.68,88.9517,110.68,146.6668,9.08,51.0,True,2,2026-10-16,False,,2
 2026-11-09,AMD,Advanced Micro Devices,sp500/nasdaq100,W,recuperación del nivel barrido con volumen (sin R/R),False,508.58,385.5956,658.52,984.14,3.87,48.3,True,3,2026-10-09,False,,1
+2026-11-09,ACX.MC,Acerinox,ibex35,D,recuperación del nivel barrido con volumen,True,15.3,14.739,18.5,19.859,8.13,51.0,True,2,2026-09-07,False,,2
+2026-11-09,MAP.MC,Mapfre,ibex35,W,recuperación del nivel barrido con volumen,True,4.182,3.918,4.616,6.4023,8.41,51.0,True,2,2026-07-24,False,,3

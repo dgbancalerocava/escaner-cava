@@ -1,24 +1,26 @@
-# Escáner método Cava · 2026-11-09
+# Escáner método Cava · 2026-11-10
 
-Analizados: 608 · Señales: 23 · Trampas: 30 · Vigilancia: 25
+Analizados: 608 · Señales: 24 · Trampas: 30 · Vigilancia: 25
 
 ## Mercado
 | Índice | Cierre | MACD sem. | MACD mens. alcista | Sobre SMA200 | Filtro mercado | Estado |
 |---|---|---|---|---|---|---|
-| S&P 500 | 7.549,94 | 88,10 | sí | sí | a favor | sin fuerza de tendencia (ADX máx 19) |
-| Nasdaq 100 | 27.907,62 | 182,52 | no | no | – | precio bajo la media larga |
+| S&P 500 | 7.520,93 | 85,79 | sí | sí | a favor | sin fuerza de tendencia (ADX máx 19) |
+| Nasdaq 100 | 27.740,79 | 169,22 | no | no | – | precio bajo la media larga |
 | IBEX 35 | 19.742,50 | 236,06 | sí | sí | a favor | En vigilancia |
 | Euro Stoxx 50 | 6.290,45 | 33,04 | sí | sí | a favor | ruptura ya producida el 2026-11-04: tramo en marcha, esperar otra corrección |
 | DAX | 26.267,19 | 274,33 | no | sí | – | en máximos / tramo en marcha (esperar corrección) |
 
-## Señal activada (23)
+## Señal activada (24)
 
 | Valor | Marco | Cierre | Entrada | Stop | Riesgo % | Obj1 | Obj2 | R/R | Calidad | Notas |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ⭐ SPY (S&P 500) | W | 752,69 | 752,69 | 727,88 | 3,3 | 781,62 | 1.040,39 | 11,6 | ★★★★ | R/R alto; corrección poco profunda; escape falso puro; ETF; RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes) |
 | PSX (Phillips 66) | W | 253,02 | 253,02 | 236,27 | 6,6 | 299,39 | 453,63 | 12,0 | ★★★ | R/R alto; corrección poco profunda; escape falso puro; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes) |
+| MAP.MC (Mapfre) | W | 4,18 | 4,18 | 3,92 | 6,3 | 4,62 | 6,40 | 8,4 | ★★★ | corrección poco profunda; corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; barrida con volumen 1.3x (manos fuertes) |
 | CIBR (Ciberseguridad) | D | 94,68 | 94,68 | 89,75 | 5,2 | 110,68 | 119,84 | 5,1 | ★★★ | corrección madura en tiempo; escape falso puro; ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.7x (manos fuertes) |
 | CIBR (Ciberseguridad) | W | 94,68 | 94,68 | 88,95 | 6,1 | 110,68 | 146,67 | 9,1 | ★★ | escape falso puro; ETF; MACD mensual alcista; barrida con volumen 1.6x (manos fuertes) |
+| ACX.MC (Acerinox) | D | 15,30 | 15,30 | 14,74 | 3,7 | 18,50 | 19,86 | 8,1 | ★★ | corrección madura en tiempo; escape falso puro; MACD mensual alcista; barrida con volumen 2.0x (manos fuertes) |
 | PANW (Palo Alto Networks) | D | 330,89 | 330,89 | 307,08 | 7,2 | 432,33 | 496,04 | 6,9 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 2.2x (manos fuertes) |
 | CRWD (CrowdStrike) | D | 228,58 | 228,58 | 209,65 | 8,3 | 286,99 | 345,77 | 6,2 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 1.9x (manos fuertes) |
 | PLTR (Palantir Technologies) | D | 169,20 | 169,20 | 150,17 | 11,2 | 212,94 | 259,17 | 4,7 | ★★ | corrección madura en tiempo; escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.8x (manos fuertes) |
@@ -31,7 +33,6 @@ Analizados: 608 · Señales: 23 · Trampas: 30 · Vigilancia: 25
 | AME (Ametek) | W | 238,24 | 238,24 | 218,92 | 8,1 | 260,78 | 339,35 | 5,2 | ★ | escape falso puro; RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 1.8x (manos fuertes) |
 | PH (Parker Hannifin) | W | 956,59 | 956,59 | 854,37 | 10,7 | 1.097,73 | 1.484,31 | 5,2 | ★ | escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; barrida con volumen 1.8x (manos fuertes); recuperó el nivel el 2026-11-06 |
 | HUM (Humana) | D | 423,22 | 423,22 | 400,94 | 5,3 | 455,53 | 538,17 | 5,2 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; ruptura con volumen 1.8x; la ruptura fue el 2026-11-06 |
-| LOG.MC (Logista) | D | 36,60 | 36,60 | 35,64 | 2,6 | 37,54 | 40,69 | 4,3 | ★ | escape falso puro; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes) |
 | WAB (Wabtec) | W | 298,19 | 298,19 | 267,35 | 10,3 | 306,32 | 426,74 | 4,2 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 1.8x (manos fuertes); recuperó el nivel el 2026-10-30 |
 | IQV (IQVIA) | W | 278,84 | 278,84 | 248,09 | 11,0 | 277,40 | 395,13 | 3,8 | ★ | corrección poco profunda; MACD mensual alcista |
 | TDY (Teledyne Technologies) | W | 643,34 | 643,34 | 580,28 | 9,8 | 697,67 | 867,84 | 3,6 | ★ | escape falso puro; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); recuperó el nivel el 2026-11-06 |
@@ -59,20 +60,20 @@ Analizados: 608 · Señales: 23 · Trampas: 30 · Vigilancia: 25
 | STLD (Steel Dynamics) | W | 227,56 | 256,42 | 212,89 | 17,0 | 287,40 | 401,92 | 3,3 | ★ | corrección madura en tiempo; MACD mensual alcista; barrida con volumen 1.4x (manos fuertes); stop muy lejano (17.0 %) |
 | WELL (Welltower) | W | 247,35 | 247,35 | 214,83 | 13,1 | 254,24 | 352,26 | 3,2 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes); recuperó el nivel el 2026-10-30; la ruptura fue el 2026-11-06; stop muy lejano (13.1 %) |
 | PFG (Principal Financial Group) | W | 115,39 | 118,66 | 104,70 | 11,8 | 121,18 | 162,42 | 3,1 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista |
-| SAB.MC (Banco Sabadell) | D | 3,60 | 3,60 | 3,33 | 7,5 | 3,77 | 4,33 | 2,8 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; MACD mensual alcista; barrida con volumen 1.8x (manos fuertes); ruptura con volumen 1.2x; la ruptura fue el 2026-11-04; R/R 2.8 < 3: no cumple, esperar mejor precio |
+| REP.MC (Repsol) | D | 29,36 | 30,93 | 27,92 | 9,7 | 31,64 | 39,49 | 2,8 | ★ | corrección madura en tiempo; MACD mensual alcista; R/R 2.8 < 3: no cumple, esperar mejor precio |
 | ETR (Entergy) | W | 111,79 | 113,42 | 95,80 | 15,5 | 117,75 | 160,63 | 2,7 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; R/R 2.7 < 3: no cumple, esperar mejor precio; stop muy lejano (15.5 %) |
-| ENG.MC (Enagás) | W | 17,80 | 17,80 | 15,85 | 11,0 | 17,64 | 22,78 | 2,5 | ★ | corrección poco profunda; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes); la ruptura fue el 2026-10-30; R/R 2.5 < 3: no cumple, esperar mejor precio |
-| BBVA.MC (BBVA) | D | 22,73 | 22,73 | 20,86 | 8,2 | 25,17 | 27,43 | 2,5 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes); ruptura con volumen 1.3x; recuperó el nivel el 2026-11-04; la ruptura fue el 2026-11-05; R/R 2.5 < 3: no cumple, esperar mejor precio |
+| MTS.MC (ArcelorMittal) | D | 56,84 | 58,00 | 52,03 | 10,3 | 68,52 | 73,70 | 2,6 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.6 < 3: no cumple, esperar mejor precio |
 | NUE (Nucor) | W | 249,24 | 279,45 | 224,66 | 19,6 | 279,45 | 412,98 | 2,4 | ★ | corrección poco profunda; MACD mensual alcista; R/R 2.4 < 3: no cumple, esperar mejor precio; stop muy lejano (19.6 %) |
 | BEN (Franklin Resources) | W | 35,87 | 35,87 | 29,63 | 17,4 | 35,91 | 50,94 | 2,4 | ★ | corrección poco profunda; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.4 < 3: no cumple, esperar mejor precio; stop muy lejano (17.4 %) |
 | GPC (Genuine Parts Company) | D | 125,65 | 134,19 | 119,32 | 11,1 | 138,81 | 169,88 | 2,4 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.4 < 3: no cumple, esperar mejor precio |
 | XLB (Materiales básicos) | W | 52,94 | 52,94 | 47,36 | 10,5 | 53,94 | 66,19 | 2,4 | ★ | ETF; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; barrida con volumen 1.3x (manos fuertes); la ruptura fue el 2026-10-30; R/R 2.4 < 3: no cumple, esperar mejor precio |
+| ENG.MC (Enagás) | W | 17,91 | 17,91 | 15,85 | 11,5 | 17,64 | 22,78 | 2,4 | ★ | corrección poco profunda; MACD mensual alcista; barrida con volumen 1.5x (manos fuertes); la ruptura fue el 2026-10-30; R/R 2.4 < 3: no cumple, esperar mejor precio |
 | FDX (FedEx) | W | 318,84 | 336,19 | 275,11 | 18,2 | 342,73 | 469,97 | 2,2 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.2 < 3: no cumple, esperar mejor precio; stop muy lejano (18.2 %) |
-| PUIG.MC (Puig) | D | 19,84 | 19,84 | 18,52 | 6,6 | 19,76 | 22,67 | 2,1 | ★ | corrección poco profunda; barrida con volumen 1.7x (manos fuertes); la ruptura fue el 2026-11-04; R/R 2.1 < 3: no cumple, esperar mejor precio |
 | DOC (Healthpeak Properties) | W | 20,62 | 20,62 | 18,09 | 12,3 | 22,60 | 25,97 | 2,1 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.1 < 3: no cumple, esperar mejor precio; stop muy lejano (12.3 %) |
 | AMZN (Amazon) | W | 266,93 | 266,93 | 225,01 | 15,7 | 287,20 | 355,18 | 2,1 | ★ | escape falso puro; RSI(2) gira desde sobreventa; barrida con volumen 1.5x (manos fuertes); recuperó el nivel el 2026-11-06; R/R 2.1 < 3: no cumple, esperar mejor precio; stop muy lejano (15.7 %) |
 | REG (Regency Centers) | W | 76,11 | 77,39 | 69,72 | 9,9 | 82,82 | 93,45 | 2,1 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; R/R 2.1 < 3: no cumple, esperar mejor precio |
 | DAL (Delta Air Lines) | W | 91,80 | 93,44 | 72,66 | 22,2 | 95,18 | 135,27 | 2,0 | ★ | corrección madura en tiempo; RSI(2) gira desde sobreventa; estocástico rápido cruza al alza; MACD mensual alcista; R/R 2.0 < 3: no cumple, esperar mejor precio; stop muy lejano (22.2 %) |
+| NEE (NextEra Energy) | W | 86,86 | 86,86 | 73,52 | 15,4 | 97,30 | 112,65 | 1,9 | ★ | corrección madura en tiempo; estocástico rápido cruza al alza; barrida con volumen 1.4x (manos fuertes); ruptura con volumen 1.5x; la ruptura fue el 2026-11-06; R/R 1.9 < 3: no cumple, esperar mejor precio; stop muy lejano (15.4 %) |
 
 ## En vigilancia (25)
 
@@ -106,35 +107,35 @@ Analizados: 608 · Señales: 23 · Trampas: 30 · Vigilancia: 25
 
 ## Autoevaluación en vivo
 
-Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el stop): 2
+Operaciones abiertas: 92 · pendientes de entrar: 15 · anuladas (abren bajo el stop): 2
 
 | Gestión | Cerradas | Acierto | R medio | Profit factor | Máx. drawdown (R) |
 |---|---|---|---|---|---|
-| Fija (stop / obj. 2) | 71 | 9.9 % | -0.65 | 0.39 | -52.6 |
-| Gestionada (stop a entrada en +1R) | 99 | 32.3 % | -0.01 | 0.98 | -28.3 |
+| Fija (stop / obj. 2) | 72 | 11.1 % | -0.60 | 0.43 | -52.6 |
+| Gestionada (stop a entrada en +1R) | 100 | 33.0 % | +0.02 | 1.03 | -27.2 |
 | Con seguimiento (SAR) | 102 | 29.4 % | -0.27 | 0.63 | -35.0 |
 
 ## Por mercado
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
-| EEUU | 56 | 12.5 % | -0.54 | 0.5 | -36.6 |
+| EEUU | 56 | 12.5 % | -0.54 | 0.5 | -37.3 |
 | ETFs | 8 | 0.0 % | -1.07 | 0.0 | -7.6 |
 | España | 6 | 0.0 % | -1.07 | 0.0 | -5.4 |
-| Europa tech | 1 | 0.0 % | -1.00 | 0.0 | 0.0 |
+| Europa tech | 2 | 50.0 % | +0.95 | 2.91 | 0.0 |
 
 ## Por marco
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
-| D | 66 | 10.6 % | -0.62 | 0.42 | -48.6 |
+| D | 67 | 11.9 % | -0.57 | 0.46 | -48.6 |
 | W | 5 | 0.0 % | -1.00 | 0.0 | -4.0 |
 
 ## Por disparo
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
-| recuperación del nivel barrido con volumen | 53 | 7.5 % | -0.77 | 0.32 | -41.7 |
+| recuperación del nivel barrido con volumen | 54 | 9.3 % | -0.71 | 0.36 | -41.7 |
 | ruptura de directriz | 18 | 16.7 % | -0.28 | 0.68 | -10.9 |
 
 ## Por puntuación
@@ -142,27 +143,27 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
 | 50-69 | 49 | 6.1 % | -0.81 | 0.29 | -46.3 |
-| <50 | 20 | 20.0 % | -0.22 | 0.76 | -8.0 |
+| <50 | 21 | 23.8 % | -0.07 | 0.92 | -8.4 |
 | ≥70 | 2 | 0.0 % | -1.00 | 0.0 | -1.0 |
 
 ## Por volumen en la trampa
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
-| con volumen | 55 | 7.3 % | -0.78 | 0.3 | -43.7 |
+| con volumen | 56 | 8.9 % | -0.72 | 0.35 | -43.7 |
 | sin volumen | 16 | 18.8 % | -0.19 | 0.78 | -8.9 |
 
 ## Por año
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
-| 2026 | 71 | 9.9 % | -0.65 | 0.39 | -52.6 |
+| 2026 | 72 | 11.1 % | -0.60 | 0.43 | -52.6 |
 
 ## Por selección diaria
 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
-| resto | 68 | 10.3 % | -0.63 | 0.41 | -49.1 |
+| resto | 69 | 11.6 % | -0.57 | 0.45 | -49.1 |
 | ⭐ seleccionadas | 3 | 0.0 % | -1.18 | 0.0 | -2.5 |
 
 ## Por calidad
@@ -170,7 +171,7 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
 | 0 | 3 | 0.0 % | -1.00 | 0.0 | -2.0 |
-| 1 | 23 | 13.0 % | -0.73 | 0.39 | -20.6 |
+| 1 | 24 | 16.7 % | -0.58 | 0.49 | -20.6 |
 | 2 | 24 | 16.7 % | -0.06 | 0.93 | -11.8 |
 | 3 | 18 | 0.0 % | -1.19 | 0.0 | -20.4 |
 | ≥4 ⭐ | 3 | 0.0 % | -1.18 | 0.0 | -2.5 |
@@ -180,7 +181,7 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | Grupo | Cerradas | Acierto | R medio | Profit factor | Máx. DD |
 |---|---|---|---|---|---|
 | descartada (R/R bajo) | 42 | 21.4 % | -0.66 | 0.2 | -26.5 |
-| pasa (R/R ≥ mínimo) | 71 | 9.9 % | -0.65 | 0.39 | -54.3 |
+| pasa (R/R ≥ mínimo) | 72 | 11.1 % | -0.60 | 0.43 | -51.4 |
 
 ## Operaciones abiertas
 
@@ -197,7 +198,6 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | 2026-10-05 | OXY | D | 57.53 | 54.3634 | 70.9782 | -0.56 |
 | 2026-10-05 | UNH | D | 379.03 | 360.3952 | 568.4362 | +1.00 |
 | 2026-10-05 | ELE.MC | D | 42.4 | 41.1206 | 50.1229 | +1.41 |
-| 2026-10-05 | DSY.PA | D | 21.44 | 19.7776 | 26.275 | +2.71 |
 | 2026-10-06 | CVX | D | 208.44 | 200.9228 | 255.2056 | +0.31 |
 | 2026-10-06 | KO | D | 86.73 | 84.824 | 103.439 | +4.88 |
 | 2026-10-06 | HST | D | 22.46 | 21.2341 | 29.3083 | +2.30 |
@@ -225,13 +225,13 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | 2026-10-09 | DOC | D | 18.66 | 18.248 | 25.756 | +4.77 |
 | 2026-10-09 | HLT | W | 325.79 | 296.3754 | 462.406 | +1.61 |
 | 2026-10-09 | KMI | W | 32.35 | 29.0316 | 44.9943 | -0.54 |
-| 2026-10-09 | SAP.DE | D | 190.58 | 179.9686 | 236.78 | +1.90 |
-| 2026-10-09 | NEXI.MI | D | 4.21 | 3.9862 | 5.237 | +1.25 |
+| 2026-10-09 | SAP.DE | D | 190.58 | 179.9686 | 236.78 | +1.99 |
+| 2026-10-09 | NEXI.MI | D | 4.21 | 3.9862 | 5.237 | +1.18 |
 | 2026-10-09 | XLF | D | 54.86 | 52.639 | 61.0372 | +1.41 |
 | 2026-10-12 | CF | D | 115.0 | 109.4982 | 152.0862 | +0.78 |
 | 2026-10-12 | MET | D | 100.42 | 91.7099 | 126.7334 | +0.14 |
 | 2026-10-12 | SPG | D | 203.35 | 196.0348 | 258.6461 | +4.05 |
-| 2026-10-13 | ENG.MC | W | 16.77 | 15.8549 | 22.7758 | +1.13 |
+| 2026-10-13 | ENG.MC | W | 16.77 | 15.8549 | 22.7758 | +1.25 |
 | 2026-10-14 | AIZ | W | 280.21 | 257.8164 | 392.4958 | +1.65 |
 | 2026-10-14 | DG | W | 133.0 | 114.4389 | 190.4403 | +0.20 |
 | 2026-10-14 | INCY | D | 112.71 | 106.9527 | 151.13 | +1.59 |
@@ -243,13 +243,13 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | 2026-10-15 | WELL | W | 237.23 | 217.2314 | 354.5425 | +0.51 |
 | 2026-10-15 | WST | D | 382.74 | 360.8679 | 479.7009 | +1.39 |
 | 2026-10-15 | WDAY | D | 196.84 | 180.8282 | 298.6 | -0.41 |
-| 2026-10-15 | AENA.MC | D | 25.76 | 24.3734 | 29.88 | +1.82 |
+| 2026-10-15 | AENA.MC | D | 25.76 | 24.3734 | 29.88 | +2.15 |
 | 2026-10-16 | UNH | D | 399.69 | 359.5823 | 538.6794 | -0.05 |
 | 2026-10-16 | XLB | W | 51.03 | 47.3629 | 66.1915 | +0.52 |
 | 2026-10-20 | DVA | D | 171.78 | 169.6691 | 275.5101 | +6.52 |
 | 2026-10-20 | DAL | D | 76.94 | 73.4579 | 106.4304 | +4.27 |
 | 2026-10-20 | TROW | W | 102.92 | 96.8315 | 146.451 | +1.30 |
-| 2026-10-20 | SIE.DE | D | 261.25 | 253.4005 | 307.45 | +0.31 |
+| 2026-10-20 | SIE.DE | D | 261.25 | 253.4005 | 307.45 | +1.24 |
 | 2026-10-21 | GRMN | W | 290.13 | 261.041 | 410.392 | +0.06 |
 | 2026-10-21 | IQV | D | 274.99 | 250.5851 | 368.21 | +0.16 |
 | 2026-10-22 | DVA | W | 184.52 | 167.7103 | 317.58 | +0.06 |
@@ -266,10 +266,10 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | 2026-10-29 | DLR | W | 185.65 | 165.6528 | 248.6505 | -0.28 |
 | 2026-10-29 | ICE | D | 166.68 | 152.9215 | 197.2036 | +0.53 |
 | 2026-10-29 | KEY | W | 21.5 | 19.1945 | 31.3526 | -0.04 |
-| 2026-10-29 | PUIG.MC | D | 19.02 | 18.5206 | 22.67 | +1.64 |
+| 2026-10-29 | PUIG.MC | D | 19.02 | 18.5206 | 22.67 | +1.88 |
 | 2026-10-30 | BAX | D | 23.34 | 22.2697 | 34.3488 | +2.87 |
 | 2026-10-30 | CCEP | D | 114.58 | 109.0649 | 128.24 | +0.53 |
-| 2026-10-30 | REP.MC | D | 30.24 | 27.9414 | 39.4942 | -0.15 |
+| 2026-10-30 | REP.MC | D | 30.24 | 27.9414 | 39.4942 | -0.38 |
 | 2026-11-02 | AMZN | W | 248.59 | 225.3323 | 355.18 | +0.79 |
 | 2026-11-02 | DOC | W | 19.15 | 18.0964 | 25.9688 | +1.40 |
 | 2026-11-02 | UHS | D | 182.54 | 167.6099 | 220.6147 | +0.98 |
@@ -278,3 +278,4 @@ Operaciones abiertas: 92 · pendientes de entrar: 14 · anuladas (abren bajo el 
 | 2026-11-04 | HPQ | D | 30.0 | 26.5703 | 43.2587 | -0.51 |
 | 2026-11-04 | PFG | W | 118.79 | 104.7325 | 162.4208 | -0.24 |
 | 2026-11-05 | P | D | 102.2 | 89.1815 | 184.3 | +0.05 |
+| 2026-11-06 | LOG.MC | D | 36.86 | 35.6428 | 40.6937 | +0.07 |

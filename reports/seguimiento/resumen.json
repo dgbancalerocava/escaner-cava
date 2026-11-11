@@ -1,24 +1,24 @@
 {
  "global": {
   "fija": {
-   "n": 71,
-   "acierto_pct": 9.9,
-   "R_medio": -0.65,
-   "R_total": -46.1,
-   "ganancia_media_R": 4.21,
+   "n": 72,
+   "acierto_pct": 11.1,
+   "R_medio": -0.6,
+   "R_total": -43.2,
+   "ganancia_media_R": 4.05,
    "perdida_media_R": -1.18,
-   "profit_factor": 0.39,
+   "profit_factor": 0.43,
    "max_drawdown_R": -52.6
   },
   "gestionada": {
-   "n": 99,
-   "acierto_pct": 32.3,
-   "R_medio": -0.01,
-   "R_total": -1.2,
-   "ganancia_media_R": 1.64,
+   "n": 100,
+   "acierto_pct": 33.0,
+   "R_medio": 0.02,
+   "R_total": 1.7,
+   "ganancia_media_R": 1.68,
    "perdida_media_R": -0.8,
-   "profit_factor": 0.98,
-   "max_drawdown_R": -28.3
+   "profit_factor": 1.03,
+   "max_drawdown_R": -27.2
   },
   "seguimiento": {
    "n": 102,
@@ -32,7 +32,7 @@
   },
   "abiertas": 92,
   "anuladas": 2,
-  "pendientes": 14
+  "pendientes": 15
  },
  "grupos": {
   "Mercado": {
@@ -44,7 +44,7 @@
     "ganancia_media_R": 4.21,
     "perdida_media_R": -1.22,
     "profit_factor": 0.5,
-    "max_drawdown_R": -36.6,
+    "max_drawdown_R": -37.3,
     "R_medio_ges": -0.08
    },
    "ETFs": {
@@ -70,28 +70,28 @@
     "R_medio_ges": -1.07
    },
    "Europa tech": {
-    "n": 1,
-    "acierto_pct": 0.0,
-    "R_medio": -1.0,
-    "R_total": -1.0,
-    "ganancia_media_R": 0.0,
+    "n": 2,
+    "acierto_pct": 50.0,
+    "R_medio": 0.95,
+    "R_total": 1.9,
+    "ganancia_media_R": 2.91,
     "perdida_media_R": -1.0,
-    "profit_factor": 0.0,
+    "profit_factor": 2.91,
     "max_drawdown_R": 0.0,
-    "R_medio_ges": -1.0
+    "R_medio_ges": 0.95
    }
   },
   "Marco": {
    "D": {
-    "n": 66,
-    "acierto_pct": 10.6,
-    "R_medio": -0.62,
-    "R_total": -41.1,
-    "ganancia_media_R": 4.21,
+    "n": 67,
+    "acierto_pct": 11.9,
+    "R_medio": -0.57,
+    "R_total": -38.2,
+    "ganancia_media_R": 4.05,
     "perdida_media_R": -1.2,
-    "profit_factor": 0.42,
+    "profit_factor": 0.46,
     "max_drawdown_R": -48.6,
-    "R_medio_ges": -0.19
+    "R_medio_ges": -0.14
    },
    "W": {
     "n": 5,
@@ -107,15 +107,15 @@
   },
   "Disparo": {
    "recuperación del nivel barrido con volumen": {
-    "n": 53,
-    "acierto_pct": 7.5,
-    "R_medio": -0.77,
-    "R_total": -41.1,
-    "ganancia_media_R": 4.73,
+    "n": 54,
+    "acierto_pct": 9.3,
+    "R_medio": -0.71,
+    "R_total": -38.2,
+    "ganancia_media_R": 4.36,
     "perdida_media_R": -1.22,
-    "profit_factor": 0.32,
+    "profit_factor": 0.36,
     "max_drawdown_R": -41.7,
-    "R_medio_ges": -0.27
+    "R_medio_ges": -0.21
    },
    "ruptura de directriz": {
     "n": 18,
@@ -142,15 +142,15 @@
     "R_medio_ges": -0.4
    },
    "<50": {
-    "n": 20,
-    "acierto_pct": 20.0,
-    "R_medio": -0.22,
-    "R_total": -4.3,
-    "ganancia_media_R": 3.34,
+    "n": 21,
+    "acierto_pct": 23.8,
+    "R_medio": -0.07,
+    "R_total": -1.4,
+    "ganancia_media_R": 3.26,
     "perdida_media_R": -1.11,
-    "profit_factor": 0.76,
-    "max_drawdown_R": -8.0,
-    "R_medio_ges": 0.17
+    "profit_factor": 0.92,
+    "max_drawdown_R": -8.4,
+    "R_medio_ges": 0.3
    },
    "≥70": {
     "n": 2,
@@ -166,15 +166,15 @@
   },
   "Volumen en la trampa": {
    "con volumen": {
-    "n": 55,
-    "acierto_pct": 7.3,
-    "R_medio": -0.78,
-    "R_total": -43.1,
-    "ganancia_media_R": 4.73,
+    "n": 56,
+    "acierto_pct": 8.9,
+    "R_medio": -0.72,
+    "R_total": -40.2,
+    "ganancia_media_R": 4.36,
     "perdida_media_R": -1.22,
-    "profit_factor": 0.3,
+    "profit_factor": 0.35,
     "max_drawdown_R": -43.7,
-    "R_medio_ges": -0.3
+    "R_medio_ges": -0.24
    },
    "sin volumen": {
     "n": 16,
@@ -190,28 +190,28 @@
   },
   "Año": {
    "2026": {
-    "n": 71,
-    "acierto_pct": 9.9,
-    "R_medio": -0.65,
-    "R_total": -46.1,
-    "ganancia_media_R": 4.21,
+    "n": 72,
+    "acierto_pct": 11.1,
+    "R_medio": -0.6,
+    "R_total": -43.2,
+    "ganancia_media_R": 4.05,
     "perdida_media_R": -1.18,
-    "profit_factor": 0.39,
+    "profit_factor": 0.43,
     "max_drawdown_R": -52.6,
-    "R_medio_ges": -0.24
+    "R_medio_ges": -0.2
    }
   },
   "Selección diaria": {
    "resto": {
-    "n": 68,
-    "acierto_pct": 10.3,
-    "R_medio": -0.63,
-    "R_total": -42.6,
-    "ganancia_media_R": 4.21,
+    "n": 69,
+    "acierto_pct": 11.6,
+    "R_medio": -0.57,
+    "R_total": -39.7,
+    "ganancia_media_R": 4.05,
     "perdida_media_R": -1.18,
-    "profit_factor": 0.41,
+    "profit_factor": 0.45,
     "max_drawdown_R": -49.1,
-    "R_medio_ges": -0.22
+    "R_medio_ges": -0.18
    },
    "⭐ seleccionadas": {
     "n": 3,
@@ -238,15 +238,15 @@
     "R_medio_ges": -1.0
    },
    "1": {
-    "n": 23,
-    "acierto_pct": 13.0,
-    "R_medio": -0.73,
-    "R_total": -16.7,
-    "ganancia_media_R": 3.53,
+    "n": 24,
+    "acierto_pct": 16.7,
+    "R_medio": -0.58,
+    "R_total": -13.8,
+    "ganancia_media_R": 3.38,
     "perdida_media_R": -1.37,
-    "profit_factor": 0.39,
+    "profit_factor": 0.49,
     "max_drawdown_R": -20.6,
-    "R_medio_ges": -0.23
+    "R_medio_ges": -0.1
    },
    "2": {
     "n": 24,
@@ -294,14 +294,14 @@
     "max_drawdown_R": -26.5
    },
    "pasa (R/R ≥ mínimo)": {
-    "n": 71,
-    "acierto_pct": 9.9,
-    "R_medio": -0.65,
-    "R_total": -46.1,
-    "ganancia_media_R": 4.21,
+    "n": 72,
+    "acierto_pct": 11.1,
+    "R_medio": -0.6,
+    "R_total": -43.2,
+    "ganancia_media_R": 4.05,
     "perdida_media_R": -1.18,
-    "profit_factor": 0.39,
-    "max_drawdown_R": -54.3
+    "profit_factor": 0.43,
+    "max_drawdown_R": -51.4
    }
   }
  },
@@ -415,16 +415,6 @@
    "objetivo2": "50.1229",
    "fija_R": 1.41,
    "ges_R": 0.0
-  },
-  {
-   "fecha": "2026-10-05",
-   "ticker": "DSY.PA",
-   "marco": "D",
-   "entrada": 21.44,
-   "stop": "19.7776",
-   "objetivo2": "26.275",
-   "fija_R": 2.71,
-   "ges_R": 2.71
   },
   {
    "fecha": "2026-10-06",
@@ -703,8 +693,8 @@
    "entrada": 190.58,
    "stop": "179.9686",
    "objetivo2": "236.78",
-   "fija_R": 1.9,
-   "ges_R": 1.9
+   "fija_R": 1.99,
+   "ges_R": 1.99
   },
   {
    "fecha": "2026-10-09",
@@ -713,7 +703,7 @@
    "entrada": 4.21,
    "stop": "3.9862",
    "objetivo2": "5.237",
-   "fija_R": 1.25,
+   "fija_R": 1.18,
    "ges_R": 1.0
   },
   {
@@ -763,8 +753,8 @@
    "entrada": 16.77,
    "stop": "15.8549",
    "objetivo2": "22.7758",
-   "fija_R": 1.13,
-   "ges_R": 1.13
+   "fija_R": 1.25,
+   "ges_R": 1.25
   },
   {
    "fecha": "2026-10-14",
@@ -883,8 +873,8 @@
    "entrada": 25.76,
    "stop": "24.3734",
    "objetivo2": "29.88",
-   "fija_R": 1.82,
-   "ges_R": 1.82
+   "fija_R": 2.15,
+   "ges_R": 2.15
   },
   {
    "fecha": "2026-10-16",
@@ -943,7 +933,7 @@
    "entrada": 261.25,
    "stop": "253.4005",
    "objetivo2": "307.45",
-   "fija_R": 0.31,
+   "fija_R": 1.24,
    "ges_R": 1.0
   },
   {
@@ -1113,8 +1103,8 @@
    "entrada": 19.02,
    "stop": "18.5206",
    "objetivo2": "22.67",
-   "fija_R": 1.64,
-   "ges_R": 1.64
+   "fija_R": 1.88,
+   "ges_R": 1.88
   },
   {
    "fecha": "2026-10-30",
@@ -1143,8 +1133,8 @@
    "entrada": 30.24,
    "stop": "27.9414",
    "objetivo2": "39.4942",
-   "fija_R": -0.15,
-   "ges_R": -0.15
+   "fija_R": -0.38,
+   "ges_R": -0.38
   },
   {
    "fecha": "2026-11-02",
@@ -1225,6 +1215,16 @@
    "objetivo2": "184.3",
    "fija_R": 0.05,
    "ges_R": 0.05
+  },
+  {
+   "fecha": "2026-11-06",
+   "ticker": "LOG.MC",
+   "marco": "D",
+   "entrada": 36.86,
+   "stop": "35.6428",
+   "objetivo2": "40.6937",
+   "fija_R": 0.07,
+   "ges_R": 0.07
   }
  ]
 }

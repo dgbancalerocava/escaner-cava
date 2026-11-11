@@ -1,8 +1,8 @@
 {
- "fecha": "2026-11-09",
+ "fecha": "2026-11-10",
  "estadisticas": {
   "analizados": 608,
-  "SENAL": 23,
+  "SENAL": 24,
   "TRAMPA": 30,
   "VIGILANCIA": 25,
   "prioritarias": 1
@@ -11,8 +11,8 @@
   {
    "ticker": "^GSPC",
    "nombre": "S&P 500",
-   "cierre": 7549.93994140625,
-   "macd_sem": 88.09998408995307,
+   "cierre": 7520.93017578125,
+   "macd_sem": 85.7858147523466,
    "macd_men_alc": true,
    "sobre_sma200": true,
    "favorable": true,
@@ -21,8 +21,8 @@
   {
    "ticker": "^NDX",
    "nombre": "Nasdaq 100",
-   "cierre": 27907.625,
-   "macd_sem": 182.52436782452423,
+   "cierre": 27740.794921875,
+   "macd_sem": 169.21598552395153,
    "macd_men_alc": false,
    "sobre_sma200": false,
    "favorable": null,
@@ -72,7 +72,7 @@
    "puntuacion": 54.0,
    "techo": 781.62,
    "fecha_techo": "2026-10-09",
-   "inicio_tramo": 473.9385,
+   "inicio_tramo": 473.9386,
    "minimo_correccion": 732.71,
    "retroceso": 0.159,
    "ratio_tiempo": 0.0641,
@@ -168,6 +168,60 @@
    "confirmaciones": [
     "MACD mensual alcista",
     "barrida con volumen 1.5x (manos fuertes)"
+   ]
+  },
+  {
+   "ticker": "MAP.MC",
+   "nombre": "Mapfre",
+   "grupo": "ibex35",
+   "marco": "W",
+   "estado": "SENAL",
+   "motivo": "trampa + recuperación del nivel barrido con volumen",
+   "fecha": "2026-11-09",
+   "cierre": 4.182,
+   "puntuacion": 51.0,
+   "techo": 4.616,
+   "fecha_techo": "2026-07-24",
+   "inicio_tramo": 2.1777,
+   "minimo_correccion": 3.964,
+   "retroceso": 0.2674,
+   "ratio_tiempo": 0.2388,
+   "directriz_hoy": 4.516,
+   "directriz_manana": 4.5097,
+   "nivel_barrido": 4.136,
+   "fecha_barrida": "2026-10-30",
+   "minimo_barrida": 3.964,
+   "volumen_barrida": 1.3329,
+   "entrada": 4.182,
+   "stop": 3.918,
+   "objetivo1": 4.616,
+   "objetivo2": 6.4023,
+   "rr": 8.4099,
+   "rr_obj1": 1.6439,
+   "riesgo_pct": 6.313,
+   "acciones": 0,
+   "macd_superior": 0.4675,
+   "macd_mensual_alcista": false,
+   "rsi14": 48.3564,
+   "rsi2": 56.7489,
+   "sto50": 56.5776,
+   "sto89": 78.8376,
+   "adx": 20.0571,
+   "sar": 4.4056,
+   "disparo": "recuperación del nivel barrido con volumen",
+   "dist_sma200": 1.0809,
+   "puntuacion2": null,
+   "seleccionada": false,
+   "calidad": 3,
+   "motivos_calidad": [
+    "corrección poco profunda",
+    "corrección madura en tiempo",
+    "escape falso puro"
+   ],
+   "avisos": [],
+   "confirmaciones": [
+    "RSI(2) gira desde sobreventa",
+    "barrida con volumen 1.3x (manos fuertes)"
    ]
   },
   {
@@ -277,6 +331,59 @@
    "confirmaciones": [
     "MACD mensual alcista",
     "barrida con volumen 1.6x (manos fuertes)"
+   ]
+  },
+  {
+   "ticker": "ACX.MC",
+   "nombre": "Acerinox",
+   "grupo": "ibex35",
+   "marco": "D",
+   "estado": "SENAL",
+   "motivo": "trampa + recuperación del nivel barrido con volumen",
+   "fecha": "2026-11-09",
+   "cierre": 15.3,
+   "puntuacion": 51.0,
+   "techo": 18.5,
+   "fecha_techo": "2026-09-07",
+   "inicio_tramo": 13.511,
+   "minimo_correccion": 14.87,
+   "retroceso": 0.7276,
+   "ratio_tiempo": 0.5,
+   "directriz_hoy": 16.9189,
+   "directriz_manana": 16.8838,
+   "nivel_barrido": 15.1398,
+   "fecha_barrida": "2026-11-06",
+   "minimo_barrida": 14.87,
+   "volumen_barrida": 1.9592,
+   "entrada": 15.3,
+   "stop": 14.739,
+   "objetivo1": 18.5,
+   "objetivo2": 19.859,
+   "rr": 8.1268,
+   "rr_obj1": 5.7042,
+   "riesgo_pct": 3.6666,
+   "acciones": 0,
+   "macd_superior": 0.291,
+   "macd_mensual_alcista": true,
+   "rsi14": 35.3347,
+   "rsi2": 49.7484,
+   "sto50": 7.6125,
+   "sto89": 7.886,
+   "adx": 30.6527,
+   "sar": 16.4227,
+   "disparo": "recuperación del nivel barrido con volumen",
+   "dist_sma200": 0.1652,
+   "puntuacion2": null,
+   "seleccionada": false,
+   "calidad": 2,
+   "motivos_calidad": [
+    "corrección madura en tiempo",
+    "escape falso puro"
+   ],
+   "avisos": [],
+   "confirmaciones": [
+    "MACD mensual alcista",
+    "barrida con volumen 2.0x (manos fuertes)"
    ]
   },
   {
@@ -859,7 +966,7 @@
    "rsi2": 82.9898,
    "sto50": 40.108,
    "sto89": 71.9079,
-   "adx": 13.7963,
+   "adx": 13.7964,
    "sar": 1084.248,
    "disparo": "recuperación del nivel barrido con volumen",
    "dist_sma200": 1.2171,
@@ -931,60 +1038,6 @@
     "estocástico rápido cruza al alza",
     "MACD mensual alcista",
     "ruptura con volumen 1.8x"
-   ]
-  },
-  {
-   "ticker": "LOG.MC",
-   "nombre": "Logista",
-   "grupo": "ibex35",
-   "marco": "D",
-   "estado": "SENAL",
-   "motivo": "trampa + recuperación del nivel barrido con volumen",
-   "fecha": "2026-11-06",
-   "cierre": 36.6,
-   "puntuacion": 58.4,
-   "techo": 37.54,
-   "fecha_techo": "2026-10-16",
-   "inicio_tramo": 32.6263,
-   "minimo_correccion": 35.78,
-   "retroceso": 0.3582,
-   "ratio_tiempo": 0.1744,
-   "directriz_hoy": 36.7257,
-   "directriz_manana": 36.7507,
-   "nivel_barrido": 36.04,
-   "fecha_barrida": "2026-11-06",
-   "minimo_barrida": 35.78,
-   "volumen_barrida": 1.381,
-   "entrada": 36.6,
-   "stop": 35.6428,
-   "objetivo1": 37.54,
-   "objetivo2": 40.6937,
-   "rr": 4.2765,
-   "rr_obj1": 0.982,
-   "riesgo_pct": 2.6154,
-   "acciones": 0,
-   "macd_superior": 1.1422,
-   "macd_mensual_alcista": true,
-   "rsi14": 54.8849,
-   "rsi2": 78.1287,
-   "sto50": 70.0757,
-   "sto89": 77.8536,
-   "adx": 17.2993,
-   "sar": 37.1947,
-   "disparo": "recuperación del nivel barrido con volumen",
-   "dist_sma200": 9.4467,
-   "puntuacion2": null,
-   "seleccionada": false,
-   "calidad": 1,
-   "motivos_calidad": [
-    "escape falso puro"
-   ],
-   "avisos": [],
-   "confirmaciones": [
-    "RSI(2) gira desde sobreventa",
-    "estocástico rápido cruza al alza",
-    "MACD mensual alcista",
-    "barrida con volumen 1.4x (manos fuertes)"
    ]
   },
   {
@@ -1286,7 +1339,7 @@
    "rsi2": 65.7981,
    "sto50": 79.2989,
    "sto89": 75.8414,
-   "adx": 31.7231,
+   "adx": 31.7232,
    "sar": 107.7425,
    "disparo": "recuperación del nivel barrido con volumen + ruptura de directriz",
    "dist_sma200": 6.2863,
@@ -1384,7 +1437,7 @@
    "entrada": 1388.05,
    "stop": 1085.8975,
    "objetivo1": 1708.9543,
-   "objetivo2": 2399.709,
+   "objetivo2": 2399.7089,
    "rr": 3.3482,
    "rr_obj1": 1.0621,
    "riesgo_pct": 21.7681,
@@ -1839,7 +1892,7 @@
    "nivel_barrido": 60.95,
    "fecha_barrida": "2026-11-09",
    "minimo_barrida": 60.85,
-   "volumen_barrida": 1.0756,
+   "volumen_barrida": 1.0763,
    "entrada": 63.08,
    "stop": 60.4328,
    "objetivo1": 70.15,
@@ -2197,45 +2250,45 @@
    ]
   },
   {
-   "ticker": "SAB.MC",
-   "nombre": "Banco Sabadell",
+   "ticker": "REP.MC",
+   "nombre": "Repsol",
    "grupo": "ibex35",
    "marco": "D",
    "estado": "TRAMPA",
-   "motivo": "disparo técnico producido pero sin R/R o stop válido: esperar retroceso",
-   "fecha": "2026-11-06",
-   "cierre": 3.595,
-   "puntuacion": 50.8,
-   "techo": 3.77,
-   "fecha_techo": "2026-09-28",
-   "inicio_tramo": 2.788,
-   "minimo_correccion": 3.35,
-   "retroceso": 0.4277,
-   "ratio_tiempo": 0.3494,
-   "directriz_hoy": 3.6488,
-   "directriz_manana": 3.6446,
-   "nivel_barrido": 3.392,
-   "fecha_barrida": "2026-10-29",
-   "minimo_barrida": 3.35,
-   "volumen_barrida": 1.8226,
-   "entrada": 3.595,
-   "stop": 3.3272,
-   "objetivo1": 3.77,
-   "objetivo2": 4.332,
-   "rr": 2.7515,
-   "rr_obj1": 0.6534,
-   "riesgo_pct": 7.4506,
+   "motivo": "trampa hecha, falta ruptura de directriz",
+   "fecha": "2026-11-09",
+   "cierre": 29.36,
+   "puntuacion": 22.2,
+   "techo": 31.64,
+   "fecha_techo": "2026-09-24",
+   "inicio_tramo": 20.3258,
+   "minimo_correccion": 28.18,
+   "retroceso": 0.3058,
+   "ratio_tiempo": 0.4923,
+   "directriz_hoy": 30.9559,
+   "directriz_manana": 30.9345,
+   "nivel_barrido": 28.26,
+   "fecha_barrida": "2026-10-28",
+   "minimo_barrida": 28.18,
+   "volumen_barrida": 0.709,
+   "entrada": 30.9345,
+   "stop": 27.9197,
+   "objetivo1": 31.64,
+   "objetivo2": 39.4942,
+   "rr": 2.8392,
+   "rr_obj1": 0.234,
+   "riesgo_pct": 9.7457,
    "acciones": 0,
-   "macd_superior": 0.153,
+   "macd_superior": 2.239,
    "macd_mensual_alcista": true,
-   "rsi14": 53.5837,
-   "rsi2": 73.167,
-   "sto50": 58.254,
-   "sto89": 73.7525,
-   "adx": 24.7462,
-   "sar": 3.3672,
-   "disparo": "ruptura de directriz (sin R/R)",
-   "dist_sma200": 14.9582,
+   "rsi14": 48.9713,
+   "rsi2": 17.2202,
+   "sto50": 60.4125,
+   "sto89": 81.1788,
+   "adx": 14.0986,
+   "sar": 28.8344,
+   "disparo": "",
+   "dist_sma200": 22.8117,
    "puntuacion2": null,
    "seleccionada": false,
    "calidad": 1,
@@ -2243,14 +2296,10 @@
     "corrección madura en tiempo"
    ],
    "avisos": [
-    "la ruptura fue el 2026-11-04",
     "R/R 2.8 < 3: no cumple, esperar mejor precio"
    ],
    "confirmaciones": [
-    "RSI(2) gira desde sobreventa",
-    "MACD mensual alcista",
-    "barrida con volumen 1.8x (manos fuertes)",
-    "ruptura con volumen 1.2x"
+    "MACD mensual alcista"
    ]
   },
   {
@@ -2287,7 +2336,7 @@
    "macd_mensual_alcista": false,
    "rsi14": 58.6647,
    "rsi2": 98.355,
-   "sto50": 75.6773,
+   "sto50": 75.6772,
    "sto89": 84.6084,
    "adx": 17.0595,
    "sar": 98.6241,
@@ -2308,100 +2357,45 @@
    ]
   },
   {
-   "ticker": "ENG.MC",
-   "nombre": "Enagás",
-   "grupo": "ibex35",
-   "marco": "W",
-   "estado": "TRAMPA",
-   "motivo": "disparo técnico producido pero sin R/R o stop válido: esperar retroceso",
-   "fecha": "2026-11-06",
-   "cierre": 17.8,
-   "puntuacion": 23.7,
-   "techo": 17.64,
-   "fecha_techo": "2026-07-31",
-   "inicio_tramo": 10.8542,
-   "minimo_correccion": 15.99,
-   "retroceso": 0.2432,
-   "ratio_tiempo": 0.1687,
-   "directriz_hoy": 17.64,
-   "directriz_manana": 17.64,
-   "nivel_barrido": 16.46,
-   "fecha_barrida": "2026-09-11",
-   "minimo_barrida": 15.99,
-   "volumen_barrida": 1.4809,
-   "entrada": 17.8,
-   "stop": 15.8484,
-   "objetivo1": 17.64,
-   "objetivo2": 22.7758,
-   "rr": 2.5496,
-   "rr_obj1": -0.082,
-   "riesgo_pct": 10.9639,
-   "acciones": 0,
-   "macd_superior": 1.3008,
-   "macd_mensual_alcista": true,
-   "rsi14": 67.4068,
-   "rsi2": 96.3785,
-   "sto50": 97.799,
-   "sto89": 98.2371,
-   "adx": 22.2205,
-   "sar": 16.1712,
-   "disparo": "ruptura de directriz (sin R/R)",
-   "dist_sma200": 8.8757,
-   "puntuacion2": null,
-   "seleccionada": false,
-   "calidad": 1,
-   "motivos_calidad": [
-    "corrección poco profunda"
-   ],
-   "avisos": [
-    "la ruptura fue el 2026-10-30",
-    "R/R 2.5 < 3: no cumple, esperar mejor precio"
-   ],
-   "confirmaciones": [
-    "MACD mensual alcista",
-    "barrida con volumen 1.5x (manos fuertes)"
-   ]
-  },
-  {
-   "ticker": "BBVA.MC",
-   "nombre": "BBVA",
+   "ticker": "MTS.MC",
+   "nombre": "ArcelorMittal",
    "grupo": "ibex35",
    "marco": "D",
    "estado": "TRAMPA",
-   "motivo": "disparo técnico producido pero sin R/R o stop válido: esperar retroceso",
-   "fecha": "2026-11-06",
-   "cierre": 22.73,
-   "puntuacion": 42.6,
-   "techo": 25.1681,
-   "fecha_techo": "2026-09-29",
-   "inicio_tramo": 18.7653,
-   "minimo_correccion": 21.03,
-   "retroceso": 0.6463,
-   "ratio_tiempo": 0.3544,
-   "directriz_hoy": 23.1478,
-   "directriz_manana": 23.0757,
-   "nivel_barrido": 21.82,
-   "fecha_barrida": "2026-10-30",
-   "minimo_barrida": 21.03,
-   "volumen_barrida": 1.4977,
-   "entrada": 22.73,
-   "stop": 20.8627,
-   "objetivo1": 25.1681,
-   "objetivo2": 27.4328,
-   "rr": 2.5184,
-   "rr_obj1": 1.3056,
-   "riesgo_pct": 8.2153,
+   "motivo": "trampa hecha, falta ruptura de directriz",
+   "fecha": "2026-11-09",
+   "cierre": 56.84,
+   "puntuacion": 29.1,
+   "techo": 68.52,
+   "fecha_techo": "2026-09-08",
+   "inicio_tramo": 47.3048,
+   "minimo_correccion": 52.48,
+   "retroceso": 0.7561,
+   "ratio_tiempo": 0.4889,
+   "directriz_hoy": 58.2324,
+   "directriz_manana": 57.9986,
+   "nivel_barrido": 53.18,
+   "fecha_barrida": "2026-10-26",
+   "minimo_barrida": 52.62,
+   "volumen_barrida": 0.8319,
+   "entrada": 57.9986,
+   "stop": 52.0292,
+   "objetivo1": 68.52,
+   "objetivo2": 73.6951,
+   "rr": 2.6295,
+   "rr_obj1": 1.7626,
+   "riesgo_pct": 10.2923,
    "acciones": 0,
-   "macd_superior": 0.6685,
+   "macd_superior": 0.6744,
    "macd_mensual_alcista": true,
-   "rsi14": 49.7018,
-   "rsi2": 69.7018,
-   "sto50": 40.1151,
-   "sto89": 40.1151,
-   "adx": 30.9776,
-   "sar": 21.1504,
-   "disparo": "recuperación del nivel barrido con volumen + ruptura de directriz (sin R/R)",
-   "dist_sma200": 7.9467,
+   "rsi14": 52.6713,
+   "rsi2": 91.7579,
+   "sto50": 18.4123,
+   "sto89": 18.4123,
+   "adx": 25.4445,
+   "sar": 52.8,
+   "disparo": "",
+   "dist_sma200": 2.285,
    "puntuacion2": null,
    "seleccionada": false,
    "calidad": 1,
@@ -2409,16 +2403,11 @@
     "corrección madura en tiempo"
    ],
    "avisos": [
-    "recuperó el nivel el 2026-11-04",
-    "la ruptura fue el 2026-11-05",
-    "R/R 2.5 < 3: no cumple, esperar mejor precio"
+    "R/R 2.6 < 3: no cumple, esperar mejor precio"
    ],
    "confirmaciones": [
-    "RSI(2) gira desde sobreventa",
     "estocástico rápido cruza al alza",
-    "MACD mensual alcista",
-    "barrida con volumen 1.5x (manos fuertes)",
-    "ruptura con volumen 1.3x"
+    "MACD mensual alcista"
    ]
   },
   {
@@ -2643,6 +2632,61 @@
    ]
   },
   {
+   "ticker": "ENG.MC",
+   "nombre": "Enagás",
+   "grupo": "ibex35",
+   "marco": "W",
+   "estado": "TRAMPA",
+   "motivo": "disparo técnico producido pero sin R/R o stop válido: esperar retroceso",
+   "fecha": "2026-11-09",
+   "cierre": 17.91,
+   "puntuacion": 22.8,
+   "techo": 17.64,
+   "fecha_techo": "2026-07-31",
+   "inicio_tramo": 10.8542,
+   "minimo_correccion": 15.99,
+   "retroceso": 0.2432,
+   "ratio_tiempo": 0.1807,
+   "directriz_hoy": 17.64,
+   "directriz_manana": 17.64,
+   "nivel_barrido": 16.46,
+   "fecha_barrida": "2026-09-11",
+   "minimo_barrida": 15.99,
+   "volumen_barrida": 1.4809,
+   "entrada": 17.91,
+   "stop": 15.8548,
+   "objetivo1": 17.64,
+   "objetivo2": 22.7758,
+   "rr": 2.3676,
+   "rr_obj1": -0.1314,
+   "riesgo_pct": 11.4752,
+   "acciones": 0,
+   "macd_superior": 1.3096,
+   "macd_mensual_alcista": true,
+   "rsi14": 68.4412,
+   "rsi2": 97.5969,
+   "sto50": 97.9629,
+   "sto89": 98.3448,
+   "adx": 22.6008,
+   "sar": 16.3159,
+   "disparo": "ruptura de directriz (sin R/R)",
+   "dist_sma200": 8.884,
+   "puntuacion2": null,
+   "seleccionada": false,
+   "calidad": 1,
+   "motivos_calidad": [
+    "corrección poco profunda"
+   ],
+   "avisos": [
+    "la ruptura fue el 2026-10-30",
+    "R/R 2.4 < 3: no cumple, esperar mejor precio"
+   ],
+   "confirmaciones": [
+    "MACD mensual alcista",
+    "barrida con volumen 1.5x (manos fuertes)"
+   ]
+  },
+  {
    "ticker": "FDX",
    "nombre": "FedEx",
    "grupo": "sp500",
@@ -2695,60 +2739,6 @@
    "confirmaciones": [
     "estocástico rápido cruza al alza",
     "MACD mensual alcista"
-   ]
-  },
-  {
-   "ticker": "PUIG.MC",
-   "nombre": "Puig",
-   "grupo": "ibex35",
-   "marco": "D",
-   "estado": "TRAMPA",
-   "motivo": "disparo técnico producido pero sin R/R o stop válido: esperar retroceso",
-   "fecha": "2026-11-06",
-   "cierre": 19.84,
-   "puntuacion": 13.7,
-   "techo": 19.76,
-   "fecha_techo": "2026-10-26",
-   "inicio_tramo": 15.72,
-   "minimo_correccion": 18.63,
-   "retroceso": 0.2797,
-   "ratio_tiempo": 0.1047,
-   "directriz_hoy": 19.76,
-   "directriz_manana": 19.76,
-   "nivel_barrido": 18.68,
-   "fecha_barrida": "2026-10-28",
-   "minimo_barrida": 18.63,
-   "volumen_barrida": 1.7467,
-   "entrada": 19.84,
-   "stop": 18.5212,
-   "objetivo1": 19.76,
-   "objetivo2": 22.67,
-   "rr": 2.1459,
-   "rr_obj1": -0.0607,
-   "riesgo_pct": 6.6471,
-   "acciones": 0,
-   "macd_superior": 0.8046,
-   "macd_mensual_alcista": false,
-   "rsi14": 63.101,
-   "rsi2": 44.0983,
-   "sto50": 95.977,
-   "sto89": 96.4377,
-   "adx": 29.4866,
-   "sar": 18.7183,
-   "disparo": "ruptura de directriz (sin R/R)",
-   "dist_sma200": 17.2719,
-   "puntuacion2": null,
-   "seleccionada": false,
-   "calidad": 1,
-   "motivos_calidad": [
-    "corrección poco profunda"
-   ],
-   "avisos": [
-    "la ruptura fue el 2026-11-04",
-    "R/R 2.1 < 3: no cumple, esperar mejor precio"
-   ],
-   "confirmaciones": [
-    "barrida con volumen 1.7x (manos fuertes)"
    ]
   },
   {
@@ -2971,6 +2961,63 @@
     "RSI(2) gira desde sobreventa",
     "estocástico rápido cruza al alza",
     "MACD mensual alcista"
+   ]
+  },
+  {
+   "ticker": "NEE",
+   "nombre": "NextEra Energy",
+   "grupo": "sp500",
+   "marco": "W",
+   "estado": "TRAMPA",
+   "motivo": "disparo técnico producido pero sin R/R o stop válido: esperar retroceso",
+   "fecha": "2026-11-09",
+   "cierre": 86.86,
+   "puntuacion": 33.7,
+   "techo": 97.3003,
+   "fecha_techo": "2026-05-01",
+   "inicio_tramo": 59.0575,
+   "minimo_correccion": 74.41,
+   "retroceso": 0.5986,
+   "ratio_tiempo": 0.5091,
+   "directriz_hoy": 89.7711,
+   "directriz_manana": 89.5022,
+   "nivel_barrido": 76.6867,
+   "fecha_barrida": "2026-09-25",
+   "minimo_barrida": 74.41,
+   "volumen_barrida": 1.3914,
+   "entrada": 86.86,
+   "stop": 73.5248,
+   "objetivo1": 97.3003,
+   "objetivo2": 112.6527,
+   "rr": 1.9342,
+   "rr_obj1": 0.7829,
+   "riesgo_pct": 15.3525,
+   "acciones": 0,
+   "macd_superior": 3.9218,
+   "macd_mensual_alcista": false,
+   "rsi14": 56.7218,
+   "rsi2": 94.8577,
+   "sto50": 49.9338,
+   "sto89": 70.0328,
+   "adx": 21.1207,
+   "sar": 75.8691,
+   "disparo": "ruptura de directriz (sin R/R)",
+   "dist_sma200": 0.1737,
+   "puntuacion2": null,
+   "seleccionada": false,
+   "calidad": 1,
+   "motivos_calidad": [
+    "corrección madura en tiempo"
+   ],
+   "avisos": [
+    "la ruptura fue el 2026-11-06",
+    "R/R 1.9 < 3: no cumple, esperar mejor precio",
+    "stop muy lejano (15.4 %)"
+   ],
+   "confirmaciones": [
+    "estocástico rápido cruza al alza",
+    "barrida con volumen 1.4x (manos fuertes)",
+    "ruptura con volumen 1.5x"
    ]
   },
   {
@@ -3433,7 +3480,7 @@
    "rsi2": 18.7939,
    "sto50": 20.1693,
    "sto89": 47.4976,
-   "adx": 17.8255,
+   "adx": 17.8221,
    "sar": 33.4355,
    "disparo": "",
    "dist_sma200": 15.4494,
@@ -4320,24 +4367,24 @@
  "autoevaluacion_vivo": {
   "global": {
    "fija": {
-    "n": 71,
-    "acierto_pct": 9.9,
-    "R_medio": -0.65,
-    "R_total": -46.1,
-    "ganancia_media_R": 4.21,
+    "n": 72,
+    "acierto_pct": 11.1,
+    "R_medio": -0.6,
+    "R_total": -43.2,
+    "ganancia_media_R": 4.05,
     "perdida_media_R": -1.18,
-    "profit_factor": 0.39,
+    "profit_factor": 0.43,
     "max_drawdown_R": -52.6
    },
    "gestionada": {
-    "n": 99,
-    "acierto_pct": 32.3,
-    "R_medio": -0.01,
-    "R_total": -1.2,
-    "ganancia_media_R": 1.64,
+    "n": 100,
+    "acierto_pct": 33.0,
+    "R_medio": 0.02,
+    "R_total": 1.7,
+    "ganancia_media_R": 1.68,
     "perdida_media_R": -0.8,
-    "profit_factor": 0.98,
-    "max_drawdown_R": -28.3
+    "profit_factor": 1.03,
+    "max_drawdown_R": -27.2
    },
    "seguimiento": {
     "n": 102,
@@ -4351,7 +4398,7 @@
    },
    "abiertas": 92,
    "anuladas": 2,
-   "pendientes": 14
+   "pendientes": 15
   },
   "grupos": {
    "Mercado": {
@@ -4363,7 +4410,7 @@
      "ganancia_media_R": 4.21,
      "perdida_media_R": -1.22,
      "profit_factor": 0.5,
-     "max_drawdown_R": -36.6,
+     "max_drawdown_R": -37.3,
      "R_medio_ges": -0.08
     },
     "ETFs": {
@@ -4389,28 +4436,28 @@
      "R_medio_ges": -1.07
     },
     "Europa tech": {
-     "n": 1,
-     "acierto_pct": 0.0,
-     "R_medio": -1.0,
-     "R_total": -1.0,
-     "ganancia_media_R": 0.0,
+     "n": 2,
+     "acierto_pct": 50.0,
+     "R_medio": 0.95,
+     "R_total": 1.9,
+     "ganancia_media_R": 2.91,
      "perdida_media_R": -1.0,
-     "profit_factor": 0.0,
+     "profit_factor": 2.91,
      "max_drawdown_R": 0.0,
-     "R_medio_ges": -1.0
+     "R_medio_ges": 0.95
     }
    },
    "Marco": {
     "D": {
-     "n": 66,
-     "acierto_pct": 10.6,
-     "R_medio": -0.62,
-     "R_total": -41.1,
-     "ganancia_media_R": 4.21,
+     "n": 67,
+     "acierto_pct": 11.9,
+     "R_medio": -0.57,
+     "R_total": -38.2,
+     "ganancia_media_R": 4.05,
      "perdida_media_R": -1.2,
-     "profit_factor": 0.42,
+     "profit_factor": 0.46,
      "max_drawdown_R": -48.6,
-     "R_medio_ges": -0.19
+     "R_medio_ges": -0.14
     },
     "W": {
      "n": 5,
@@ -4426,15 +4473,15 @@
    },
    "Disparo": {
     "recuperación del nivel barrido con volumen": {
-     "n": 53,
-     "acierto_pct": 7.5,
-     "R_medio": -0.77,
-     "R_total": -41.1,
-     "ganancia_media_R": 4.73,
+     "n": 54,
+     "acierto_pct": 9.3,
+     "R_medio": -0.71,
+     "R_total": -38.2,
+     "ganancia_media_R": 4.36,
      "perdida_media_R": -1.22,
-     "profit_factor": 0.32,
+     "profit_factor": 0.36,
      "max_drawdown_R": -41.7,
-     "R_medio_ges": -0.27
+     "R_medio_ges": -0.21
     },
     "ruptura de directriz": {
      "n": 18,
@@ -4461,15 +4508,15 @@
      "R_medio_ges": -0.4
     },
     "<50": {
-     "n": 20,
-     "acierto_pct": 20.0,
-     "R_medio": -0.22,
-     "R_total": -4.3,
-     "ganancia_media_R": 3.34,
+     "n": 21,
+     "acierto_pct": 23.8,
+     "R_medio": -0.07,
+     "R_total": -1.4,
+     "ganancia_media_R": 3.26,
      "perdida_media_R": -1.11,
-     "profit_factor": 0.76,
-     "max_drawdown_R": -8.0,
-     "R_medio_ges": 0.17
+     "profit_factor": 0.92,
+     "max_drawdown_R": -8.4,
+     "R_medio_ges": 0.3
     },
     "≥70": {
      "n": 2,
@@ -4485,15 +4532,15 @@
    },
    "Volumen en la trampa": {
     "con volumen": {
-     "n": 55,
-     "acierto_pct": 7.3,
-     "R_medio": -0.78,
-     "R_total": -43.1,
-     "ganancia_media_R": 4.73,
+     "n": 56,
+     "acierto_pct": 8.9,
+     "R_medio": -0.72,
+     "R_total": -40.2,
+     "ganancia_media_R": 4.36,
      "perdida_media_R": -1.22,
-     "profit_factor": 0.3,
+     "profit_factor": 0.35,
      "max_drawdown_R": -43.7,
-     "R_medio_ges": -0.3
+     "R_medio_ges": -0.24
     },
     "sin volumen": {
      "n": 16,
@@ -4509,28 +4556,28 @@
    },
    "Año": {
     "2026": {
-     "n": 71,
-     "acierto_pct": 9.9,
-     "R_medio": -0.65,
-     "R_total": -46.1,
-     "ganancia_media_R": 4.21,
+     "n": 72,
+     "acierto_pct": 11.1,
+     "R_medio": -0.6,
+     "R_total": -43.2,
+     "ganancia_media_R": 4.05,
      "perdida_media_R": -1.18,
-     "profit_factor": 0.39,
+     "profit_factor": 0.43,
      "max_drawdown_R": -52.6,
-     "R_medio_ges": -0.24
+     "R_medio_ges": -0.2
     }
    },
    "Selección diaria": {
     "resto": {
-     "n": 68,
-     "acierto_pct": 10.3,
-     "R_medio": -0.63,
-     "R_total": -42.6,
-     "ganancia_media_R": 4.21,
+     "n": 69,
+     "acierto_pct": 11.6,
+     "R_medio": -0.57,
+     "R_total": -39.7,
+     "ganancia_media_R": 4.05,
      "perdida_media_R": -1.18,
-     "profit_factor": 0.41,
+     "profit_factor": 0.45,
      "max_drawdown_R": -49.1,
-     "R_medio_ges": -0.22
+     "R_medio_ges": -0.18
     },
     "⭐ seleccionadas": {
      "n": 3,
@@ -4557,15 +4604,15 @@
      "R_medio_ges": -1.0
     },
     "1": {
-     "n": 23,
-     "acierto_pct": 13.0,
-     "R_medio": -0.73,
-     "R_total": -16.7,
-     "ganancia_media_R": 3.53,
+     "n": 24,
+     "acierto_pct": 16.7,
+     "R_medio": -0.58,
+     "R_total": -13.8,
+     "ganancia_media_R": 3.38,
      "perdida_media_R": -1.37,
-     "profit_factor": 0.39,
+     "profit_factor": 0.49,
      "max_drawdown_R": -20.6,
-     "R_medio_ges": -0.23
+     "R_medio_ges": -0.1
     },
     "2": {
      "n": 24,
@@ -4613,14 +4660,14 @@
      "max_drawdown_R": -26.5
     },
     "pasa (R/R ≥ mínimo)": {
-     "n": 71,
-     "acierto_pct": 9.9,
-     "R_medio": -0.65,
-     "R_total": -46.1,
-     "ganancia_media_R": 4.21,
+     "n": 72,
+     "acierto_pct": 11.1,
+     "R_medio": -0.6,
+     "R_total": -43.2,
+     "ganancia_media_R": 4.05,
      "perdida_media_R": -1.18,
-     "profit_factor": 0.39,
-     "max_drawdown_R": -54.3
+     "profit_factor": 0.43,
+     "max_drawdown_R": -51.4
     }
    }
   },
@@ -4734,16 +4781,6 @@
     "objetivo2": "50.1229",
     "fija_R": 1.41,
     "ges_R": 0.0
-   },
-   {
-    "fecha": "2026-10-05",
-    "ticker": "DSY.PA",
-    "marco": "D",
-    "entrada": 21.44,
-    "stop": "19.7776",
-    "objetivo2": "26.275",
-    "fija_R": 2.71,
-    "ges_R": 2.71
    },
    {
     "fecha": "2026-10-06",
@@ -5022,8 +5059,8 @@
     "entrada": 190.58,
     "stop": "179.9686",
     "objetivo2": "236.78",
-    "fija_R": 1.9,
-    "ges_R": 1.9
+    "fija_R": 1.99,
+    "ges_R": 1.99
    },
    {
     "fecha": "2026-10-09",
@@ -5032,7 +5069,7 @@
     "entrada": 4.21,
     "stop": "3.9862",
     "objetivo2": "5.237",
-    "fija_R": 1.25,
+    "fija_R": 1.18,
     "ges_R": 1.0
    },
    {
@@ -5082,8 +5119,8 @@
     "entrada": 16.77,
     "stop": "15.8549",
     "objetivo2": "22.7758",
-    "fija_R": 1.13,
-    "ges_R": 1.13
+    "fija_R": 1.25,
+    "ges_R": 1.25
    },
    {
     "fecha": "2026-10-14",
@@ -5202,8 +5239,8 @@
     "entrada": 25.76,
     "stop": "24.3734",
     "objetivo2": "29.88",
-    "fija_R": 1.82,
-    "ges_R": 1.82
+    "fija_R": 2.15,
+    "ges_R": 2.15
    },
    {
     "fecha": "2026-10-16",
@@ -5262,7 +5299,7 @@
     "entrada": 261.25,
     "stop": "253.4005",
     "objetivo2": "307.45",
-    "fija_R": 0.31,
+    "fija_R": 1.24,
     "ges_R": 1.0
    },
    {
@@ -5432,8 +5469,8 @@
     "entrada": 19.02,
     "stop": "18.5206",
     "objetivo2": "22.67",
-    "fija_R": 1.64,
-    "ges_R": 1.64
+    "fija_R": 1.88,
+    "ges_R": 1.88
    },
    {
     "fecha": "2026-10-30",
@@ -5462,8 +5499,8 @@
     "entrada": 30.24,
     "stop": "27.9414",
     "objetivo2": "39.4942",
-    "fija_R": -0.15,
-    "ges_R": -0.15
+    "fija_R": -0.38,
+    "ges_R": -0.38
    },
    {
     "fecha": "2026-11-02",
@@ -5544,6 +5581,16 @@
     "objetivo2": "184.3",
     "fija_R": 0.05,
     "ges_R": 0.05
+   },
+   {
+    "fecha": "2026-11-06",
+    "ticker": "LOG.MC",
+    "marco": "D",
+    "entrada": 36.86,
+    "stop": "35.6428",
+    "objetivo2": "40.6937",
+    "fija_R": 0.07,
+    "ges_R": 0.07
    }
   ]
  },
