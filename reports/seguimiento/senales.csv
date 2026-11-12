@@ -324,3 +324,11 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-09,AMD,Advanced Micro Devices,sp500/nasdaq100,W,recuperación del nivel barrido con volumen (sin R/R),False,508.58,385.5956,658.52,984.14,3.87,48.3,True,3,2026-10-09,False,,1
 2026-11-09,ACX.MC,Acerinox,ibex35,D,recuperación del nivel barrido con volumen,True,15.3,14.739,18.5,19.859,8.13,51.0,True,2,2026-09-07,False,,2
 2026-11-09,MAP.MC,Mapfre,ibex35,W,recuperación del nivel barrido con volumen,True,4.182,3.918,4.616,6.4023,8.41,51.0,True,2,2026-07-24,False,,3
+2026-11-10,ABBV,AbbVie,sp500,D,ruptura de directriz,True,293.89,279.2469,302.93,344.272,3.44,30.2,False,1,2026-11-05,False,,0
+2026-11-10,CI,Cigna,sp500,D,ruptura de directriz,True,303.13,289.5234,318.05,347.9628,3.29,39.5,False,1,2026-11-05,False,,0
+2026-11-10,CVS,CVS Health,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,89.01,75.8129,109.2172,146.0182,4.32,58.6,True,4,2026-07-31,False,,1
+2026-11-10,MNST,Monster Beverage,sp500/nasdaq100,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,45.34,43.6068,49.5,52.38,4.06,36.3,True,2,2026-11-05,False,,0
+2026-11-10,OXY,Occidental Petroleum,sp500,D,recuperación del nivel barrido con volumen,True,56.9,53.386,64.96,71.2682,4.09,57.4,True,4,2026-10-23,False,,1
+2026-11-10,PFE,Pfizer,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,29.36,28.3654,30.9876,36.6477,7.33,46.0,True,2,2026-11-05,False,,0
+2026-11-10,TRV,Travelers Companies (The),sp500,D,ruptura de directriz,True,400.78,387.6051,418.0,483.3587,6.27,38.0,False,1,2026-11-05,False,,0
+2026-11-10,MTS.MC,ArcelorMittal,ibex35,D,ruptura de directriz (sin R/R),False,58.5,52.031,68.52,73.6951,2.35,27.7,False,2,2026-09-08,False,,1
