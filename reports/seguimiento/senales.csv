@@ -332,3 +332,9 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-10,PFE,Pfizer,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,29.36,28.3654,30.9876,36.6477,7.33,46.0,True,2,2026-11-05,False,,0
 2026-11-10,TRV,Travelers Companies (The),sp500,D,ruptura de directriz,True,400.78,387.6051,418.0,483.3587,6.27,38.0,False,1,2026-11-05,False,,0
 2026-11-10,MTS.MC,ArcelorMittal,ibex35,D,ruptura de directriz (sin R/R),False,58.5,52.031,68.52,73.6951,2.35,27.7,False,2,2026-09-08,False,,1
+2026-11-11,JCI,Johnson Controls,sp500,W,recuperación del nivel barrido con volumen,True,144.61,128.4241,160.41,224.2791,4.92,40.6,True,2,2026-10-09,False,,1
+2026-11-11,ASML.AS,ASML,europe_tech,W,recuperación del nivel barrido con volumen (sin R/R),False,1403.8,1176.9216,1736.5827,2445.6586,4.59,65.0,True,4,2026-07-03,False,,1
+2026-11-11,QQQ,Nasdaq 100,etfs,W,recuperación del nivel barrido con volumen,True,690.38,639.3365,762.86,1010.3143,6.27,59.0,True,3,2026-10-09,False,,2
+2026-11-11,XLK,Tecnología EEUU,etfs,W,recuperación del nivel barrido con volumen,True,174.36,159.5272,203.25,279.8569,7.11,59.0,True,3,2026-10-09,False,,2
+2026-11-11,XLE,Energía EEUU,etfs,D,ruptura de directriz,True,63.37,60.0159,70.15,78.2709,4.44,61.2,False,3,2026-10-30,False,,1
+2026-11-11,EWJ,Japón,etfs,W,recuperación del nivel barrido con volumen,True,92.12,86.7539,99.98,130.7406,7.2,59.0,True,3,2026-10-09,False,,2
