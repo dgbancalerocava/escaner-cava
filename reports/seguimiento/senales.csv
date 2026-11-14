@@ -338,3 +338,6 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-11,XLK,Tecnología EEUU,etfs,W,recuperación del nivel barrido con volumen,True,174.36,159.5272,203.25,279.8569,7.11,59.0,True,3,2026-10-09,False,,2
 2026-11-11,XLE,Energía EEUU,etfs,D,ruptura de directriz,True,63.37,60.0159,70.15,78.2709,4.44,61.2,False,3,2026-10-30,False,,1
 2026-11-11,EWJ,Japón,etfs,W,recuperación del nivel barrido con volumen,True,92.12,86.7539,99.98,130.7406,7.2,59.0,True,3,2026-10-09,False,,2
+2026-11-13,OXY,Occidental Petroleum,sp500,W,recuperación del nivel barrido con volumen,True,58.75,52.8426,66.8332,80.6536,3.71,49.5,True,2,2026-04-03,False,,2
+2026-11-12,GRF.MC,Grifols,ibex35,W,ruptura de directriz (sin R/R),False,11.66,9.0992,12.7522,14.8762,1.26,9.3,False,1,2025-10-03,False,,1
+2026-11-12,SIE.DE,Siemens,europe_tech,W,ruptura de directriz,True,281.7,250.2363,291.7,387.2003,3.35,40.8,False,3,2026-08-28,False,,-1
