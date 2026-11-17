@@ -341,3 +341,9 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-13,OXY,Occidental Petroleum,sp500,W,recuperación del nivel barrido con volumen,True,58.75,52.8426,66.8332,80.6536,3.71,49.5,True,2,2026-04-03,False,,2
 2026-11-12,GRF.MC,Grifols,ibex35,W,ruptura de directriz (sin R/R),False,11.66,9.0992,12.7522,14.8762,1.26,9.3,False,1,2025-10-03,False,,1
 2026-11-12,SIE.DE,Siemens,europe_tech,W,ruptura de directriz,True,281.7,250.2363,291.7,387.2003,3.35,40.8,False,3,2026-08-28,False,,-1
+2026-11-16,DTE,DTE Energy,sp500,W,ruptura de directriz (sin R/R),False,139.91,118.3099,154.3382,165.9274,1.2,12.0,True,2,2026-07-10,False,,0
+2026-11-16,EXR,Extra Space Storage,sp500,W,ruptura de directriz (sin R/R),False,158.23,128.9035,157.0336,174.5123,0.56,29.8,True,4,2026-07-31,False,,1
+2026-11-16,IQV,IQVIA,sp500,W,ruptura de directriz,True,264.73,248.1726,284.5,402.23,8.3,38.0,False,1,2026-10-30,False,,1
+2026-11-16,PSA,Public Storage,sp500,W,ruptura de directriz (sin R/R),False,333.71,276.6571,332.1422,370.726,0.65,22.2,False,3,2026-07-31,False,,1
+2026-11-16,SO,Southern Company,sp500,D,ruptura de directriz (sin R/R),False,94.64,89.8885,94.9427,104.2664,2.03,26.1,False,2,2026-11-05,False,,1
+2026-11-16,TRGP,Targa Resources,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,292.12,256.2934,316.6,437.3089,4.05,31.3,True,2,2026-10-30,False,,1
