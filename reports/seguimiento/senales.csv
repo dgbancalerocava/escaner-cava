@@ -347,3 +347,6 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-16,PSA,Public Storage,sp500,W,ruptura de directriz (sin R/R),False,333.71,276.6571,332.1422,370.726,0.65,22.2,False,3,2026-07-31,False,,1
 2026-11-16,SO,Southern Company,sp500,D,ruptura de directriz (sin R/R),False,94.64,89.8885,94.9427,104.2664,2.03,26.1,False,2,2026-11-05,False,,1
 2026-11-16,TRGP,Targa Resources,sp500,W,recuperación del nivel barrido con volumen (sin R/R),False,292.12,256.2934,316.6,437.3089,4.05,31.3,True,2,2026-10-30,False,,1
+2026-11-17,BMY,Bristol Myers Squibb,sp500,D,recuperación del nivel barrido con volumen,True,61.35,60.1843,67.5405,71.3887,8.61,46.0,True,2,2026-09-03,False,,2
+2026-11-17,UNH,UnitedHealth Group,sp500,D,recuperación del nivel barrido con volumen,True,389.68,384.234,426.55,451.09,11.28,61.0,True,2,2026-10-22,False,,3
+2026-11-17,WDAY,"Workday, Inc.",sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,182.8,179.9349,212.91,283.19,35.04,51.0,True,2,2026-10-26,False,,2
