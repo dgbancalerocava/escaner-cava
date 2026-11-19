@@ -350,3 +350,8 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-17,BMY,Bristol Myers Squibb,sp500,D,recuperación del nivel barrido con volumen,True,61.35,60.1843,67.5405,71.3887,8.61,46.0,True,2,2026-09-03,False,,2
 2026-11-17,UNH,UnitedHealth Group,sp500,D,recuperación del nivel barrido con volumen,True,389.68,384.234,426.55,451.09,11.28,61.0,True,2,2026-10-22,False,,3
 2026-11-17,WDAY,"Workday, Inc.",sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,182.8,179.9349,212.91,283.19,35.04,51.0,True,2,2026-10-26,False,,2
+2026-11-18,AOS,A. O. Smith,sp500,D,ruptura de directriz,True,64.55,62.2063,68.12,76.5565,5.12,48.6,False,1,2026-11-05,False,,1
+2026-11-18,EBAY,eBay Inc.,sp500,D,ruptura de directriz,True,121.46,117.0106,127.74,145.15,5.32,47.6,False,2,2026-11-05,False,,0
+2026-11-18,VEEV,Veeva Systems,sp500,D,recuperación del nivel barrido con volumen,True,277.2,270.3294,325.99,448.3,24.9,51.0,True,2,2026-10-22,False,,2
+2026-11-18,WSM,"Williams-Sonoma, Inc.",sp500,D,ruptura de directriz (sin R/R),False,260.09,240.5569,274.45,304.4265,2.27,53.3,False,4,2026-11-05,False,,0
+2026-11-18,XLV,Salud EEUU,etfs,D,recuperación del nivel barrido con volumen,True,181.17,179.8811,192.32,216.4295,27.36,51.0,True,2,2026-11-05,False,,3
