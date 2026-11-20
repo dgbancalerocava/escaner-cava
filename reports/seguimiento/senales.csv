@@ -355,3 +355,4 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-18,VEEV,Veeva Systems,sp500,D,recuperación del nivel barrido con volumen,True,277.2,270.3294,325.99,448.3,24.9,51.0,True,2,2026-10-22,False,,2
 2026-11-18,WSM,"Williams-Sonoma, Inc.",sp500,D,ruptura de directriz (sin R/R),False,260.09,240.5569,274.45,304.4265,2.27,53.3,False,4,2026-11-05,False,,0
 2026-11-18,XLV,Salud EEUU,etfs,D,recuperación del nivel barrido con volumen,True,181.17,179.8811,192.32,216.4295,27.36,51.0,True,2,2026-11-05,False,,3
+2026-11-19,JNJ,Johnson & Johnson,sp500,D,recuperación del nivel barrido con volumen,True,267.14,262.9784,290.25,310.6448,10.45,61.0,True,2,2026-11-16,False,,2
