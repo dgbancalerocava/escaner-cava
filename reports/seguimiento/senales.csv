@@ -356,3 +356,8 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-18,WSM,"Williams-Sonoma, Inc.",sp500,D,ruptura de directriz (sin R/R),False,260.09,240.5569,274.45,304.4265,2.27,53.3,False,4,2026-11-05,False,,0
 2026-11-18,XLV,Salud EEUU,etfs,D,recuperación del nivel barrido con volumen,True,181.17,179.8811,192.32,216.4295,27.36,51.0,True,2,2026-11-05,False,,3
 2026-11-19,JNJ,Johnson & Johnson,sp500,D,recuperación del nivel barrido con volumen,True,267.14,262.9784,290.25,310.6448,10.45,61.0,True,2,2026-11-16,False,,2
+2026-11-20,CTAS,Cintas,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,220.01,215.4792,232.9264,282.6738,13.83,51.0,True,2,2026-11-05,False,,3
+2026-11-20,PANW,Palo Alto Networks,sp500/nasdaq100,W,recuperación del nivel barrido con volumen (sin R/R),False,343.32,290.5969,432.33,594.04,4.76,57.8,True,3,2026-10-09,False,,1
+2026-11-20,PM,Philip Morris International,sp500,D,recuperación del nivel barrido con volumen,True,184.09,182.1692,214.35,224.2606,20.91,46.0,True,2,2026-10-30,False,,2
+2026-11-20,PM,Philip Morris International,sp500,W,recuperación del nivel barrido con volumen,True,184.09,180.3493,214.35,277.1475,24.88,46.0,True,2,2026-10-30,False,,2
+2026-11-19,SGE.L,Sage Group,europe_tech,D,recuperación del nivel barrido con volumen,True,1132.5,1095.7768,1208.0,1504.8,10.14,51.0,True,2,2026-11-05,False,,2
