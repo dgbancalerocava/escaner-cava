@@ -361,3 +361,22 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-20,PM,Philip Morris International,sp500,D,recuperación del nivel barrido con volumen,True,184.09,182.1692,214.35,224.2606,20.91,46.0,True,2,2026-10-30,False,,2
 2026-11-20,PM,Philip Morris International,sp500,W,recuperación del nivel barrido con volumen,True,184.09,180.3493,214.35,277.1475,24.88,46.0,True,2,2026-10-30,False,,2
 2026-11-19,SGE.L,Sage Group,europe_tech,D,recuperación del nivel barrido con volumen,True,1132.5,1095.7768,1208.0,1504.8,10.14,51.0,True,2,2026-11-05,False,,2
+2026-11-23,A,Agilent Technologies,sp500,D,recuperación del nivel barrido con volumen,True,176.04,168.0773,182.99,227.5761,6.47,51.0,True,2,2026-10-28,False,,3
+2026-11-23,AMGN,Amgen,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,449.04,429.7759,481.2106,564.0884,5.97,66.9,True,4,2026-11-05,False,,1
+2026-11-23,ADSK,Autodesk,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,255.33,240.4248,279.24,329.68,4.99,55.9,True,2,2026-11-05,False,,1
+2026-11-23,BLK,BlackRock,sp500,D,recuperación del nivel barrido con volumen,True,1144.52,1086.484,1242.12,1391.8812,4.26,47.3,True,2,2026-11-05,False,,1
+2026-11-23,EL,Estée Lauder Companies (The),sp500,D,recuperación del nivel barrido con volumen,True,103.75,98.1812,115.29,136.1163,5.81,76.1,True,4,2026-11-09,False,,1
+2026-11-23,FAST,Fastenal,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,52.06,50.1881,56.27,63.2015,5.95,55.8,True,2,2026-11-12,False,,1
+2026-11-23,GPC,Genuine Parts Company,sp500,D,recuperación del nivel barrido con volumen,True,120.27,116.3869,138.2,166.402,11.88,56.0,True,2,2026-09-04,False,,3
+2026-11-23,IFF,International Flavors & Fragrances,sp500,W,recuperación del nivel barrido con volumen + ruptura de directriz,True,82.84,76.9806,95.27,115.7179,5.61,67.1,True,3,2026-11-06,False,,0
+2026-11-23,KDP,Keurig Dr Pepper,sp500/nasdaq100,D,ruptura de directriz,True,35.43,33.7973,38.29,43.9263,5.2,57.0,False,2,2026-11-11,False,,0
+2026-11-23,LIN,Linde plc,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,517.0,497.8544,533.39,579.46,3.26,63.3,True,4,2026-11-05,False,,2
+2026-11-23,MET,MetLife,sp500,D,recuperación del nivel barrido con volumen,True,98.72,94.5478,106.72,118.6018,4.77,57.8,True,3,2026-11-05,False,,1
+2026-11-23,MSFT,Microsoft,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,492.5,476.7872,558.072,680.5708,11.97,61.0,True,2,2026-11-04,False,,2
+2026-11-23,NDAQ,"Nasdaq, Inc.",sp500,D,recuperación del nivel barrido con volumen,True,105.34,101.9719,111.45,137.7679,9.63,67.0,True,4,2026-11-05,False,,3
+2026-11-23,NXPI,NXP Semiconductors,sp500/nasdaq100,D,recuperación del nivel barrido con volumen (sin R/R),False,256.03,230.3728,274.21,291.5735,1.39,33.9,True,4,2026-11-11,False,,1
+2026-11-23,PYPL,PayPal,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,55.24,52.6869,60.87,71.8141,6.49,56.0,True,2,2026-11-04,False,,1
+2026-11-23,RL,Ralph Lauren Corporation,sp500,D,ruptura de directriz (sin R/R),False,385.29,360.864,413.6,447.7405,2.56,38.8,False,2,2026-11-04,False,,1
+2026-11-23,SBUX,Starbucks,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,106.36,101.8912,110.8451,126.095,4.42,51.1,True,3,2026-11-05,False,,2
+2026-11-23,WAT,Waters Corporation,sp500,D,recuperación del nivel barrido con volumen,True,452.9,433.7487,483.33,575.66,6.41,59.0,True,3,2026-11-11,False,,1
+2026-11-23,SHOP,Shopify,nasdaq100,D,recuperación del nivel barrido con volumen,True,134.3,120.6507,180.88,199.6,4.78,52.9,True,3,2026-10-12,False,,2
