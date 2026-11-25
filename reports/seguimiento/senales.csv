@@ -380,3 +380,19 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-23,SBUX,Starbucks,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,106.36,101.8912,110.8451,126.095,4.42,51.1,True,3,2026-11-05,False,,2
 2026-11-23,WAT,Waters Corporation,sp500,D,recuperación del nivel barrido con volumen,True,452.9,433.7487,483.33,575.66,6.41,59.0,True,3,2026-11-11,False,,1
 2026-11-23,SHOP,Shopify,nasdaq100,D,recuperación del nivel barrido con volumen,True,134.3,120.6507,180.88,199.6,4.78,52.9,True,3,2026-10-12,False,,2
+2026-11-24,IT,Gartner,sp500,D,ruptura de directriz,True,180.08,169.8642,237.54,283.87,10.16,69.0,False,3,2026-11-02,False,,1
+2026-11-24,ITW,Illinois Tool Works,sp500,D,ruptura de directriz (sin R/R),False,283.75,271.226,297.17,314.37,2.44,41.2,False,3,2026-11-05,False,,1
+2026-11-24,INCY,Incyte,sp500,D,ruptura de directriz (sin R/R),False,123.61,113.3228,130.0,145.6,2.14,44.7,False,3,2026-09-03,False,,1
+2026-11-24,KIM,Kimco Realty,sp500,D,ruptura de directriz,True,25.79,25.0367,26.37,29.78,5.3,47.5,False,2,2026-11-05,False,,2
+2026-11-24,MRSH,Marsh McLennan,sp500,D,ruptura de directriz,True,213.16,200.964,214.0,254.2652,3.37,29.9,False,1,2026-11-05,False,,1
+2026-11-24,NUE,Nucor,sp500,W,ruptura de directriz,True,248.01,232.0489,287.7,428.7908,11.33,43.0,False,1,2026-11-06,False,,2
+2026-11-24,OTIS,Otis Worldwide,sp500,D,ruptura de directriz,True,78.3,74.9138,80.717,92.8446,4.3,34.5,False,1,2026-11-04,False,,1
+2026-11-24,PAYX,Paychex,sp500/nasdaq100,D,recuperación del nivel barrido con volumen,True,115.08,109.6504,126.6898,138.0451,4.23,58.1,True,4,2026-09-01,False,,2
+2026-11-24,ROP,Roper Technologies,sp500/nasdaq100,D,ruptura de directriz,True,476.48,450.6378,507.24,630.3431,5.95,58.8,False,3,2026-11-05,False,,0
+2026-11-24,SWKS,Skyworks Solutions,sp500,D,ruptura de directriz,True,80.95,72.2171,93.24,111.21,3.47,48.3,False,2,2026-11-12,False,,0
+2026-11-24,USB,U.S. Bancorp,sp500,D,recuperación del nivel barrido con volumen,True,58.07,55.5143,63.1183,67.3442,3.63,50.1,True,4,2026-09-03,False,,2
+2026-11-24,UNP,Union Pacific Corporation,sp500,D,recuperación del nivel barrido con volumen,True,290.83,284.593,309.86,329.1389,6.14,69.0,True,3,2026-11-04,False,,1
+2026-11-24,VLTO,Veralto,sp500,D,ruptura de directriz,True,119.04,115.1221,120.35,146.8702,7.1,59.0,False,3,2026-11-16,False,,1
+2026-11-24,VRTX,Vertex Pharmaceuticals,sp500/nasdaq100,D,ruptura de directriz (sin R/R),False,563.92,509.6025,568.67,617.47,0.99,33.9,False,3,2026-11-02,False,,0
+2026-11-23,HEXA-B.ST,Hexagon,europe_tech,D,recuperación del nivel barrido con volumen,True,101.65,98.5276,111.95,132.83,9.99,59.0,True,3,2026-11-05,False,,1
+2026-11-24,XLF,Financiero EEUU,etfs,D,recuperación del nivel barrido con volumen (sin R/R),False,56.11,54.1782,60.04,61.66,2.87,38.4,True,3,2026-11-05,False,,3
