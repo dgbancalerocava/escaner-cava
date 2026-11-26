@@ -396,3 +396,20 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-24,VRTX,Vertex Pharmaceuticals,sp500/nasdaq100,D,ruptura de directriz (sin R/R),False,563.92,509.6025,568.67,617.47,0.99,33.9,False,3,2026-11-02,False,,0
 2026-11-23,HEXA-B.ST,Hexagon,europe_tech,D,recuperación del nivel barrido con volumen,True,101.65,98.5276,111.95,132.83,9.99,59.0,True,3,2026-11-05,False,,1
 2026-11-24,XLF,Financiero EEUU,etfs,D,recuperación del nivel barrido con volumen (sin R/R),False,56.11,54.1782,60.04,61.66,2.87,38.4,True,3,2026-11-05,False,,3
+2026-11-25,APD,Air Products,sp500,D,ruptura de directriz (sin R/R),False,314.26,294.656,324.0,353.04,1.98,43.9,False,3,2026-11-05,False,,1
+2026-11-25,ALLE,Allegion,sp500,D,ruptura de directriz,True,192.2,182.0967,195.42,246.3102,5.36,55.8,False,3,2026-11-05,False,,1
+2026-11-25,AZO,AutoZone,sp500,D,ruptura de directriz (sin R/R),False,3404.46,3210.6591,3359.0,3803.3501,2.06,18.3,False,1,2026-11-05,False,,1
+2026-11-25,ED,Consolidated Edison,sp500,D,ruptura de directriz,True,120.37,116.4356,122.0,137.7697,4.42,35.1,False,1,2026-11-20,False,,1
+2026-11-25,GEHC,GE HealthCare,sp500/nasdaq100,D,ruptura de directriz,True,83.33,79.7271,87.56,107.6837,6.76,51.0,False,2,2026-11-04,False,,1
+2026-11-25,GD,General Dynamics,sp500,D,ruptura de directriz (sin R/R),False,360.27,338.6466,386.6,406.8419,2.15,26.8,False,2,2026-10-30,False,,1
+2026-11-25,JKHY,Jack Henry & Associates,sp500,D,ruptura de directriz (sin R/R),False,182.08,167.2419,185.02,219.5273,2.52,28.6,False,2,2026-11-05,False,,0
+2026-11-25,J,Jacobs Solutions,sp500,D,recuperación del nivel barrido con volumen,True,145.49,140.8409,162.0,182.1077,7.88,61.0,True,2,2026-11-04,False,,1
+2026-11-25,MA,Mastercard,sp500,D,ruptura de directriz,True,659.97,620.387,681.99,800.575,3.55,46.8,False,3,2026-11-05,False,,0
+2026-11-25,MTD,Mettler Toledo,sp500,D,recuperación del nivel barrido con volumen,True,1664.55,1622.3813,1806.58,2224.6799,13.28,59.0,True,3,2026-11-06,False,,2
+2026-11-25,PNW,Pinnacle West Capital,sp500,D,ruptura de directriz,True,103.24,99.6567,109.0,119.7257,4.6,62.0,False,3,2026-11-12,False,,1
+2026-11-25,PPG,PPG Industries,sp500,D,ruptura de directriz (sin R/R),False,124.61,115.7297,128.109,143.6296,2.14,44.7,False,3,2026-11-04,False,,1
+2026-11-25,PGR,Progressive Corporation,sp500,D,ruptura de directriz (sin R/R),False,238.7,222.8489,241.02,264.3269,1.62,21.1,False,1,2026-11-05,False,,1
+2026-11-25,LUV,Southwest Airlines,sp500,D,ruptura de directriz,True,45.95,43.3721,47.59,53.9852,3.12,28.6,False,1,2026-11-18,False,,0
+2026-11-25,UPS,United Parcel Service,sp500,D,ruptura de directriz (sin R/R),False,111.47,104.9993,113.2925,128.7384,2.67,37.3,False,3,2026-11-05,False,,1
+2026-11-25,V,Visa Inc.,sp500,D,ruptura de directriz,True,424.39,398.4124,441.4129,504.327,3.08,54.4,False,3,2026-11-05,False,,0
+2026-11-25,XLB,Materiales básicos,etfs,W,ruptura de directriz,True,51.21,47.699,54.63,67.2797,4.58,38.9,False,2,2026-11-06,False,,1
