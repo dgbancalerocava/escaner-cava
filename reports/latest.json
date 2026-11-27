@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-25",
+ "fecha": "2026-11-26",
  "estadisticas": {
   "analizados": 608,
   "SENAL": 30,
@@ -21,8 +21,8 @@
   {
    "ticker": "^NDX",
    "nombre": "Nasdaq 100",
-   "cierre": 26046.896484375,
-   "macd_sem": -306.21770327771446,
+   "cierre": 26046.900390625,
+   "macd_sem": -306.21739166802945,
    "macd_men_alc": false,
    "sobre_sma200": false,
    "favorable": null,
@@ -31,18 +31,18 @@
   {
    "ticker": "^IBEX",
    "nombre": "IBEX 35",
-   "cierre": 18635.80078125,
-   "macd_sem": 127.83444178550417,
+   "cierre": 19057.900390625,
+   "macd_sem": 161.5062054963273,
    "macd_men_alc": false,
-   "sobre_sma200": false,
-   "favorable": false,
-   "estado": "precio bajo la media larga"
+   "sobre_sma200": true,
+   "favorable": true,
+   "estado": "retroceso excesivo (101%): tendencia dañada"
   },
   {
    "ticker": "^STOXX50E",
    "nombre": "Euro Stoxx 50",
-   "cierre": 5894.4599609375,
-   "macd_sem": -11.691773210485735,
+   "cierre": 6014.740234375,
+   "macd_sem": -2.096765642822902,
    "macd_men_alc": false,
    "sobre_sma200": false,
    "favorable": false,
@@ -51,12 +51,12 @@
   {
    "ticker": "^GDAXI",
    "nombre": "DAX",
-   "cierre": 24702.130859375,
-   "macd_sem": 128.30604984458114,
+   "cierre": 25215.51953125,
+   "macd_sem": 169.2601319314781,
    "macd_men_alc": false,
-   "sobre_sma200": false,
+   "sobre_sma200": true,
    "favorable": null,
-   "estado": "precio bajo la media larga"
+   "estado": "retroceso excesivo (98%): tendencia dañada"
   }
  ],
  "candidatos": [
@@ -671,63 +671,6 @@
    ]
   },
   {
-   "ticker": "HEXA-B.ST",
-   "nombre": "Hexagon",
-   "grupo": "europe_tech",
-   "marco": "D",
-   "estado": "SENAL",
-   "motivo": "trampa + recuperación del nivel barrido con volumen",
-   "fecha": "2026-11-24",
-   "cierre": 100.75,
-   "puntuacion": 54.0,
-   "techo": 111.95,
-   "fecha_techo": "2026-11-05",
-   "inicio_tramo": 78.22,
-   "minimo_correccion": 99.1,
-   "retroceso": 0.381,
-   "ratio_tiempo": 0.1512,
-   "directriz_hoy": 105.3417,
-   "directriz_manana": 104.8333,
-   "nivel_barrido": 99.78,
-   "fecha_barrida": "2026-11-20",
-   "minimo_barrida": 99.1,
-   "volumen_barrida": 1.942,
-   "entrada": 100.75,
-   "stop": 98.5354,
-   "objetivo1": 111.95,
-   "objetivo2": 132.83,
-   "rr": 14.4859,
-   "rr_obj1": 5.0574,
-   "riesgo_pct": 2.1981,
-   "acciones": 0,
-   "macd_superior": 3.0568,
-   "macd_mensual_alcista": true,
-   "rsi14": 37.0603,
-   "rsi2": 34.3059,
-   "sto50": 42.4042,
-   "sto89": 66.1073,
-   "adx": 21.8548,
-   "sar": 108.3634,
-   "disparo": "recuperación del nivel barrido con volumen",
-   "dist_sma200": 6.3736,
-   "puntuacion2": null,
-   "seleccionada": false,
-   "calidad": 1,
-   "motivos_calidad": [
-    "R/R alto",
-    "escape falso puro",
-    "Europa tech (resta)"
-   ],
-   "avisos": [
-    "recuperó el nivel el 2026-11-23"
-   ],
-   "confirmaciones": [
-    "estocástico rápido cruza al alza",
-    "MACD mensual alcista",
-    "barrida con volumen 1.9x (manos fuertes)"
-   ]
-  },
-  {
    "ticker": "J",
    "nombre": "Jacobs Solutions",
    "grupo": "sp500",
@@ -1027,7 +970,7 @@
    "rsi2": 51.311,
    "sto50": 79.8504,
    "sto89": 83.2177,
-   "adx": 26.3527,
+   "adx": 26.3526,
    "sar": 312.2606,
    "disparo": "recuperación del nivel barrido con volumen",
    "dist_sma200": 6.6664,
@@ -1430,7 +1373,7 @@
    "puntuacion": 55.0,
    "techo": 106.72,
    "fecha_techo": "2026-11-05",
-   "inicio_tramo": 83.3382,
+   "inicio_tramo": 83.3381,
    "minimo_correccion": 95.22,
    "retroceso": 0.4918,
    "ratio_tiempo": 0.1556,
@@ -1443,7 +1386,7 @@
    "entrada": 99.78,
    "stop": 94.5606,
    "objetivo1": 106.72,
-   "objetivo2": 118.6018,
+   "objetivo2": 118.6019,
    "rr": 3.6062,
    "rr_obj1": 1.3297,
    "riesgo_pct": 5.2309,
@@ -1523,6 +1466,61 @@
    "avisos": [],
    "confirmaciones": [
     "estocástico rápido cruza al alza"
+   ]
+  },
+  {
+   "ticker": "HEXA-B.ST",
+   "nombre": "Hexagon",
+   "grupo": "europe_tech",
+   "marco": "D",
+   "estado": "SENAL",
+   "motivo": "trampa + recuperación del nivel barrido con volumen",
+   "fecha": "2026-11-25",
+   "cierre": 102.2,
+   "puntuacion": 67.0,
+   "techo": 111.95,
+   "fecha_techo": "2026-11-05",
+   "inicio_tramo": 78.22,
+   "minimo_correccion": 99.1,
+   "retroceso": 0.381,
+   "ratio_tiempo": 0.1628,
+   "directriz_hoy": 104.8333,
+   "directriz_manana": 104.325,
+   "nivel_barrido": 102.0,
+   "fecha_barrida": "2026-11-20",
+   "minimo_barrida": 99.1,
+   "volumen_barrida": 1.942,
+   "entrada": 102.2,
+   "stop": 98.5356,
+   "objetivo1": 111.95,
+   "objetivo2": 132.83,
+   "rr": 8.3588,
+   "rr_obj1": 2.6607,
+   "riesgo_pct": 3.5855,
+   "acciones": 0,
+   "macd_superior": 3.1725,
+   "macd_mensual_alcista": true,
+   "rsi14": 42.3387,
+   "rsi2": 65.6891,
+   "sto50": 45.7914,
+   "sto89": 68.4918,
+   "adx": 22.1571,
+   "sar": 107.6224,
+   "disparo": "recuperación del nivel barrido con volumen",
+   "dist_sma200": 7.8627,
+   "puntuacion2": null,
+   "seleccionada": false,
+   "calidad": 0,
+   "motivos_calidad": [
+    "escape falso puro",
+    "Europa tech (resta)"
+   ],
+   "avisos": [],
+   "confirmaciones": [
+    "RSI(2) gira desde sobreventa",
+    "estocástico rápido cruza al alza",
+    "MACD mensual alcista",
+    "barrida con volumen 1.9x (manos fuertes)"
    ]
   },
   {
@@ -1664,7 +1662,7 @@
    "rsi2": 91.1807,
    "sto50": 78.4185,
    "sto89": 79.563,
-   "adx": 40.8582,
+   "adx": 40.8583,
    "sar": 453.72,
    "disparo": "ruptura de directriz",
    "dist_sma200": 29.7785,
@@ -1992,7 +1990,7 @@
    "rsi2": 54.7193,
    "sto50": 80.7683,
    "sto89": 86.6366,
-   "adx": 25.4476,
+   "adx": 25.4477,
    "sar": 30.3553,
    "disparo": "",
    "dist_sma200": 9.6751,
@@ -2407,9 +2405,9 @@
    "marco": "W",
    "estado": "TRAMPA",
    "motivo": "trampa hecha, falta ruptura de directriz",
-   "fecha": "2026-11-24",
-   "cierre": 5.344,
-   "puntuacion": 19.9,
+   "fecha": "2026-11-25",
+   "cierre": 5.208,
+   "puntuacion": 11.9,
    "techo": 5.718,
    "fecha_techo": "2026-06-26",
    "inicio_tramo": 2.151,
@@ -2423,23 +2421,23 @@
    "minimo_barrida": 4.714,
    "volumen_barrida": 0.9063,
    "entrada": 5.603,
-   "stop": 4.6372,
+   "stop": 4.6366,
    "objetivo1": 5.718,
    "objetivo2": 8.281,
-   "rr": 2.7728,
-   "rr_obj1": 0.1191,
-   "riesgo_pct": 17.2377,
+   "rr": 2.7712,
+   "rr_obj1": 0.119,
+   "riesgo_pct": 17.2479,
    "acciones": 0,
-   "macd_superior": 0.5997,
+   "macd_superior": 0.5889,
    "macd_mensual_alcista": false,
-   "rsi14": 57.9186,
-   "rsi2": 68.4302,
-   "sto50": 80.1273,
-   "sto89": 88.5466,
-   "adx": 14.3214,
+   "rsi14": 55.0716,
+   "rsi2": 45.8667,
+   "sto50": 77.7813,
+   "sto89": 87.1945,
+   "adx": 14.1444,
    "sar": 4.7896,
    "disparo": "",
-   "dist_sma200": 10.1028,
+   "dist_sma200": 7.376,
    "puntuacion2": null,
    "seleccionada": false,
    "calidad": 1,
@@ -2451,7 +2449,6 @@
     "stop muy lejano (17.2 %)"
    ],
    "confirmaciones": [
-    "RSI(2) gira desde sobreventa",
     "estocástico rápido cruza al alza"
    ]
   },
@@ -3834,7 +3831,7 @@
    "puntuacion": 27.2,
    "techo": 437.9941,
    "fecha_techo": "2026-10-29",
-   "inicio_tramo": 324.8531,
+   "inicio_tramo": 324.853,
    "minimo_correccion": 371.63,
    "retroceso": 0.5866,
    "ratio_tiempo": 0.2836,
@@ -3931,6 +3928,57 @@
    ]
   },
   {
+   "ticker": "IAG.MC",
+   "nombre": "IAG",
+   "grupo": "ibex35",
+   "marco": "D",
+   "estado": "VIGILANCIA",
+   "motivo": "contexto alcista y corrección madura, sin trampa aún",
+   "fecha": "2026-11-25",
+   "cierre": 5.208,
+   "puntuacion": 18.2,
+   "techo": 5.52,
+   "fecha_techo": "2026-11-10",
+   "inicio_tramo": 4.714,
+   "minimo_correccion": 5.206,
+   "retroceso": 0.3896,
+   "ratio_tiempo": 0.9167,
+   "directriz_hoy": 5.4914,
+   "directriz_manana": 5.4888,
+   "nivel_barrido": null,
+   "fecha_barrida": "",
+   "minimo_barrida": null,
+   "volumen_barrida": null,
+   "entrada": 5.4888,
+   "stop": 5.1684,
+   "objetivo1": 5.52,
+   "objetivo2": 6.012,
+   "rr": 1.633,
+   "rr_obj1": 0.0974,
+   "riesgo_pct": 5.8372,
+   "acciones": 0,
+   "macd_superior": 0.0906,
+   "macd_mensual_alcista": false,
+   "rsi14": 49.5297,
+   "rsi2": 20.0819,
+   "sto50": 76.1787,
+   "sto89": 76.1787,
+   "adx": 22.6551,
+   "sar": 5.5028,
+   "disparo": "",
+   "dist_sma200": 7.0023,
+   "puntuacion2": null,
+   "seleccionada": false,
+   "calidad": 1,
+   "motivos_calidad": [
+    "corrección madura en tiempo"
+   ],
+   "avisos": [
+    "R/R 1.6 < 3: no cumple, esperar mejor precio"
+   ],
+   "confirmaciones": []
+  },
+  {
    "ticker": "VEEV",
    "nombre": "Veeva Systems",
    "grupo": "sp500",
@@ -4011,7 +4059,7 @@
    "entrada": 247.1694,
    "stop": 219.1117,
    "objetivo1": 254.8628,
-   "objetivo2": 292.2275,
+   "objetivo2": 292.2276,
    "rr": 1.6059,
    "rr_obj1": 0.2742,
    "riesgo_pct": 11.3516,
@@ -4098,39 +4146,39 @@
    "marco": "D",
    "estado": "VIGILANCIA",
    "motivo": "contexto alcista y corrección madura, sin trampa aún",
-   "fecha": "2026-11-24",
-   "cierre": 21.94,
-   "puntuacion": 15.4,
+   "fecha": "2026-11-25",
+   "cierre": 21.28,
+   "puntuacion": 15.6,
    "techo": 25.1681,
    "fecha_techo": "2026-09-29",
    "inicio_tramo": 18.7653,
    "minimo_correccion": 21.03,
    "retroceso": 0.6463,
-   "ratio_tiempo": 0.5063,
-   "directriz_hoy": 23.5573,
-   "directriz_manana": 23.517,
+   "ratio_tiempo": 0.519,
+   "directriz_hoy": 23.517,
+   "directriz_manana": 23.4768,
    "nivel_barrido": null,
    "fecha_barrida": "",
    "minimo_barrida": null,
    "volumen_barrida": null,
-   "entrada": 23.517,
-   "stop": 20.8783,
+   "entrada": 23.4768,
+   "stop": 20.8747,
    "objetivo1": 25.1681,
    "objetivo2": 27.4328,
-   "rr": 1.484,
-   "rr_obj1": 0.6257,
-   "riesgo_pct": 11.2204,
+   "rr": 1.5203,
+   "rr_obj1": 0.65,
+   "riesgo_pct": 11.0835,
    "acciones": 0,
-   "macd_superior": 0.4146,
+   "macd_superior": 0.3619,
    "macd_mensual_alcista": true,
-   "rsi14": 40.8388,
-   "rsi2": 29.3515,
-   "sto50": 25.6157,
-   "sto89": 25.6157,
-   "adx": 20.6917,
-   "sar": 23.8753,
+   "rsi14": 35.8718,
+   "rsi2": 13.6331,
+   "sto50": 21.1853,
+   "sto89": 21.1853,
+   "adx": 21.5208,
+   "sar": 23.8342,
    "disparo": "",
-   "dist_sma200": 3.2883,
+   "dist_sma200": 0.109,
    "puntuacion2": null,
    "seleccionada": false,
    "calidad": 1,
@@ -4206,39 +4254,39 @@
    "marco": "D",
    "estado": "VIGILANCIA",
    "motivo": "contexto alcista y corrección madura, sin trampa aún",
-   "fecha": "2026-11-24",
-   "cierre": 3.226,
-   "puntuacion": 20.2,
+   "fecha": "2026-11-25",
+   "cierre": 3.124,
+   "puntuacion": 20.3,
    "techo": 3.646,
    "fecha_techo": "2026-09-22",
    "inicio_tramo": 2.6379,
    "minimo_correccion": 3.058,
    "retroceso": 0.5833,
-   "ratio_tiempo": 0.5056,
-   "directriz_hoy": 3.466,
-   "directriz_manana": 3.462,
+   "ratio_tiempo": 0.5169,
+   "directriz_hoy": 3.462,
+   "directriz_manana": 3.458,
    "nivel_barrido": null,
    "fecha_barrida": "",
    "minimo_barrida": null,
    "volumen_barrida": null,
-   "entrada": 3.462,
-   "stop": 3.0399,
+   "entrada": 3.458,
+   "stop": 3.0392,
    "objetivo1": 3.646,
    "objetivo2": 4.0661,
-   "rr": 1.4314,
-   "rr_obj1": 0.436,
-   "riesgo_pct": 12.1912,
+   "rr": 1.452,
+   "rr_obj1": 0.4489,
+   "riesgo_pct": 12.1112,
    "acciones": 0,
-   "macd_superior": 0.0894,
+   "macd_superior": 0.0813,
    "macd_mensual_alcista": true,
-   "rsi14": 41.7527,
-   "rsi2": 26.012,
-   "sto50": 32.6531,
-   "sto89": 32.6531,
-   "adx": 23.2973,
-   "sar": 3.4604,
+   "rsi14": 35.5707,
+   "rsi2": 10.5402,
+   "sto50": 26.8708,
+   "sto89": 26.8708,
+   "adx": 24.3108,
+   "sar": 3.4464,
    "disparo": "",
-   "dist_sma200": 7.1064,
+   "dist_sma200": 3.6045,
    "puntuacion2": null,
    "seleccionada": false,
    "calidad": 1,
@@ -4246,8 +4294,8 @@
     "corrección madura en tiempo"
    ],
    "avisos": [
-    "R/R 1.4 < 3: no cumple, esperar mejor precio",
-    "stop muy lejano (12.2 %)"
+    "R/R 1.5 < 3: no cumple, esperar mejor precio",
+    "stop muy lejano (12.1 %)"
    ],
    "confirmaciones": [
     "MACD mensual alcista"
@@ -4633,97 +4681,41 @@
     "estocástico rápido cruza al alza",
     "MACD mensual alcista"
    ]
-  },
-  {
-   "ticker": "DOC",
-   "nombre": "Healthpeak Properties",
-   "grupo": "sp500",
-   "marco": "D",
-   "estado": "VIGILANCIA",
-   "motivo": "contexto alcista y corrección madura, sin trampa aún",
-   "fecha": "2026-11-25",
-   "cierre": 20.71,
-   "puntuacion": 34.5,
-   "techo": 20.9525,
-   "fecha_techo": "2026-09-03",
-   "inicio_tramo": 15.1571,
-   "minimo_correccion": 18.1589,
-   "retroceso": 0.482,
-   "ratio_tiempo": 0.6517,
-   "directriz_hoy": 20.6398,
-   "directriz_manana": 20.8482,
-   "nivel_barrido": null,
-   "fecha_barrida": "",
-   "minimo_barrida": null,
-   "volumen_barrida": null,
-   "entrada": 20.8482,
-   "stop": 18.0311,
-   "objetivo1": 20.9525,
-   "objetivo2": 23.9543,
-   "rr": 1.1026,
-   "rr_obj1": 0.037,
-   "riesgo_pct": 13.5125,
-   "acciones": 0,
-   "macd_superior": 0.2251,
-   "macd_mensual_alcista": true,
-   "rsi14": 64.6702,
-   "rsi2": 97.169,
-   "sto50": 84.7919,
-   "sto89": 50.9457,
-   "adx": 17.3222,
-   "sar": 19.0382,
-   "disparo": "",
-   "dist_sma200": 9.4974,
-   "puntuacion2": null,
-   "seleccionada": false,
-   "calidad": 1,
-   "motivos_calidad": [
-    "corrección madura en tiempo"
-   ],
-   "avisos": [
-    "R/R 1.1 < 3: no cumple, esperar mejor precio",
-    "stop muy lejano (13.5 %)"
-   ],
-   "confirmaciones": [
-    "RSI(2) gira desde sobreventa",
-    "estocástico rápido cruza al alza",
-    "MACD mensual alcista"
-   ]
   }
  ],
  "autoevaluacion_vivo": {
   "global": {
    "fija": {
-    "n": 121,
-    "acierto_pct": 6.6,
+    "n": 123,
+    "acierto_pct": 6.5,
     "R_medio": -0.76,
-    "R_total": -92.0,
+    "R_total": -94.0,
     "ganancia_media_R": 4.13,
-    "perdida_media_R": -1.11,
+    "perdida_media_R": -1.1,
     "profit_factor": 0.26,
-    "max_drawdown_R": -91.0
+    "max_drawdown_R": -93.0
    },
    "gestionada": {
-    "n": 157,
-    "acierto_pct": 26.8,
-    "R_medio": -0.12,
-    "R_total": -19.4,
+    "n": 158,
+    "acierto_pct": 26.6,
+    "R_medio": -0.13,
+    "R_total": -20.4,
     "ganancia_media_R": 1.55,
-    "perdida_media_R": -0.73,
-    "profit_factor": 0.77,
+    "perdida_media_R": -0.74,
+    "profit_factor": 0.76,
     "max_drawdown_R": -29.3
    },
    "seguimiento": {
-    "n": 168,
-    "acierto_pct": 29.8,
-    "R_medio": -0.04,
-    "R_total": -7.3,
+    "n": 170,
+    "acierto_pct": 29.4,
+    "R_medio": -0.05,
+    "R_total": -9.3,
     "ganancia_media_R": 2.16,
     "perdida_media_R": -0.98,
-    "profit_factor": 0.94,
-    "max_drawdown_R": -39.9
+    "profit_factor": 0.92,
+    "max_drawdown_R": -38.9
    },
-   "abiertas": 112,
+   "abiertas": 110,
    "anuladas": 3,
    "pendientes": 10
   },
@@ -4763,52 +4755,52 @@
      "R_medio_ges": -1.05
     },
     "Europa tech": {
-     "n": 2,
-     "acierto_pct": 50.0,
-     "R_medio": 0.95,
-     "R_total": 1.9,
+     "n": 4,
+     "acierto_pct": 25.0,
+     "R_medio": -0.02,
+     "R_total": -0.1,
      "ganancia_media_R": 2.91,
      "perdida_media_R": -1.0,
-     "profit_factor": 2.91,
-     "max_drawdown_R": 0.0,
-     "R_medio_ges": 0.95
+     "profit_factor": 0.97,
+     "max_drawdown_R": -2.0,
+     "R_medio_ges": 0.48
     }
    },
    "Marco": {
     "D": {
-     "n": 103,
-     "acierto_pct": 7.8,
+     "n": 104,
+     "acierto_pct": 7.7,
      "R_medio": -0.72,
-     "R_total": -73.9,
+     "R_total": -74.9,
      "ganancia_media_R": 4.13,
-     "perdida_media_R": -1.13,
+     "perdida_media_R": -1.12,
      "profit_factor": 0.31,
-     "max_drawdown_R": -72.9,
-     "R_medio_ges": -0.21
+     "max_drawdown_R": -73.9,
+     "R_medio_ges": -0.2
     },
     "W": {
-     "n": 18,
+     "n": 19,
      "acierto_pct": 0.0,
      "R_medio": -1.01,
-     "R_total": -18.1,
+     "R_total": -19.1,
      "ganancia_media_R": 0.0,
      "perdida_media_R": -1.01,
      "profit_factor": 0.0,
-     "max_drawdown_R": -17.1,
-     "R_medio_ges": -0.78
+     "max_drawdown_R": -18.1,
+     "R_medio_ges": -0.79
     }
    },
    "Disparo": {
     "recuperación del nivel barrido con volumen": {
-     "n": 80,
+     "n": 81,
      "acierto_pct": 6.2,
-     "R_medio": -0.8,
-     "R_total": -64.2,
+     "R_medio": -0.81,
+     "R_total": -65.2,
      "ganancia_media_R": 4.44,
      "perdida_media_R": -1.15,
-     "profit_factor": 0.26,
-     "max_drawdown_R": -63.2,
-     "R_medio_ges": -0.27
+     "profit_factor": 0.25,
+     "max_drawdown_R": -64.2,
+     "R_medio_ges": -0.25
     },
     "recuperación del nivel barrido con volumen + ruptura de directriz": {
      "n": 4,
@@ -4822,15 +4814,15 @@
      "R_medio_ges": 0.2
     },
     "ruptura de directriz": {
-     "n": 37,
-     "acierto_pct": 8.1,
-     "R_medio": -0.64,
-     "R_total": -23.8,
+     "n": 38,
+     "acierto_pct": 7.9,
+     "R_medio": -0.65,
+     "R_total": -24.8,
      "ganancia_media_R": 3.61,
      "perdida_media_R": -1.02,
-     "profit_factor": 0.31,
-     "max_drawdown_R": -22.8,
-     "R_medio_ges": -0.41
+     "profit_factor": 0.3,
+     "max_drawdown_R": -23.8,
+     "R_medio_ges": -0.42
     }
    },
    "Puntuación": {
@@ -4846,14 +4838,14 @@
      "R_medio_ges": -0.37
     },
     "<50": {
-     "n": 39,
-     "acierto_pct": 12.8,
-     "R_medio": -0.49,
-     "R_total": -19.0,
+     "n": 41,
+     "acierto_pct": 12.2,
+     "R_medio": -0.51,
+     "R_total": -21.0,
      "ganancia_media_R": 3.34,
      "perdida_media_R": -1.05,
-     "profit_factor": 0.47,
-     "max_drawdown_R": -18.0,
+     "profit_factor": 0.44,
+     "max_drawdown_R": -20.0,
      "R_medio_ges": -0.17
     },
     "≥70": {
@@ -4870,52 +4862,52 @@
    },
    "Volumen en la trampa": {
     "con volumen": {
-     "n": 86,
-     "acierto_pct": 5.8,
+     "n": 87,
+     "acierto_pct": 5.7,
      "R_medio": -0.82,
-     "R_total": -70.2,
+     "R_total": -71.2,
      "ganancia_media_R": 4.44,
      "perdida_media_R": -1.14,
      "profit_factor": 0.24,
-     "max_drawdown_R": -69.2,
-     "R_medio_ges": -0.26
+     "max_drawdown_R": -70.2,
+     "R_medio_ges": -0.25
     },
     "sin volumen": {
-     "n": 35,
-     "acierto_pct": 8.6,
-     "R_medio": -0.62,
-     "R_total": -21.8,
+     "n": 36,
+     "acierto_pct": 8.3,
+     "R_medio": -0.63,
+     "R_total": -22.8,
      "ganancia_media_R": 3.61,
      "perdida_media_R": -1.02,
-     "profit_factor": 0.33,
-     "max_drawdown_R": -20.8,
-     "R_medio_ges": -0.37
+     "profit_factor": 0.32,
+     "max_drawdown_R": -21.8,
+     "R_medio_ges": -0.39
     }
    },
    "Año": {
     "2026": {
-     "n": 121,
-     "acierto_pct": 6.6,
+     "n": 123,
+     "acierto_pct": 6.5,
      "R_medio": -0.76,
-     "R_total": -92.0,
+     "R_total": -94.0,
      "ganancia_media_R": 4.13,
-     "perdida_media_R": -1.11,
+     "perdida_media_R": -1.1,
      "profit_factor": 0.26,
-     "max_drawdown_R": -91.0,
+     "max_drawdown_R": -93.0,
      "R_medio_ges": -0.29
     }
    },
    "Selección diaria": {
     "resto": {
-     "n": 117,
-     "acierto_pct": 6.8,
+     "n": 119,
+     "acierto_pct": 6.7,
      "R_medio": -0.75,
-     "R_total": -87.5,
+     "R_total": -89.5,
      "ganancia_media_R": 4.13,
-     "perdida_media_R": -1.11,
+     "perdida_media_R": -1.1,
      "profit_factor": 0.27,
-     "max_drawdown_R": -86.5,
-     "R_medio_ges": -0.28
+     "max_drawdown_R": -88.5,
+     "R_medio_ges": -0.27
     },
     "⭐ seleccionadas": {
      "n": 4,
@@ -4930,6 +4922,17 @@
     }
    },
    "Calidad": {
+    "-1": {
+     "n": 1,
+     "acierto_pct": 0.0,
+     "R_medio": -1.0,
+     "R_total": -1.0,
+     "ganancia_media_R": 0.0,
+     "perdida_media_R": -1.0,
+     "profit_factor": 0.0,
+     "max_drawdown_R": 0.0,
+     "R_medio_ges": -1.0
+    },
     "0": {
      "n": 11,
      "acierto_pct": 0.0,
@@ -4942,15 +4945,15 @@
      "R_medio_ges": -0.65
     },
     "1": {
-     "n": 40,
-     "acierto_pct": 10.0,
-     "R_medio": -0.74,
-     "R_total": -29.6,
+     "n": 41,
+     "acierto_pct": 9.8,
+     "R_medio": -0.75,
+     "R_total": -30.6,
      "ganancia_media_R": 3.43,
      "perdida_media_R": -1.2,
-     "profit_factor": 0.32,
-     "max_drawdown_R": -28.6,
-     "R_medio_ges": -0.24
+     "profit_factor": 0.31,
+     "max_drawdown_R": -29.6,
+     "R_medio_ges": -0.21
     },
     "2": {
      "n": 41,
@@ -4960,7 +4963,7 @@
      "ganancia_media_R": 4.83,
      "perdida_media_R": -1.02,
      "profit_factor": 0.51,
-     "max_drawdown_R": -20.5,
+     "max_drawdown_R": -19.5,
      "R_medio_ges": -0.21
     },
     "3": {
@@ -4988,24 +4991,24 @@
    },
    "Filtro R/R": {
     "descartada (R/R bajo)": {
-     "n": 68,
-     "acierto_pct": 17.6,
-     "R_medio": -0.66,
-     "R_total": -44.9,
-     "ganancia_media_R": 1.05,
+     "n": 69,
+     "acierto_pct": 18.8,
+     "R_medio": -0.63,
+     "R_total": -43.1,
+     "ganancia_media_R": 1.11,
      "perdida_media_R": -1.03,
-     "profit_factor": 0.22,
-     "max_drawdown_R": -43.7
+     "profit_factor": 0.25,
+     "max_drawdown_R": -42.0
     },
     "pasa (R/R ≥ mínimo)": {
-     "n": 121,
-     "acierto_pct": 6.6,
+     "n": 123,
+     "acierto_pct": 6.5,
      "R_medio": -0.76,
-     "R_total": -92.0,
+     "R_total": -94.0,
      "ganancia_media_R": 4.13,
-     "perdida_media_R": -1.11,
+     "perdida_media_R": -1.1,
      "profit_factor": 0.26,
-     "max_drawdown_R": -100.6
+     "max_drawdown_R": -102.6
     }
    }
   },
@@ -5097,7 +5100,7 @@
     "entrada": 42.4,
     "stop": "41.1206",
     "objetivo2": "50.1229",
-    "fija_R": 0.17,
+    "fija_R": 0.28,
     "ges_R": 0.0
    },
    {
@@ -5357,7 +5360,7 @@
     "entrada": 190.58,
     "stop": "179.9686",
     "objetivo2": "236.78",
-    "fija_R": -0.05,
+    "fija_R": -0.07,
     "ges_R": 1.0
    },
    {
@@ -5367,7 +5370,7 @@
     "entrada": 4.21,
     "stop": "3.9862",
     "objetivo2": "5.237",
-    "fija_R": 0.28,
+    "fija_R": 0.41,
     "ges_R": 1.0
    },
    {
@@ -5417,8 +5420,8 @@
     "entrada": 16.77,
     "stop": "15.8549",
     "objetivo2": "22.7758",
-    "fija_R": 1.13,
-    "ges_R": 1.13
+    "fija_R": 1.22,
+    "ges_R": 1.22
    },
    {
     "fecha": "2026-10-14",
@@ -5497,8 +5500,8 @@
     "entrada": 25.76,
     "stop": "24.3734",
     "objetivo2": "29.88",
-    "fija_R": 1.67,
-    "ges_R": 1.67
+    "fija_R": 1.54,
+    "ges_R": 1.54
    },
    {
     "fecha": "2026-10-16",
@@ -5529,16 +5532,6 @@
     "objetivo2": "146.451",
     "fija_R": 0.1,
     "ges_R": 0.0
-   },
-   {
-    "fecha": "2026-10-20",
-    "ticker": "SIE.DE",
-    "marco": "D",
-    "entrada": 261.25,
-    "stop": "253.4005",
-    "objetivo2": "307.45",
-    "fija_R": -0.84,
-    "ges_R": 1.0
    },
    {
     "fecha": "2026-10-21",
@@ -5637,7 +5630,7 @@
     "entrada": 19.02,
     "stop": "18.5206",
     "objetivo2": "22.67",
-    "fija_R": 2.24,
+    "fija_R": 3.0,
     "ges_R": 0.96
    },
    {
@@ -5747,8 +5740,8 @@
     "entrada": 36.86,
     "stop": "35.6428",
     "objetivo2": "40.6937",
-    "fija_R": -0.21,
-    "ges_R": -0.21
+    "fija_R": -0.43,
+    "ges_R": -0.43
    },
    {
     "fecha": "2026-11-09",
@@ -5767,8 +5760,8 @@
     "entrada": 4.12,
     "stop": "3.918",
     "objetivo2": "6.4023",
-    "fija_R": -0.47,
-    "ges_R": -0.47
+    "fija_R": -0.7,
+    "ges_R": -0.7
    },
    {
     "fecha": "2026-11-10",
@@ -5789,16 +5782,6 @@
     "objetivo2": "224.2791",
     "fija_R": -0.44,
     "ges_R": -0.44
-   },
-   {
-    "fecha": "2026-11-12",
-    "ticker": "SIE.DE",
-    "marco": "W",
-    "entrada": 278.9,
-    "stop": "250.2363",
-    "objetivo2": "387.2003",
-    "fija_R": -0.85,
-    "ges_R": -0.85
    },
    {
     "fecha": "2026-11-18",
@@ -5847,8 +5830,8 @@
     "entrada": 1131.0,
     "stop": "1095.7768",
     "objetivo2": "1504.8",
-    "fija_R": 0.4,
-    "ges_R": 0.4
+    "fija_R": 0.27,
+    "ges_R": 0.27
    },
    {
     "fecha": "2026-11-23",
@@ -6127,8 +6110,8 @@
     "entrada": 101.8,
     "stop": "98.5276",
     "objetivo2": "132.83",
-    "fija_R": -0.32,
-    "ges_R": -0.32
+    "fija_R": 0.12,
+    "ges_R": 0.12
    }
   ]
  },
