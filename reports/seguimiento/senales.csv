@@ -413,3 +413,9 @@ fecha,ticker,nombre,grupo,marco,disparo,pasa_filtro,entrada_ref,stop,objetivo1,o
 2026-11-25,UPS,United Parcel Service,sp500,D,ruptura de directriz (sin R/R),False,111.47,104.9993,113.2925,128.7384,2.67,37.3,False,3,2026-11-05,False,,1
 2026-11-25,V,Visa Inc.,sp500,D,ruptura de directriz,True,424.39,398.4124,441.4129,504.327,3.08,54.4,False,3,2026-11-05,False,,0
 2026-11-25,XLB,Materiales básicos,etfs,W,ruptura de directriz,True,51.21,47.699,54.63,67.2797,4.58,38.9,False,2,2026-11-06,False,,1
+2026-11-27,ECL,Ecolab,sp500,D,ruptura de directriz (sin R/R),False,311.67,291.9902,318.93,351.8429,2.04,44.2,False,3,2026-11-05,False,,0
+2026-11-27,XOM,ExxonMobil,sp500,D,recuperación del nivel barrido con volumen + ruptura de directriz,True,160.18,155.7017,187.3177,210.7469,11.29,77.0,True,4,2026-10-30,False,,1
+2026-11-27,IVZ,Invesco,sp500,D,ruptura de directriz (sin R/R),False,28.99,26.0167,33.0882,35.2951,2.12,26.6,False,2,2026-09-04,False,,1
+2026-11-27,PAYX,Paychex,sp500/nasdaq100,D,recuperación del nivel barrido con volumen (sin R/R),False,118.13,109.6522,125.1752,136.5305,2.17,37.9,True,4,2026-09-03,False,,2
+2026-11-27,SO,Southern Company,sp500,W,ruptura de directriz (sin R/R),False,95.04,80.1461,97.6476,103.3052,0.55,0.8,True,1,2026-07-10,False,,1
+2026-11-26,SAB.MC,Banco Sabadell,ibex35,D,recuperación del nivel barrido con volumen,True,3.483,3.3685,3.797,4.085,5.26,65.3,True,3,2026-11-11,False,,1
